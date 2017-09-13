@@ -1,4 +1,4 @@
-# Aristotle and Aristotelianism
+## Aristotle and Aristotelianism
 
 Rob Iliffe
 
@@ -10,11 +10,11 @@ Main component of west science
 
 -----
 
-## Introduction
+### Introduction
 
 Plato Aristotle
 
-### Plato
+#### Plato
 
 Before cries XD
 
@@ -28,17 +28,42 @@ learn by thinking about it
 
 *Pythagoras*
 
-### Aristotle
+#### Aristotle
 
 Lyceum, Academic
 
 Aristotle is fascinated by the real world, but not the percect world.
 
-### Anti-Plato
+#### Anti-Plato
 
 what we can claim to know.
 
-### Substance and form
+#### Substance and form
 
 there are 2 kinds of forms : `substantial` and `accidental`
+
+## Instruments and the Scientific Revolution
+
+*Nicolaus Copernicus*  *Tycho Brahe*
+
+在柏拉图和亚里士多德之后，新的东西出现了。
+
+地心说->日心说
+
+伽利略发明望远镜，天文学出现历史性突破。引入实验方法。
+
+*Francis Bacon*
+
+> Knowledge is power.
+
+> get rid of your books, go into nature.
+
+**One of the teacher's main search: science instrument.**
+
+*Antoni van Leeuwenhoek* discovered spermatozoa in 1677
+
+> microscope is a more significant instrument than the telescope
+>
+> This is the greatest instrument of science revolution.
+
 
