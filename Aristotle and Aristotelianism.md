@@ -66,4 +66,12 @@ there are 2 kinds of forms : `substantial` and `accidental`
 >
 > This is the greatest instrument of science revolution.
 
+## The Mathematization of Nature
+
+*Descartes*
+
+the most famous claim in west philosopy history
+
+> I think, therefore I am.
+
 
