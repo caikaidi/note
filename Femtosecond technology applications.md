@@ -117,7 +117,7 @@ Laser tissue interactions:
 
 a single parameter distinguishes and primarily controls these process: the duration of laser exposure
 
-Laser induced optical breakdown (LIOB) 10^11 w/cm^2 in solids or fluids 10^14 w/cm^2 in air
+Laser induced optical breakdown (LIOB) $$10^{11} W/cm^2$$ in solids or fluids $$10^{14} W/cm^2$$ in air
 $$
 I(r,z,t)=\frac{1}{2}\varepsilon_0CE^2
 $$
