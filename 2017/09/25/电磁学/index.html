@@ -103,7 +103,10 @@
 <meta property="og:description" content="电磁学第一章 静电场 恒定电流场静电的基本现象和基本规律物质电结构 金属导体中外层电子（价电子）可以自由运动，称为自由电子，除价电子外的其余部分叫做原子实。固态金属中原子实排列成整齐的点阵，称为晶格或晶体点阵。 电解液中自由电荷不是电子而是溶解在其中的溶质分子离解成的正负离子。 在电离的气体（如日光灯中的汞蒸气）中，自由电荷也是正负离子，不过气体中的负离子往往就是电子。 半导体中导电的离子叫做载流">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2017/09/22/59c4bf3adae9e.png">
-<meta property="og:updated_time" content="2017-09-25T14:08:36.000Z">
+<meta property="og:image" content="https://i.loli.net/2017/09/25/59c90e60b07fc.png">
+<meta property="og:image" content="https://i.loli.net/2017/09/25/59c90f0f916ac.png">
+<meta property="og:image" content="https://i.loli.net/2017/09/25/59c90f9318065.png">
+<meta property="og:updated_time" content="2017-09-25T14:17:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="电磁学">
 <meta name="twitter:description" content="电磁学第一章 静电场 恒定电流场静电的基本现象和基本规律物质电结构 金属导体中外层电子（价电子）可以自由运动，称为自由电子，除价电子外的其余部分叫做原子实。固态金属中原子实排列成整齐的点阵，称为晶格或晶体点阵。 电解液中自由电荷不是电子而是溶解在其中的溶质分子离解成的正负离子。 在电离的气体（如日光灯中的汞蒸气）中，自由电荷也是正负离子，不过气体中的负离子往往就是电子。 半导体中导电的离子叫做载流">
@@ -409,7 +412,7 @@
 </blockquote>
 <p>本节只讨论相互作用能，自能将在以后讨论。</p>
 <p>首先考虑两个点电荷的情形：</p>
-<p><img src="" alt="fig1.2 两点电荷间的相互作用能"></p>
+<p><img src="https://i.loli.net/2017/09/25/59c90e60b07fc.png" alt="fig1.2 两点电荷间的相互作用能"></p>
 <p>首先把$q_1$放置到它的位置并固定下来，然后把$q_2$从无穷远搬过来，<br>$$<br>A^\prime = -\int_{\infty}^{P_2}\vec F_{12}\cdot\mathrm d \vec l=-q_2\int_\infty^{P_2} \vec {E_1}\cdot\mathrm d \vec l=q_2U_{12}<br>$$<br>其中$U_{12}$是$q_1$在$P_2$点产生的电势（以无穷远为电势零点）：<br>$$<br>U_{12}=-\int_\infty^{P_2} \vec {E_1}\cdot\mathrm d \vec l =\frac{1}{4\pi\varepsilon_0}\frac{q_1}{r_{12}}<br>$$<br>则<br>$$<br>W_互 = A^\prime = \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{r_{12}}<br>$$<br>多个点电荷时只需用叠加原理：<br>$$<br>W_互 &amp;=\frac{1}{4\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{i-1}\frac{q_iq_j}{r_{ij}}\tag 1\\<br>W_互 &amp;=\frac{1}{8\pi\varepsilon_0}\sum_{i=1}^n\sum_{j=1}^{n}\frac{q_iq_j}{r_{ij}},(i\ne j)\tag 2\\<br>W_互&amp;=\frac{1}{2}\sum_{i=1}^nq_iU_i \tag3\\<br>$$<br>其中(3)中的$U_i$表示除$q_i$外其余各点电荷在$q_i$的位置$P_i$上产生的电势：<br>$$<br>U_i = U(P_i)= \sum_{j=1,j\ne i}^n U_{ji}=\frac{1}{4\pi\varepsilon_0}\sum_{j=1,j \ne i}^n\frac{q_i}{r_{ij}}<br>$$</p>
 <h4 id="电荷连续分布情形的静电能"><a href="#电荷连续分布情形的静电能" class="headerlink" title="电荷连续分布情形的静电能"></a>电荷连续分布情形的静电能</h4><p>把连续带电体分割成许多体积元$\Delta V_i$，设电荷的体密度为$\rho_e$，则根据上式(3)有<br>$$<br>W_e=\frac1 2 \sum_i\rho_e\Delta V_iU_i<br>$$<br>取$$\Delta V_i \rightarrow 0$$的极限，上式过渡到体积分：<br>$$<br>W_e=\frac 1 2 \iiint\rho_eU\mathrm d V\tag1<br>$$<br><strong>注意</strong>写成体积分意味着体积元被无限分割，因此得到的不仅是相互作用能，而是包括自能在内的总静电能。</p>
 <p>同理对于线电荷分布和面电荷分布，有<br>$$<br>W_e &amp;= \frac 1 2 \int\eta_eU\mathrm d l\tag2\\<br>W_e &amp;= \frac 1 2\iint\sigma_eU\mathrm d S\tag3\\<br>$$<br>在只有一个带电体的时候，上面三个式子给出的就是它的自能。</p>
@@ -439,10 +442,10 @@
 <h4 id="电流的连续方程"><a href="#电流的连续方程" class="headerlink" title="电流的连续方程"></a>电流的连续方程</h4><p>电流场的一个重要的基本性质是它的连续方程，其实质是电荷守恒定律。<strong>电流连续方程</strong>描述了单位时间里流出一个面的电量等于面内的电量减少：<br>$$<br>\oint_S\vec j\cdot\mathrm d S= -\frac{\mathrm d q}{\mathrm d t}<br>$$<br>在<strong>恒定电流场</strong>中电流场不随时间变化，也就是说电荷分布保持不变，因此对于任意闭合曲面$S$，面内的电量不随时间变化：<br>$$<br>\oint_S\vec j\cdot\mathrm d \vec S= 0<br>$$<br>此式叫做<strong>电流的恒定条件</strong>。</p>
 <h4 id="两种导体分界面上的边界条件"><a href="#两种导体分界面上的边界条件" class="headerlink" title="两种导体分界面上的边界条件"></a>两种导体分界面上的边界条件</h4><ol>
 <li><p>$\vec j$法向分量的连续性</p>
-<p><img src="" alt="fig1.3 电流密度法向分量的连续性"><br>$$<br>\begin{alignat}{1}&amp;\oint_S\vec j\cdot\mathrm d \vec S&amp;=\iint_{上面}\vec j\cdot\mathrmd \vec S=\iint_{下面}\vec j\cdot\mathrm d \vec S=\iint_{侧面}\vec j\cdot\mathrm d \vec S\\&amp;&amp;=(\vec {j_2}-\vec{j_1})\cdot\vec n\Delta S =0\\&amp;\Rightarrow(\vec{j_2}-\vec{j_1})\cdot\vec n&amp;=0\\&amp;\Rightarrow j_{2n}=j_{1n}\\ \end{alignat}<br>$$<br><em>在边界面两侧电流密度的法向分量是连续的</em></p>
+<p><img src="https://i.loli.net/2017/09/25/59c90f0f916ac.png" alt="fig1.3 电流密度法向分量的连续性"><br>$$<br>\begin{alignat}{1}&amp;\oint_S\vec j\cdot\mathrm d \vec S&amp;=\iint_{上面}\vec j\cdot\mathrmd \vec S=\iint_{下面}\vec j\cdot\mathrm d \vec S=\iint_{侧面}\vec j\cdot\mathrm d \vec S\\&amp;&amp;=(\vec {j_2}-\vec{j_1})\cdot\vec n\Delta S =0\\&amp;\Rightarrow(\vec{j_2}-\vec{j_1})\cdot\vec n&amp;=0\\&amp;\Rightarrow j_{2n}=j_{1n}\\ \end{alignat}<br>$$<br><em>在边界面两侧电流密度的法向分量是连续的</em></p>
 </li>
 <li><p>$\vec E$切向分量的连续性</p>
-<p><img src="" alt="fig1.4 电场强度切向分量的连续性"><br>$$<br>\begin{alignat}{1}<br>&amp;\oint\vec E\cdot\mathrm d \vec l&amp;=\int_A^B\vec E\cdot\mathrm d \vec l+\int_B^C\vec E\cdot\mathrm d \vec l+\int_C^D\vec E\cdot\mathrm d \vec l+\int_D^A\vec E\cdot\mathrm d \vec l\\<br>&amp;&amp;=(E_{1t}-E_{2t})\Delta l \\<br>&amp;&amp;=0\\<br>&amp;\Rightarrow E_{1t}=E_{2t}<br>\end{alignat}<br>$$<br><em>在边界面两侧电场强度的切向分量是连续的</em></p>
+<p><img src="https://i.loli.net/2017/09/25/59c90f9318065.png" alt="fig1.4 电场强度切向分量的连续性"><br>$$<br>\begin{alignat}{1}<br>&amp;\oint\vec E\cdot\mathrm d \vec l&amp;=\int_A^B\vec E\cdot\mathrm d \vec l+\int_B^C\vec E\cdot\mathrm d \vec l+\int_C^D\vec E\cdot\mathrm d \vec l+\int_D^A\vec E\cdot\mathrm d \vec l\\<br>&amp;&amp;=(E_{1t}-E_{2t})\Delta l \\<br>&amp;&amp;=0\\<br>&amp;\Rightarrow E_{1t}=E_{2t}<br>\end{alignat}<br>$$<br><em>在边界面两侧电场强度的切向分量是连续的</em></p>
 </li>
 </ol>
 <h4 id="电流线在导体界面上的折射"><a href="#电流线在导体界面上的折射" class="headerlink" title="电流线在导体界面上的折射"></a>电流线在导体界面上的折射</h4><p>电流线和电场线与界面法线的夹角分别为$\theta_1$和$\theta_2$，加上边界条件和欧姆定律的微分形式<br>$$<br>\begin{cases}<br>j_{1n}=j\cos\theta_1,\quad j_{2n}=j\cos \theta_2 \\<br>E_{1t}=E\sin\theta_1,\quad E_{2t}=E\sin\theta_2 \\<br>j_{1n}=j_{2n},\quad E_{1t}=E_{2t}\\<br>j_1=\sigma_1E_1,\quad j_2=\sigma_2 E_2<br>\end{cases}<br>$$</p>
