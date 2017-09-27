@@ -140,7 +140,7 @@ a common finding: laser intensity is inversely proportional to laser pulse durat
 
 an optimal pulse duration for femtosecond laser corneal surgery in the few hundreds of femtosecond pulse duration ranges
 
-### 2. LASIK surgery
+## 2. LASIK surgery
 
 ### 2.1 LASIK procedure
 
@@ -183,3 +183,64 @@ advantages of femtosecond laser:
 
 IntraLASIK and femtoLASIK are all laserLASIK
 
+-----
+
+@9.25
+
+### 2.4 Commercially available femtosecond laser in refractive surgery
+
+Intralase 2001	CPA
+
+20/10 perfect vision 2001	CPA
+
+Ziemer 2005
+
+ziess 2006	CPA
+
+Alcon 2010(wavelight) 2012(lenSx)	CPA
+
+two groups:
+
+1. High pulse energy $$\mu J$$ low frequency $$KHz$$
+2. Low pulse energy $$nJ$$ high frequency $$MHz$$
+
+## 3. safety study
+
+50%~60% of enegy go through the cornea
+
+(600fs 1053nm 150KHz)
+
+The thermal camera is Ti55 Fluke camera
+
+San Diego eye bank
+
+1. Refractive index 1.33
+2. 17mm
+
+Now we talk about the simulation,
+
+Assumptions:
+
+- Four layer(neuro-sensory retina, RPE, choroid, sclera)
+
+- average refractive index 1.33
+
+- The high concentration of melanin pigments in retina is the main factor for absorption of laser energy 
+
+- Upper: heat flux   Others: temperature 20$$^\circ C$$
+  $$
+  K\nabla T = h(T_{inf}-T)
+  $$
+
+- iris is big
+
+- no heat flow due to blood flow
+
+Heat diffusion equation
+$$
+\rho C_p\frac{\partial T}{\partial t}+\nabla\times(-k\nabla T)=Q\\
+\begin{align}
+&\rho - \text{Density}\qquad C_p-\text{Heat capacity}\\
+&k-\text{Thermal conductivity}
+\end{align}
+$$
