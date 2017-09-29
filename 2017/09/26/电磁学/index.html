@@ -81,7 +81,9 @@
 <meta property="og:image" content="https://i.loli.net/2017/09/25/59c90e60b07fc.png">
 <meta property="og:image" content="https://i.loli.net/2017/09/25/59c90f0f916ac.png">
 <meta property="og:image" content="https://i.loli.net/2017/09/25/59c90f9318065.png">
-<meta property="og:updated_time" content="2017-09-28T09:16:47.000Z">
+<meta property="og:image" content="https://i.loli.net/2017/09/29/59cdb35092693.png">
+<meta property="og:image" content="https://i.loli.net/2017/09/29/59cdb40079ceb.png">
+<meta property="og:updated_time" content="2017-09-29T03:00:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="电磁学">
 <meta name="twitter:description" content="电磁学电磁学是为了更好的学习工程光学而自学的一门课程，教材为高等教育出版社出版的新概念物理教程 电磁学 第二版，笔记均为自习整理，较为完善。">
@@ -405,8 +407,7 @@
 <h4 id="电流的连续方程"><a href="#电流的连续方程" class="headerlink" title="电流的连续方程"></a>电流的连续方程</h4><p>电流场的一个重要的基本性质是它的连续方程，其实质是电荷守恒定律。<strong>电流连续方程</strong>描述了单位时间里流出一个面的电量等于面内的电量减少：<br>$$<br>\oint_S\vec j\cdot\mathrm d S= -\frac{\mathrm d q}{\mathrm d t}<br>$$<br>在<strong>恒定电流场</strong>中电流场不随时间变化，也就是说电荷分布保持不变，因此对于任意闭合曲面$$S$$，面内的电量不随时间变化：<br>$$<br>\oint_S\vec j\cdot\mathrm d \vec S= 0<br>$$<br>此式叫做<strong>电流的恒定条件</strong>。</p>
 <h4 id="两种导体分界面上的边界条件"><a href="#两种导体分界面上的边界条件" class="headerlink" title="两种导体分界面上的边界条件"></a>两种导体分界面上的边界条件</h4><ol>
 <li><p>$\vec j$法向分量的连续性</p>
-<p><img src="https://i.loli.net/2017/09/25/59c90f0f916ac.png" alt="fig1.3 电流密度法向分量的连续性"><br>$$<br>\begin{align}<br>&amp;\oint_S\vec j\cdot\mathrm d \vec S&amp;=\iint_{上面}\vec j\cdot\mathrm d \vec S=\iint_{下面}\vec j\cdot\mathrm d \vec S=\iint_{侧面}\vec j\cdot\mathrm d \vec S\\<br>&amp;&amp;=(\vec {j_2}-\vec{j_1})\cdot\vec n\Delta S =0\\</p>
-<p>&amp;\Rightarrow(\vec{j_2}-\vec{j_1})\cdot\vec n&amp;=0\\<br>&amp;\Rightarrow j_{2n}=j_{1n}\\<br>\end{align}<br>$$<br><em>在边界面两侧电流密度的法向分量是连续的</em></p>
+<p><img src="https://i.loli.net/2017/09/25/59c90f0f916ac.png" alt="fig1.3 电流密度法向分量的连续性"><br>$$<br>\begin{align}<br>\oint_S\vec j\cdot\mathrm d \vec S=\iint_{上面}\vec j\cdot\mathrm d \vec S=\iint_{下面}\vec j\cdot\mathrm d \vec S=\iint_{侧面}\vec j\cdot\mathrm d \vec S\\<br>=(\vec {j_2}-\vec{j_1})\cdot\vec n\Delta S =0\\<br>\Rightarrow(\vec{j_2}-\vec{j_1})\cdot\vec n=0\\<br>\Rightarrow j_{2n}=j_{1n}\\<br>\end{align}<br>$$<br><em>在边界面两侧电流密度的法向分量是连续的</em></p>
 </li>
 <li><p>$\vec E$切向分量的连续性</p>
 <p><img src="https://i.loli.net/2017/09/25/59c90f9318065.png" alt="fig1.4 电场强度切向分量的连续性"><br>$$<br>\begin{alignat}{1}<br>&amp;\oint\vec E\cdot\mathrm d \vec l&amp;=\int_A^B\vec E\cdot\mathrm d \vec l+\int_B^C\vec E\cdot\mathrm d \vec l+\int_C^D\vec E\cdot\mathrm d \vec l+\int_D^A\vec E\cdot\mathrm d \vec l\\<br>&amp;&amp;=(E_{1t}-E_{2t})\Delta l \\<br>&amp;&amp;=0\\<br>&amp;\Rightarrow E_{1t}=E_{2t}<br>\end{alignat}<br>$$<br><em>在边界面两侧电场强度的切向分量是连续的</em></p>
@@ -493,6 +494,221 @@
 </li>
 </ol>
 <h4 id="磁偶极子与载流线圈"><a href="#磁偶极子与载流线圈" class="headerlink" title="磁偶极子与载流线圈"></a>磁偶极子与载流线圈</h4><p>磁偶极子和载流线圈是十分相似的，要使二者完全等价，只需令<br>$$<br>\vec B = \mu_0\vec H\\<br>\vec{P_m}=\mu_0\vec m<br>$$</p>
+<h3 id="6-带电粒子在磁场中的运动"><a href="#6-带电粒子在磁场中的运动" class="headerlink" title="6. 带电粒子在磁场中的运动"></a>6. 带电粒子在磁场中的运动</h3><h4 id="洛伦兹力"><a href="#洛伦兹力" class="headerlink" title="洛伦兹力"></a>洛伦兹力</h4><p>$$<br>\vec F = q\vec v\times \vec B\\<br>F=|q|vB\sin\theta<br>$$</p>
+<p><em>洛伦兹力方向总与速度垂直，因此洛伦兹力永远不对粒子作功，它只改变粒子的运动方向，不改变其速率和动能。</em></p>
+<h4 id="安培力与洛伦兹力"><a href="#安培力与洛伦兹力" class="headerlink" title="安培力与洛伦兹力"></a>安培力与洛伦兹力</h4><p>注意二者的相似性：<br>$$<br>\mathrm d F=I\mathrm d \vec l\times \vec B\\<br>\vec F = q\vec v\times \vec B<br>$$<br>因为运动的电荷就是一个瞬时的电流元，导线受的安培力就是作用在各自由电子上洛伦兹力的宏观表现。</p>
+<h3 id="本章总结-1"><a href="#本章总结-1" class="headerlink" title="本章总结"></a>本章总结</h3><ol>
+<li><p>一切从相互作用力开始。但是注意磁场有磁荷产生和电流产生两种方式，并且具有等价性。<br>$$<br>F=\frac{1}{4\pi\mu_0}\frac{q_{m1}q_{m2}}{r^2}\\<br>\mathrm d \vec{F_{12}}=k\frac{I_1I_2\mathrm d\vec{l_2}\times (\mathrm d\vec{l_1}\times\hat r_{12})}{r^2_{12}}<br>$$</p>
+</li>
+<li><p>安培环路定理与磁场“高斯定理”<br>$$<br>\oint_L\vec B\cdot\mathrm d \vec l=\mu_0\sum_{L内}I\\<br>\oint_SB\cos\theta\mathrm d S=\oint_S\vec B\cdot\mathrm d \vec S=0<br>$$</p>
+</li>
+<li><p>描述磁场的物理量</p>
+<ul>
+<li><p>以磁荷观点类比电荷有磁场强度$\vec H$</p>
+</li>
+<li><p>以电流观点有磁感应强度$\vec B$：<br>$$<br>B=\frac{(\mathrm d F_2)_{\max}}{I_2\mathrm d l_2}<br>$$</p>
+</li>
+<li><p>磁矢势$\vec A$:<br>$$<br>\nabla\times\vec A=\vec B<br>$$</p>
+</li>
+</ul>
+</li>
+<li><p>安培力与洛伦兹力<br>$$<br>\mathrm d F=I\mathrm d \vec l\times \vec B\\<br>\vec F = q\vec v\times \vec B<br>$$</p>
+</li>
+</ol>
+<h2 id="第三章-电磁感应-电磁场的相对论变换"><a href="#第三章-电磁感应-电磁场的相对论变换" class="headerlink" title="第三章 电磁感应 电磁场的相对论变换"></a>第三章 电磁感应 电磁场的相对论变换</h2><h3 id="1-电磁感应定律"><a href="#1-电磁感应定律" class="headerlink" title="1. 电磁感应定律"></a>1. 电磁感应定律</h3><h4 id="法拉第定律"><a href="#法拉第定律" class="headerlink" title="法拉第定律"></a>法拉第定律</h4><p>$$<br>\mathcal E=-N\frac{\mathrm d \varPhi}{\mathrm d t}<br>$$</p>
+<h4 id="楞次定律"><a href="#楞次定律" class="headerlink" title="楞次定律"></a>楞次定律</h4><p><em>闭合回路中感应电流的方向，总是使得它所激发的磁场来阻碍引起感应电流的磁通量的变化</em></p>
+<h3 id="2-动生电动势和感生电动势"><a href="#2-动生电动势和感生电动势" class="headerlink" title="2. 动生电动势和感生电动势"></a>2. 动生电动势和感生电动势</h3><h4 id="动生电动势"><a href="#动生电动势" class="headerlink" title="动生电动势"></a>动生电动势</h4><p>在磁场内导体运动导致磁通量变化引起的感应电动势叫做<strong>动生电动势</strong>，动生电动势是由洛伦兹力引起的。<br>$$<br>\mathcal E=\oint_L(\vec v\times\vec B)\cdot\mathrm d \vec l<br>$$</p>
+<h4 id="感生电动势"><a href="#感生电动势" class="headerlink" title="感生电动势"></a>感生电动势</h4><p>导体不动，由磁场变化引起的感应电动势叫做<strong>感生电动势</strong>。<br>$$<br>\mathcal E =-\frac{\mathrm d \varPhi}{\mathrm d t}=-\frac{\mathrm d}{\mathrm d t}\iint_S\vec B\cdot\mathrm d\vec S=-\frac{\mathrm d}{\mathrm d t}\oint_L\vec A\cdot\mathrm d\vec l=-\oint_L\frac{\partial \vec A}{\partial t}\cdot\mathrm d \vec l<br>$$<br>这里的$-\frac{\partial\vec A}{\partial t}$就是<strong>感应电场</strong>或者<strong>涡旋电场</strong>，用$\vec E_旋$表示，说明<em>即使不存在导体回路，变化的磁场在周围也会激发电场</em>。</p>
+<p>一般情况下，空间的总电场是静电场和涡旋电场的叠加：<br>$$<br>\vec E=\vec E_势+\vec E_旋\\<br>\vec E = -\nabla U-\frac{\partial\vec A}{\partial t}<br>$$</p>
+<h3 id="3-磁矢势与磁场中带电粒子的动量"><a href="#3-磁矢势与磁场中带电粒子的动量" class="headerlink" title="3. 磁矢势与磁场中带电粒子的动量"></a>3. 磁矢势与磁场中带电粒子的动量</h3><h3 id="4-电磁场的相对论变换"><a href="#4-电磁场的相对论变换" class="headerlink" title="4. 电磁场的相对论变换"></a>4. 电磁场的相对论变换</h3><h3 id="5-互感和自感"><a href="#5-互感和自感" class="headerlink" title="5. 互感和自感"></a>5. 互感和自感</h3><h2 id="第四章-电磁介质"><a href="#第四章-电磁介质" class="headerlink" title="第四章 电磁介质"></a>第四章 电磁介质</h2><h3 id="1-电介质"><a href="#1-电介质" class="headerlink" title="1. 电介质"></a>1. 电介质</h3><h4 id="电介质的极化"><a href="#电介质的极化" class="headerlink" title="电介质的极化"></a>电介质的极化</h4><p><strong>电介质</strong>就是绝缘介质，是不导电的，电介质与静电场的相互作用特点与导体有相似之处，但也有重要差别。</p>
+<p>与导体类似，电介质在电场中也会由于正负电荷受力相反导致介质表面出现正负电荷，这种现象就叫做电介质的<strong>极化</strong>，表面出现的电荷就叫<strong>极化电荷</strong>。但导体表面出现感应电荷是其中自由电荷重新分布的结果，而电介质上出现极化电荷是其中束缚电荷的微小移动造成的宏观效果。</p>
+<p>有些物质分子的正负电荷“重心”重合，在外加电场作用下正负电荷“重心”会稍微错开，形成一个电偶极子（其电偶极矩称为<strong>感生电矩</strong>），在电场力作用下定向排列，引起介质极化，叫做<strong>电子位移极化</strong>。有些分子的正负电荷“重心”本来就不重合，则在电场作用下发生取向偏转，这种极化机制称为<strong>取向极化</strong>。在高频电场作用下，由于分子惯性较大，取向极化跟不上外电场的变化，只有惯性很小的电子才能紧跟高频电场的变化而产生位移极化。</p>
+<h4 id="极化强度矢量"><a href="#极化强度矢量" class="headerlink" title="极化强度矢量"></a>极化强度矢量</h4><p>极化状态下的电介质感生电矩是有偏向的，引入极化强度矢量，量度电介质极化程度和方向：<br>$$<br>\vec P=\frac{\sum p_{分子}}{\Delta V}<br>$$<br>如果电介质中各点的极化强度矢量大小和方向都相同，称该极化是均匀的。</p>
+<p>极化强度矢量表示了电介质内未抵消的电偶极矩，而电介质表面还有极化电荷，其面密度<br>$$<br>\sigma_e=\frac{\mathrm dq^\prime}{\mathrm d S}=P\cos\theta=\vec P\cdot\vec n=P_n\tag1<br>$$<br>极化电荷产生的电场在介质内部总是起着减弱极化的作用，故叫做<strong>退极化场</strong>。</p>
+<h4 id="极化率"><a href="#极化率" class="headerlink" title="极化率"></a>极化率</h4><p>极化强度与总电场成简单的正比关系：<br>$$<br>\vec P = \chi_e\varepsilon_0\vec E<br>$$<br>$\chi_e$叫做<strong>极化率</strong>，是介质材料的本身属性。</p>
+<h4 id="电位移矢量-有介质时的高斯定理"><a href="#电位移矢量-有介质时的高斯定理" class="headerlink" title="电位移矢量 有介质时的高斯定理"></a>电位移矢量 有介质时的高斯定理</h4><p>引入<strong>电位移矢量</strong>，或叫<strong>电感应强度矢量</strong>：<br>$$<br>\vec D=\varepsilon_0\vec E+\vec P<br>$$<br>则有介质时的高斯定理可写为：<br>$$<br>\oint_S\vec D\cdot\mathrm d \vec S=\sum_Sq_0\tag2\\<br>\vec D =\varepsilon_r\varepsilon_0 \vec E<br>$$</p>
+<h3 id="2-磁介质-分子电流观点"><a href="#2-磁介质-分子电流观点" class="headerlink" title="2. 磁介质-分子电流观点"></a>2. 磁介质-分子电流观点</h3><h4 id="磁化"><a href="#磁化" class="headerlink" title="磁化"></a>磁化</h4><p><img src="https://i.loli.net/2017/09/29/59cdb35092693.png" alt="fig4.1 分子电流观点的磁化机制"></p>
+<p>外加电流$\vec I_0$产生外磁场$\vec B_0$，使各分子环流的磁矩定向排列，介质被磁化。这个外加电流称为<strong>励磁电流</strong>，磁场称为<strong>磁化场</strong>。磁化铁棒的边缘会长生环形电流，称为<strong>磁化电流</strong>。</p>
+<p>为描述磁介质的磁化状态，引入<strong>磁化强度矢量</strong>，定义为<em>单位体积内分子磁矩的矢量和</em>：<br>$$<br>\vec M=\frac{\sum\vec m_{分子}}{\Delta V}<br>$$<br>类似上面的(2)式和(1)式，有<br>$$<br>\oint_L\vec M\cdot\mathrm d \vec l=\sum_L\vec{I^\prime}\\<br>\vec{i^\prime}=\vec M\times\vec n\<br>$$<br>其中$I^\prime$是介质中的磁化电流，$i^\prime$是面磁化电流密度。</p>
+<h4 id="磁场强度矢量-有介质时的安培环路定理"><a href="#磁场强度矢量-有介质时的安培环路定理" class="headerlink" title="磁场强度矢量 有介质时的安培环路定理"></a>磁场强度矢量 有介质时的安培环路定理</h4><p>引入磁场强度矢量：<br>$$<br>\vec H=\frac{\vec B}{\mu_0}-\vec M<br>$$<br>则有介质时的安培环路定理可写为：<br>$$<br>\oint_L\vec H\cdot\mathrm d\vec l=\sum_L\vec {I_0}\\<br>\vec H = \frac{\vec B}{\mu_0}(真空中\vec M等于0)<br>$$</p>
+<h3 id="3-磁介质-磁荷观点"><a href="#3-磁介质-磁荷观点" class="headerlink" title="3. 磁介质-磁荷观点"></a>3. 磁介质-磁荷观点</h3><h4 id="磁化-1"><a href="#磁化-1" class="headerlink" title="磁化"></a>磁化</h4><p>外加电流$\vec I_0$产生外磁场$\vec H_0$，使磁偶极子受磁偶极矩$p_{m分子}$定向排列，介质被磁化。</p>
+<p>引入<strong>磁极化强度矢量</strong>描述介质磁化的方向和程度大小：<br>$$<br>\vec J = \frac{\sum \vec p_{m分子}}{\Delta V}<br>$$<br>类比上面(1)(2)<br>$$<br>\oint_S\vec J\cdot\mathrm d \vec S=-\sum_Sq_m\\<br>\sigma_m=\frac{\mathrm d q_m}{\mathrm d S}=J\cos \theta=\vec J\cdot\vec n=J_n<br>$$<br>介质被磁化产生一个磁化场$\vec{H^\prime}$，在介质内部方向与外磁场$\vec{H_0}$相反，称为<strong>退磁场</strong>。其大小与<strong>退磁因子</strong>$N_D$有关：<br>$$<br>H^\prime=N_DJ/\mu_0\\<br>N_D=1-(l/d)[1+(l/d)^2]^{-1/2}<br>$$</p>
+<h4 id="磁感应强度矢量-安培环路定理-高斯定理"><a href="#磁感应强度矢量-安培环路定理-高斯定理" class="headerlink" title="磁感应强度矢量 安培环路定理 高斯定理"></a>磁感应强度矢量 安培环路定理 高斯定理</h4><p>定义<strong>磁感应强度矢量</strong><br>$$<br>\vec B\equiv\mu_0\vec H+\vec J<br>$$<br>在真空中$\vec J=0$。</p>
+<p>高斯定理可写为<br>$$<br>\oint_S\vec B\cdot\mathrm d \vec S=0<br>$$<br>安培环路定理<br>$$<br>\oint_L\vec H\cdot\mathrm d \vec l=\sum_LI_0<br>$$</p>
+<h4 id="磁化率和磁导率"><a href="#磁化率和磁导率" class="headerlink" title="磁化率和磁导率"></a>磁化率和磁导率</h4><p>$$<br>\vec J=\chi_m\mu_0\vec H<br>$$</p>
+<p>则<br>$$<br>\vec B=\mu_r\mu_0\vec H<br>$$<br>其中$\mu_r=1+\chi_m$称为<strong>磁导率</strong>，是与电介质中的介电常数$\varepsilon$对应的量。</p>
+<h3 id="4-磁介质的磁化规律和机理-铁电体"><a href="#4-磁介质的磁化规律和机理-铁电体" class="headerlink" title="4. 磁介质的磁化规律和机理 铁电体"></a>4. 磁介质的磁化规律和机理 铁电体</h3><h3 id="5-电磁介质界面上的边界条件-磁路定理"><a href="#5-电磁介质界面上的边界条件-磁路定理" class="headerlink" title="5. 电磁介质界面上的边界条件 磁路定理"></a>5. 电磁介质界面上的边界条件 磁路定理</h3><h4 id="边界条件"><a href="#边界条件" class="headerlink" title="边界条件"></a>边界条件</h4><p>仿照$\vec j$和$\vec E$的边界条件，有<br>$$<br>D_{2n}=D_{1n}\\<br>E_{1t}=E_{2t}\\<br>B_{2n}=B_{1n}\\<br>H_{1t}=H_{2t}<br>$$<br>在有介质情况下边值问题仍符合唯一性定理。</p>
+<h4 id="界面上的折射"><a href="#界面上的折射" class="headerlink" title="界面上的折射"></a>界面上的折射</h4><p>$$<br>\frac{\tan\theta_1}{\tan\theta_2}=\frac{\varepsilon_1}{\varepsilon_2}\\<br>\frac{\tan\theta_1}{\tan\theta_2}=\frac{\mu_1}{\mu_2}<br>$$</p>
+<p>即：</p>
+<ul>
+<li><em>电介质界面两侧电场线与法线夹角的正切之比等于两侧介电常量之比</em></li>
+<li><em>磁介质界面两侧磁感应先与法线夹角的正切之比等于两侧磁导率之比</em></li>
+</ul>
+<h4 id="磁路定理"><a href="#磁路定理" class="headerlink" title="磁路定理"></a>磁路定理</h4><h3 id="6-电磁场能"><a href="#6-电磁场能" class="headerlink" title="6. 电磁场能"></a>6. 电磁场能</h3><h3 id="本章总结-2"><a href="#本章总结-2" class="headerlink" title="本章总结"></a>本章总结</h3><ol>
+<li>磁化与极化</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">物理量和规律</th>
+<th style="text-align:center">分子电流观点</th>
+<th style="text-align:center">磁荷观点</th>
+<th style="text-align:center">电介质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">微观模型</td>
+<td style="text-align:center">分子环流</td>
+<td style="text-align:center">磁偶极子</td>
+<td style="text-align:center">电偶极子</td>
+</tr>
+<tr>
+<td style="text-align:center">描述磁化（极化）的量</td>
+<td style="text-align:center">磁化强度矢量$\vec M=\frac{\sum \vec m_{分子}}{\Delta V}$</td>
+<td style="text-align:center">磁极化强度矢量$\vec J=\frac{\sum \vec p_{m分子}}{\Delta V}$</td>
+<td style="text-align:center">极化强度矢量$\vec P=\frac{\sum \vec p_{分子}}{\Delta V}$</td>
+</tr>
+<tr>
+<td style="text-align:center">磁化（极化）的宏观效果</td>
+<td style="text-align:center">与$\vec M$平行的界面上出现磁化电流</td>
+<td style="text-align:center">与$\vec J$垂直的界面上出现磁荷</td>
+<td style="text-align:center">与$\vec P$垂直的界面上出现极化电荷</td>
+</tr>
+<tr>
+<td style="text-align:center">场基本矢量</td>
+<td style="text-align:center">磁感应强度$\vec B$</td>
+<td style="text-align:center">磁场强度$\vec H$</td>
+<td style="text-align:center">电场强度$\vec E$</td>
+</tr>
+<tr>
+<td style="text-align:center">介质的影响</td>
+<td style="text-align:center">$\vec B=\vec{B_0}+\vec{B^\prime}$</td>
+<td style="text-align:center">$\vec H=\vec{H_0}+\vec{H^\prime}$</td>
+<td style="text-align:center">$\vec E=\vec{E_0}+\vec{E^\prime}$</td>
+</tr>
+<tr>
+<td style="text-align:center">辅助矢量</td>
+<td style="text-align:center">磁场强度$\vec H=\frac{\vec B}{\mu_0}-\vec M$</td>
+<td style="text-align:center">磁感应强度$\vec B =\mu_0\vec H+\vec J$</td>
+<td style="text-align:center">电位移$\vec D=\varepsilon_0\vec E+\vec P$</td>
+</tr>
+<tr>
+<td style="text-align:center">高斯定理</td>
+<td style="text-align:center">$\oint_S\vec B\cdot\mathrm d\vec S=0$</td>
+<td style="text-align:center">$\oint_S\vec B\cdot\mathrm d\vec S=0$</td>
+<td style="text-align:center">$\oint_S\vec D\cdot\mathrm d \vec S=\sum q_0$</td>
+</tr>
+<tr>
+<td style="text-align:center">环路定理</td>
+<td style="text-align:center">$\oint_L\vec H\cdot\mathrm d\vec l=\sum I_0$</td>
+<td style="text-align:center">$\oint_L\vec H\cdot\mathrm d\vec l=\sum I_0$</td>
+<td style="text-align:center">$\oint_S\vec E\cdot\mathrm d\vec l=0$</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>边界条件</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">电介质</th>
+<th style="text-align:center">磁介质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">规律</td>
+<td style="text-align:center">$\vec D=\varepsilon_r\varepsilon_0\vec E$</td>
+<td style="text-align:center">$\vec B =\mu_r\mu_0\vec H$</td>
+</tr>
+<tr>
+<td style="text-align:center">法向边界条件</td>
+<td style="text-align:center">$D_{2n}=D_{1n}$</td>
+<td style="text-align:center">$\vec B_{2n}=\vec B_{1n}$</td>
+</tr>
+<tr>
+<td style="text-align:center">切向边界条件</td>
+<td style="text-align:center">$\vec E_{1t}=\vec E_{2t}$</td>
+<td style="text-align:center">$\vec H_{1t}=\vec H_{2t}$</td>
+</tr>
+<tr>
+<td style="text-align:center">场线在边界的折射</td>
+<td style="text-align:center">$\frac{\tan\theta_1}{\tan\theta_2}=\frac{\varepsilon_1}{\varepsilon_2}$</td>
+<td style="text-align:center">$\frac{\tan\theta_1}{\tan\theta_2}=\frac{\mu_1}{\mu_2}$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="第五章-电路"><a href="#第五章-电路" class="headerlink" title="第五章 电路"></a>第五章 电路</h2><h2 id="第六章-麦克斯韦电磁理论-电磁波-电磁单位制"><a href="#第六章-麦克斯韦电磁理论-电磁波-电磁单位制" class="headerlink" title="第六章 麦克斯韦电磁理论 电磁波 电磁单位制"></a>第六章 麦克斯韦电磁理论 电磁波 电磁单位制</h2><h3 id="1-麦克斯韦电磁理论"><a href="#1-麦克斯韦电磁理论" class="headerlink" title="1. 麦克斯韦电磁理论"></a>1. 麦克斯韦电磁理论</h3><blockquote>
+<p>当麦克斯韦把已有的电磁规律用几个方程式表达出来之后，发现其中有矛盾，只有加上他称之为“位移电流”的一项，方程式才是彼此相容的。“位移电流”后来导致了一项非常重大的发现——电磁波。</p>
+</blockquote>
+<h4 id="位移电流"><a href="#位移电流" class="headerlink" title="位移电流"></a>位移电流</h4><p>麦克斯韦时代的基本电磁规律概括如下：<br>$$<br>\begin{align}<br>&amp;\oint_S\vec D\cdot\mathrm d \vec S=q_0\tag{1. 电场的高斯定理}\\<br>&amp;\oint_L\vec E\cdot\mathrm d\vec l=0\tag{2. 静电场的环路定理}\\<br>&amp;\oint_S\vec B\cdot\mathrm d\vec S=0\tag{3. 磁场的高斯定理}\\<br>&amp;\oint_L\vec H\cdot\mathrm d\vec l=I_0\tag{4.安培环路定理}\\<br>&amp;\mathcal E=-\frac{\partial\varPhi_B}{\partial t}\tag{5. 法拉第电磁感应定律}<br>\end{align}<br>$$<br>麦克斯韦想用一组方程描述普遍情况下的电磁规律，第三章中提到麦克斯韦从感生电动势现象中感觉到变化的磁场会在周围产生涡旋电场，即使是没有导体回路。因此电场环路定理推广到普遍情形下应该是：<br>$$<br>\oint_L\vec E\cdot\mathrm d \vec l=-\iint\frac{\partial\vec B}{\partial t}\cdot\mathrm d\vec S<br>$$<br>在将安培回路定理推广到非恒定情形时遇到矛盾：</p>
+<ul>
+<li><p>安培回路定理<br>$$<br>\oint_L\vec H\cdot\mathrm d \vec l=I_0=\iint_S\vec{j_0}\cdot\mathrm d \vec S<br>$$<br>表示磁场强度沿闭合回路的积分只与回路边界有关，$I_0$是以$L$为边界任意选取曲面$S$，穿过该曲面的电流。</p>
+</li>
+<li><p>在非恒定条件下发现有时候选两个曲面$S_1$和$S_2$通过的电流不同：<br><img src="https://i.loli.net/2017/09/29/59cdb40079ceb.png" alt="fig6.1 安培环路定理非恒定情形下的矛盾"><br>$$<br>\oint_{S_1}\vec{j_0}\cdot\mathrm d\vec S = 0, \quad\oint_{S_2}\vec{j_0}\cdot\mathrm d\vec S \ne 0<br>$$</p>
+</li>
+<li><p>矛盾源于$\frac{\mathrm d q_0}{\mathrm d t}$，$S_1$面内这个值为0，$S_2$内这个值不为0</p>
+</li>
+<li><p>构造解决方案：<br>$$<br>\oint_S(\vec{j_0}+\frac{\partial \vec D}{\partial t})\cdot\mathrm d\vec S=0\\<br>\iint_{S_1}(\vec{j_0}+\frac{\partial \vec D}{\partial t})\cdot\mathrm d\vec S= \iint_{S_2}(\vec{j_0}+\frac{\partial \vec D}{\partial t})\cdot\mathrm d\vec S=0<br>$$</p>
+</li>
+<li><p>令<br>$$<br>\varPhi_D=\iint\vec D\cdot\mathrm d\vec S<br>$$<br>则有<br>$$<br>\frac{\mathrm d\varPhi_D}{\mathrm d t}=\iint_S\frac{\partial \vec D}{\partial t}\cdot\mathrm d \vec S<br>$$<br>麦克斯韦把$\frac{\partial \varPhi_D}{\partial t}$叫做<strong>位移电流</strong>，$\frac{\partial\vec D}{\partial t}$称为<strong>位移电流密度</strong>。</p>
+</li>
+<li><p>最终安培环路定理的普遍形式如下：<br>$$<br>\oint_L\vec H\cdot\mathrm d \vec l=I_0+\frac{\mathrm d \varPhi_D}{\mathrm d t}<br>$$</p>
+</li>
+</ul>
+<h4 id="麦克斯韦方程组"><a href="#麦克斯韦方程组" class="headerlink" title="麦克斯韦方程组"></a>麦克斯韦方程组</h4><p>$$<br>\begin{align}<br>&amp;\oint_S\vec D\cdot\mathrm d\vec S=q_0\tag{I}\\<br>&amp;\oint_L\vec E\cdot\mathrm d\vec l=-\iint\frac{\partial \vec B}{\partial t}\cdot\mathrm d \vec S\tag{II}\\<br>&amp;\oint_S\vec B\cdot\mathrm d \vec S=0\tag{III}\\<br>&amp;\oint_L\vec H\cdot\mathrm d \vec l=I_0+\iint\frac{\partial \vec D}{\partial t}\cdot\mathrm d\vec S\tag{IV}<br>\end{align}<br>$$</p>
+<p>这就是<strong>麦克斯韦方程组的积分形式</strong>。</p>
+<p>通过矢量分析可推导出<strong>麦克斯韦方程组的微分形式</strong>：<br>$$<br>\begin{align}<br>&amp;\nabla\cdot\vec D=\rho_{e0}\tag{I}\\<br>&amp;\nabla\times\vec E=-\frac{\partial \vec B}{\partial t}\tag{II}\\<br>&amp;\nabla\cdot\vec B=0\tag{III}\\<br>&amp;\nabla\times\vec H=\vec {j_0}+\frac{\partial \vec D}{\partial t}\tag{IV}<br>\end{align}<br>$$<br>其中$\rho_{e0}$是自由电荷的体密度，$\vec{j_0}$是传导电流密度，$\frac{\partial \vec D}{\partial t}$是位移电流密度。</p>
+<p>在各向同性线性介质内引入物质方程：<br>$$<br>\begin{align}<br>&amp;\vec D=\varepsilon_r\varepsilon_0\vec E\tag{V}\\<br>&amp;\vec B=\mu_r\mu_0\vec H\tag{VI}\\<br>&amp;\vec{j_0}=\sigma\vec E\tag{VII}\\<br>\end{align}<br>$$</p>
+<h4 id="边界条件-1"><a href="#边界条件-1" class="headerlink" title="边界条件"></a>边界条件</h4><p>在解麦克斯韦方程组的时候只有在边界条件已知的情况下才能唯一的确定方程组的解。在两种不同介质的分界面上，由于介电常量$\varepsilon$、磁导率$\mu$、电导率$\sigma$不同，相应的有三组边界条件。</p>
+<ol>
+<li><p>磁介质界面上的边界条件<br>$$<br>H_{2t}=H_{1t}<br>$$</p>
+</li>
+<li><p>电介质界面上的边界条件<br>$$<br>D_{2n}=D_{1n}\\<br>E_{2t}=E_{1t}<br>$$</p>
+</li>
+<li><p>导体界面上的边界条件<br>$$<br>D_{2n}-D_{1n}=\sigma_{e0}\\<br>(j_{02})_n=(j_{01})_n<br>$$<br>其中$\sigma_{e0}$是导体界面上的自由电荷密度。</p>
+</li>
+</ol>
+<h3 id="2-电磁波理论"><a href="#2-电磁波理论" class="headerlink" title="2. 电磁波理论"></a>2. 电磁波理论</h3><h4 id="平面电磁波的解"><a href="#平面电磁波的解" class="headerlink" title="平面电磁波的解"></a>平面电磁波的解</h4><p>自由空间的麦克斯韦方程可简化为：<br>$$<br>\begin{align}<br>&amp;\nabla\cdot\vec D=0\tag{I}\\<br>&amp;\nabla\times\vec E=-\mu_r\mu_0\frac{\partial \vec H}{\partial t}\tag{II}\\<br>&amp;\nabla\cdot\vec H=0\tag{III}\\<br>&amp;\nabla\times\vec H=\varepsilon_r\varepsilon_0\frac{\partial \vec E}{\partial t}\tag{IV}<br>\end{align}<br>$$</p>
+<p>设平面波沿$z$轴方向传播，对(III) 两边同时取旋度，化简，得到波动方程<br>$$<br>\nabla ^2\vec E-\frac{1}{v^2}\frac{\partial ^2 \vec E}{\partial t^2}<br>$$<br>其最简单的解为简谐波，<br>$$<br>\begin{cases}<br>\widetilde E=\widetilde E_0 e^{i(\omega t-kz)}\\<br>\widetilde H =\widetilde H_0e^{i(\omega t-kz)}<br>\end{cases}<br>$$<br>其中$\omega$和$k$是<strong>角频率</strong>和<strong>波数</strong>，<br>$$<br>\omega = \frac{2\pi}{T},\quad k=\frac{2\pi}{\lambda}<br>$$</p>
+<h4 id="平面电磁波的性质"><a href="#平面电磁波的性质" class="headerlink" title="平面电磁波的性质"></a>平面电磁波的性质</h4><ul>
+<li>电磁波是横波：电矢量$\vec E$和磁矢量$\vec H$都与单位波矢$\hat k$垂直</li>
+<li>电矢量与磁矢量垂直</li>
+<li>$\vec E$和$\vec H$同相位</li>
+<li><p>$\vec E$和$\vec H$的幅值成比例<br>$$<br>\sqrt{\varepsilon_r\varepsilon_0}E_0=\sqrt{\mu_r\mu_0}H_0<br>$$</p>
+</li>
+<li><p>电磁波的传播速度为<br>$$<br>v=\frac{1}{\sqrt{\varepsilon_r\varepsilon_0\mu_r\mu_0}}<br>$$</p>
+</li>
+</ul>
+<h3 id="3-电磁场的能流密度与动量"><a href="#3-电磁场的能流密度与动量" class="headerlink" title="3. 电磁场的能流密度与动量"></a>3. 电磁场的能流密度与动量</h3><h3 id="4-电磁波的产生"><a href="#4-电磁波的产生" class="headerlink" title="4. 电磁波的产生"></a>4. 电磁波的产生</h3><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="1-矢量的积"><a href="#1-矢量的积" class="headerlink" title="1. 矢量的积"></a>1. 矢量的积</h3><h4 id="矢量的标积"><a href="#矢量的标积" class="headerlink" title="矢量的标积"></a>矢量的标积</h4><p>$$<br>\vec A\cdot\vec B=AB\cos\theta<br>$$</p>
+<h4 id="矢量的失积"><a href="#矢量的失积" class="headerlink" title="矢量的失积"></a>矢量的失积</h4><p>$$<br>\vec A\times\vec B=AB\sin\theta\vec k<br>$$</p>
+<h3 id="2-标量场和矢量场"><a href="#2-标量场和矢量场" class="headerlink" title="2. 标量场和矢量场"></a>2. 标量场和矢量场</h3><h4 id="标量场"><a href="#标量场" class="headerlink" title="标量场"></a>标量场</h4><p>空间各点存在着一个标量$\varPhi$，其数值是空间位置的函数<br>$$<br>\varPhi =\varPhi(x,y,z)<br>$$<br>比如电势。</p>
+<h4 id="矢量场-1"><a href="#矢量场-1" class="headerlink" title="矢量场"></a>矢量场</h4><p>空间各点存在一个矢量$\vec A$，其大小和方向是空间位置的函数<br>$$<br>\vec A =\vec A(x,y,z)<br>$$<br>比如电场。</p>
+<p>研究矢量场时人们常引入“场线”和“场管”的概念。所谓<strong>场线</strong>是一些有方向的曲线，其上每一点的切线方向都与该点场矢量$\vec A$的方向一致。由一束场线围城的管状区域叫做<strong>场管</strong>。</p>
+<h4 id="标量场的梯度"><a href="#标量场的梯度" class="headerlink" title="标量场的梯度"></a>标量场的梯度</h4><p>标量场沿任意方向的变化率<br>$$<br>\frac{\partial \vec{\varPhi}}{\partial l}=\lim_{\Delta l\rightarrow 0}\frac{\Delta \varPhi}{\Delta l}<br>$$<br>叫做标量场沿$\Delta l$方向的<strong>方向微商</strong>。</p>
+<p><strong>标量场的梯度</strong>$\nabla \varPhi$是一个矢量，其方向沿方向微商最大的方向，数值上等于这个最大的方向微商。</p>
+<p>标量场的梯度是个矢量场。</p>
+<h4 id="矢量场的通量和散度-高斯定理"><a href="#矢量场的通量和散度-高斯定理" class="headerlink" title="矢量场的通量和散度 高斯定理"></a>矢量场的通量和散度 高斯定理</h4><p>矢量场$\vec A$通过一个截面$S$的通量<br>$$<br>\varPhi_A=\iint_S\vec A\cdot\mathrm d\vec S=\iint_SA\cos\theta\mathrm d S<br>$$<br>令$S$为一闭合曲面，当其体积趋近于零时<br>$$<br>\nabla\cdot\vec A=\lim_{\Delta V\rightarrow 0}\frac{\varPhi_A}{\Delta V}=\lim_{\Delta V\rightarrow0}\frac{\oint_S\vec A\cdot\mathrm d\vec S}{\Delta V}<br>$$<br>称为矢量场的散度。<em>矢量场的散度是个标量场</em>。</p>
+<p>把取散度的闭合曲面$S$无限分割，<br>$$<br>\varPhi_A=\oint_S\vec A\cdot\mathrm d\vec S=\sum_{i=1}^n(\nabla\cdot\vec A)_i\Delta V_i<br>$$<br>取极限后右端变为积分：<br>$$<br>\oint_S\vec A\cdot\mathrm d\vec S=\iiint_V\nabla\cdot\vec A\mathrm d V<br>$$<br>上式表明<em>矢量场通过任意闭合曲面$S$的通量等于它所包围体积内散度的积分</em>，这就是矢量场论中的<strong>高斯定理</strong>。</p>
+<h4 id="矢量场的环量和旋度-斯托克斯定理"><a href="#矢量场的环量和旋度-斯托克斯定理" class="headerlink" title="矢量场的环量和旋度 斯托克斯定理"></a>矢量场的环量和旋度 斯托克斯定理</h4><p>矢量场$\vec A$沿闭合回路的线积分称为环量<br>$$<br>\varGamma_A=\oint_L\vec A\cdot\mathrm d\vec l<br>$$<br>环逐渐缩小，包围的面积趋近于零时<br>$$<br>(\nabla\times\vec A)_n=\lim_{\Delta S\rightarrow 0}\frac{\varGamma_A}{\Delta S}=\lim_{\Delta S\rightarrow 0}\frac{\oint_L\vec A\cdot\mathrm d \vec l}{\Delta S}<br>$$<br>称为矢量场$\vec A$的旋度在$\vec n$上的投影。<em>矢量场的旋度是个矢量场</em>。</p>
+<p>把取旋度的回路无限分割，<br>$$<br>\varGamma_A=\oint_L\vec A\cdot\mathrm d \vec l=\sum_{i=1}^n(\nabla\times\vec A)\cdot\Delta\vec {S_i}<br>$$<br>取极限后右端变为积分：<br>$$<br>\oint_L\vec A\cdot\mathrm d \vec l=\iint_S(\nabla\times\vec A)\cdot\mathrm d\vec S<br>$$<br>上式表明<em>矢量场在任意闭合回路$L$上的环量等于以它为边界的曲面上旋度的积分</em>，这就是矢量场论中的<strong>斯托克斯定理</strong>。</p>
+<h4 id="矢量场的分解"><a href="#矢量场的分解" class="headerlink" title="矢量场的分解"></a>矢量场的分解</h4><ul>
+<li>若一矢量场在某空间范围内散度为0，我们就说它在此范围内<strong>无源</strong>，或它是<strong>无散场</strong>；反之则是<strong>有源</strong>的，或叫<strong>有散场</strong>。<em>任何矢量场的旋度永远是无散场</em>。</li>
+<li>若一矢量场在某空间范围内旋度为0，我们就说它在此范围内<strong>无旋</strong>，或它是<strong>无旋场</strong>；反之则是<strong>有旋</strong>的，或叫<strong>有旋场</strong>。<em>任何标量场的梯度永远是无旋场</em>，那个标量称为<strong>势函数</strong>，无旋场称为<strong>势场</strong>。</li>
+<li>若一矢量场在某空间范围内既无散又无旋，则这个矢量场为<strong>谐和场</strong>。</li>
+</ul>
+<p>在普遍的情况下，一个矢量场既是有旋的，又是有散的，则可以分解为两部分：<br>$$<br>\vec A=\vec A_势+\vec A_旋<br>$$<br>这个分解并不是唯一的。</p>
+<h4 id="复数运算"><a href="#复数运算" class="headerlink" title="复数运算"></a>复数运算</h4><p>单位虚数：<br>$$<br>i=\sqrt{-1},\quad i^2=-1,\quad \frac 1 i=-i,\\<br>i=e^{i\pi/2},\quad \frac 1 i=e^{-i\pi/2}<br>$$<br>复数$\widetilde A$对应于复平面内一个坐标为$(x,y)$的点，或者一个长度为$A$，仰角为$\varphi$的矢量:<br>$$<br>\widetilde A=x+iy\\<br>\widetilde A =Ae^{i\varphi}<br>$$<br>式中<br>$$<br>e^{i\varphi}=\cos\varphi +i\sin\varphi<br>$$<br>复数的直角坐标表示中横坐标是<strong>实部</strong>，记作$x=\mathrm{Re}\widetilde A$，纵坐标是<strong>虚部</strong>，记作$y=\mathrm{Im}\widetilde A$，对应矢量的长度$A$是复数的<strong>模</strong>或<strong>绝对值</strong>，记作$A=|\widetilde A|$，仰角为复数的<strong>辐角</strong>，记作$\varphi=\arg \widetilde A$</p>
+<p>由极坐标换算直角坐标：<br>$$<br>A=\sqrt{x^2+y^2}\\<br>\varphi=\arctan \frac y x<br>$$<br>直角坐标换算极坐标：<br>$$<br>x=A\cos\varphi\\<br>y=A\sin\varphi<br>$$</p>
+<p>复数$\widetilde A = x+iy=e^{i\varphi}$的共轭复数$\widetilde A^*$定义为：<br>$$<br>\widetilde A^*=x-iy=e^{-i\varphi}<br>$$<br>所以<br>$$<br>\widetilde A\widetilde A^*=A^2=x^2+y^2<br>$$<br>即：<em>一对共轭复数的乘积等于模的平方</em>。</p>
+<p>两个复数相等的充要条件为实部和虚部分别相等，或模和辐角分别相等。</p>
+<p>欧拉公式：<br>$$<br>e^{\pm ix}=\cos x\pm i\sin x<br>$$</p>
+<p>对于一个简谐量$s(t)=A\cos (\omega t+\varphi)$，可以用复数表示为：<br>$$<br>\widetilde s(t)=Ae^{i(\omega t+\varphi)}= \widetilde Ae^{i\omega t}<br>$$<br>其中$\widetilde A=e^{i\varphi}$称为<strong>复振幅</strong>，集振幅和初相位于一身。</p>
+<p>对$t$求导数只相当于乘上$i\omega$，十分方便。</p>
+<p>两个简谐量$a_1(t)a_2(t)$的乘积在一个周期内的平均值等于<br>$$<br>\begin{align}<br>\overline{(a_1a_2)}&amp;=\frac 1 T \int_0^T  a_1(t)a_2(t)\mathrm d t\\<br>&amp;=\frac{A_1A_2}{2}\cos (\varPhi_1-\varPhi_2)\\<br>&amp;=\frac 1 2 \mathrm{Re}(\widetilde{a_1}\widetilde{a_2}^*)<br>\end{align}<br>$$</p>
 
       
     </div>
@@ -679,7 +895,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#电磁学"><span class="nav-text">电磁学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-静电场-恒定电流场"><span class="nav-text">第一章 静电场 恒定电流场</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-静电的基本现象和基本规律"><span class="nav-text">1. 静电的基本现象和基本规律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#物质电结构"><span class="nav-text">物质电结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#库仑定律"><span class="nav-text">库仑定律</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-电场-电场强度"><span class="nav-text">2. 电场 电场强度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电场强度矢量"><span class="nav-text">电场强度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷的连续分布"><span class="nav-text">电荷的连续分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带点体在电场中受的力及其运动"><span class="nav-text">带点体在电场中受的力及其运动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场"><span class="nav-text">矢量场</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-高斯定理"><span class="nav-text">3. 高斯定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电通量"><span class="nav-text">电通量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高斯定理的表述及证明"><span class="nav-text">高斯定理的表述及证明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电场线的性质"><span class="nav-text">电场线的性质</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-电势及其梯度"><span class="nav-text">4. 电势及其梯度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#静电场力所作的功与路径无关"><span class="nav-text">静电场力所作的功与路径无关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电势与电势差"><span class="nav-text">电势与电势差</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等势面"><span class="nav-text">等势面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电势的梯度"><span class="nav-text">电势的梯度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电偶极层"><span class="nav-text">电偶极层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-静电场中的导体"><span class="nav-text">5. 静电场中的导体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#导体的平衡条件"><span class="nav-text">导体的平衡条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体上的电荷分布"><span class="nav-text">导体上的电荷分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体壳（腔内无带电体）"><span class="nav-text">导体壳（腔内无带电体）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体壳（腔内有带电体）"><span class="nav-text">导体壳（腔内有带电体）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-静电能"><span class="nav-text">6. 静电能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#点电荷之间的相互作用能"><span class="nav-text">点电荷之间的相互作用能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷连续分布情形的静电能"><span class="nav-text">电荷连续分布情形的静电能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷在外电场中的能量"><span class="nav-text">电荷在外电场中的能量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-电容和电容器"><span class="nav-text">7. 电容和电容器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#孤立导体的电容"><span class="nav-text">孤立导体的电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容器及其电容"><span class="nav-text">电容器及其电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容器储能"><span class="nav-text">电容器储能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-静电场边值问题的唯一性定理"><span class="nav-text">8. 静电场边值问题的唯一性定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#唯一性定理"><span class="nav-text">唯一性定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电像法"><span class="nav-text">电像法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-恒定电流场"><span class="nav-text">9. 恒定电流场</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流密度矢量"><span class="nav-text">电流密度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#欧姆定律的微分形式"><span class="nav-text">欧姆定律的微分形式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流的连续方程"><span class="nav-text">电流的连续方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两种导体分界面上的边界条件"><span class="nav-text">两种导体分界面上的边界条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流线在导体界面上的折射"><span class="nav-text">电流线在导体界面上的折射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非静电力与电动势"><span class="nav-text">非静电力与电动势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本章总结"><span class="nav-text">本章总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-恒磁场"><span class="nav-text">第二章 恒磁场</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-磁的基本现象和基本规律"><span class="nav-text">1. 磁的基本现象和基本规律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁的库仑定律"><span class="nav-text">磁的库仑定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安培定律"><span class="nav-text">安培定律</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-磁感应强度-毕奥-萨伐尔定律"><span class="nav-text">2. 磁感应强度 毕奥-萨伐尔定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁感应强度矢量"><span class="nav-text">磁感应强度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#毕奥-萨伐尔定律"><span class="nav-text">毕奥-萨伐尔定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见磁场分布"><span class="nav-text">常见磁场分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安培环路定理"><span class="nav-text">3. 安培环路定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-磁场的“高斯定理”-磁矢势"><span class="nav-text">4. 磁场的“高斯定理” 磁矢势</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁场的“高斯定理”"><span class="nav-text">磁场的“高斯定理”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁矢势"><span class="nav-text">磁矢势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-磁场对载流导线的作用"><span class="nav-text">5. 磁场对载流导线的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安培公式"><span class="nav-text">安培公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安培力的作用"><span class="nav-text">安培力的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁偶极子与载流线圈"><span class="nav-text">磁偶极子与载流线圈</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#电磁学"><span class="nav-text">电磁学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-静电场-恒定电流场"><span class="nav-text">第一章 静电场 恒定电流场</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-静电的基本现象和基本规律"><span class="nav-text">1. 静电的基本现象和基本规律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#物质电结构"><span class="nav-text">物质电结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#库仑定律"><span class="nav-text">库仑定律</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-电场-电场强度"><span class="nav-text">2. 电场 电场强度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电场强度矢量"><span class="nav-text">电场强度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷的连续分布"><span class="nav-text">电荷的连续分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带点体在电场中受的力及其运动"><span class="nav-text">带点体在电场中受的力及其运动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场"><span class="nav-text">矢量场</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-高斯定理"><span class="nav-text">3. 高斯定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电通量"><span class="nav-text">电通量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高斯定理的表述及证明"><span class="nav-text">高斯定理的表述及证明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电场线的性质"><span class="nav-text">电场线的性质</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-电势及其梯度"><span class="nav-text">4. 电势及其梯度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#静电场力所作的功与路径无关"><span class="nav-text">静电场力所作的功与路径无关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电势与电势差"><span class="nav-text">电势与电势差</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#等势面"><span class="nav-text">等势面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电势的梯度"><span class="nav-text">电势的梯度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电偶极层"><span class="nav-text">电偶极层</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-静电场中的导体"><span class="nav-text">5. 静电场中的导体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#导体的平衡条件"><span class="nav-text">导体的平衡条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体上的电荷分布"><span class="nav-text">导体上的电荷分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体壳（腔内无带电体）"><span class="nav-text">导体壳（腔内无带电体）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导体壳（腔内有带电体）"><span class="nav-text">导体壳（腔内有带电体）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-静电能"><span class="nav-text">6. 静电能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#点电荷之间的相互作用能"><span class="nav-text">点电荷之间的相互作用能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷连续分布情形的静电能"><span class="nav-text">电荷连续分布情形的静电能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷在外电场中的能量"><span class="nav-text">电荷在外电场中的能量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-电容和电容器"><span class="nav-text">7. 电容和电容器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#孤立导体的电容"><span class="nav-text">孤立导体的电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容器及其电容"><span class="nav-text">电容器及其电容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容器储能"><span class="nav-text">电容器储能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-静电场边值问题的唯一性定理"><span class="nav-text">8. 静电场边值问题的唯一性定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#唯一性定理"><span class="nav-text">唯一性定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电像法"><span class="nav-text">电像法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-恒定电流场"><span class="nav-text">9. 恒定电流场</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流密度矢量"><span class="nav-text">电流密度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#欧姆定律的微分形式"><span class="nav-text">欧姆定律的微分形式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流的连续方程"><span class="nav-text">电流的连续方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两种导体分界面上的边界条件"><span class="nav-text">两种导体分界面上的边界条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流线在导体界面上的折射"><span class="nav-text">电流线在导体界面上的折射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非静电力与电动势"><span class="nav-text">非静电力与电动势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本章总结"><span class="nav-text">本章总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-恒磁场"><span class="nav-text">第二章 恒磁场</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-磁的基本现象和基本规律"><span class="nav-text">1. 磁的基本现象和基本规律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁的库仑定律"><span class="nav-text">磁的库仑定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安培定律"><span class="nav-text">安培定律</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-磁感应强度-毕奥-萨伐尔定律"><span class="nav-text">2. 磁感应强度 毕奥-萨伐尔定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁感应强度矢量"><span class="nav-text">磁感应强度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#毕奥-萨伐尔定律"><span class="nav-text">毕奥-萨伐尔定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见磁场分布"><span class="nav-text">常见磁场分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安培环路定理"><span class="nav-text">3. 安培环路定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-磁场的“高斯定理”-磁矢势"><span class="nav-text">4. 磁场的“高斯定理” 磁矢势</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁场的“高斯定理”"><span class="nav-text">磁场的“高斯定理”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁矢势"><span class="nav-text">磁矢势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-磁场对载流导线的作用"><span class="nav-text">5. 磁场对载流导线的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安培公式"><span class="nav-text">安培公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安培力的作用"><span class="nav-text">安培力的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁偶极子与载流线圈"><span class="nav-text">磁偶极子与载流线圈</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-带电粒子在磁场中的运动"><span class="nav-text">6. 带电粒子在磁场中的运动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#洛伦兹力"><span class="nav-text">洛伦兹力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安培力与洛伦兹力"><span class="nav-text">安培力与洛伦兹力</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本章总结-1"><span class="nav-text">本章总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-电磁感应-电磁场的相对论变换"><span class="nav-text">第三章 电磁感应 电磁场的相对论变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-电磁感应定律"><span class="nav-text">1. 电磁感应定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#法拉第定律"><span class="nav-text">法拉第定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#楞次定律"><span class="nav-text">楞次定律</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-动生电动势和感生电动势"><span class="nav-text">2. 动生电动势和感生电动势</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#动生电动势"><span class="nav-text">动生电动势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#感生电动势"><span class="nav-text">感生电动势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-磁矢势与磁场中带电粒子的动量"><span class="nav-text">3. 磁矢势与磁场中带电粒子的动量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-电磁场的相对论变换"><span class="nav-text">4. 电磁场的相对论变换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-互感和自感"><span class="nav-text">5. 互感和自感</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四章-电磁介质"><span class="nav-text">第四章 电磁介质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-电介质"><span class="nav-text">1. 电介质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电介质的极化"><span class="nav-text">电介质的极化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极化强度矢量"><span class="nav-text">极化强度矢量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极化率"><span class="nav-text">极化率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电位移矢量-有介质时的高斯定理"><span class="nav-text">电位移矢量 有介质时的高斯定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-磁介质-分子电流观点"><span class="nav-text">2. 磁介质-分子电流观点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁化"><span class="nav-text">磁化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁场强度矢量-有介质时的安培环路定理"><span class="nav-text">磁场强度矢量 有介质时的安培环路定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-磁介质-磁荷观点"><span class="nav-text">3. 磁介质-磁荷观点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#磁化-1"><span class="nav-text">磁化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁感应强度矢量-安培环路定理-高斯定理"><span class="nav-text">磁感应强度矢量 安培环路定理 高斯定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁化率和磁导率"><span class="nav-text">磁化率和磁导率</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-磁介质的磁化规律和机理-铁电体"><span class="nav-text">4. 磁介质的磁化规律和机理 铁电体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-电磁介质界面上的边界条件-磁路定理"><span class="nav-text">5. 电磁介质界面上的边界条件 磁路定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#边界条件"><span class="nav-text">边界条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#界面上的折射"><span class="nav-text">界面上的折射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#磁路定理"><span class="nav-text">磁路定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-电磁场能"><span class="nav-text">6. 电磁场能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本章总结-2"><span class="nav-text">本章总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五章-电路"><span class="nav-text">第五章 电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六章-麦克斯韦电磁理论-电磁波-电磁单位制"><span class="nav-text">第六章 麦克斯韦电磁理论 电磁波 电磁单位制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-麦克斯韦电磁理论"><span class="nav-text">1. 麦克斯韦电磁理论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#位移电流"><span class="nav-text">位移电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#麦克斯韦方程组"><span class="nav-text">麦克斯韦方程组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#边界条件-1"><span class="nav-text">边界条件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-电磁波理论"><span class="nav-text">2. 电磁波理论</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#平面电磁波的解"><span class="nav-text">平面电磁波的解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#平面电磁波的性质"><span class="nav-text">平面电磁波的性质</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-电磁场的能流密度与动量"><span class="nav-text">3. 电磁场的能流密度与动量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-电磁波的产生"><span class="nav-text">4. 电磁波的产生</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-text">附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-矢量的积"><span class="nav-text">1. 矢量的积</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量的标积"><span class="nav-text">矢量的标积</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量的失积"><span class="nav-text">矢量的失积</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-标量场和矢量场"><span class="nav-text">2. 标量场和矢量场</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#标量场"><span class="nav-text">标量场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场-1"><span class="nav-text">矢量场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标量场的梯度"><span class="nav-text">标量场的梯度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场的通量和散度-高斯定理"><span class="nav-text">矢量场的通量和散度 高斯定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场的环量和旋度-斯托克斯定理"><span class="nav-text">矢量场的环量和旋度 斯托克斯定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#矢量场的分解"><span class="nav-text">矢量场的分解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复数运算"><span class="nav-text">复数运算</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
