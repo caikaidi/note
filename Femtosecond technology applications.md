@@ -244,3 +244,58 @@ $$
 &k-\text{Thermal conductivity}
 \end{align}
 $$
+
+-----
+
+@10.9
+
+> 查一篇文献
+>
+> - 2017/2016
+> - Femtosecond laser LASIK
+> - pdf
+> - 写一段文献内容
+
+### 3.2 iris safety
+
+Iris model
+
+basic assumptions:
+
+- one isotropic layer(iris pigment epithelium)
+
+- an average refractive index 1.33
+
+- the high concentration of melanin pigments in the iris is the main factor for absorption
+
+- upper: heat flux    other: temperature
+  $$
+  k\nabla h =h(T_{inf}-T)
+  $$
+
+- the calculation of the heat absorbed by this iris was based on the Beer-Lambert law
+  $$
+  I=I_0e^{-\circ}
+  $$
+
+
+mathematical model
+
+heat duffusion equation
+$$
+\rho C_p\frac{\partial T}{\partial t}+\nabla\times(-k\nabla T)=Q\\
+\begin{align}
+&\rho - \text{Density}\qquad C_p-\text{Heat capacity}\quad 3997\\
+&k-\text{Thermal conductivity}\qquad Q-\text{enegy}
+\end{align}
+$$
+
+## 4. Imaging technology for LASIK surgery
+
+Two-photon microscope
+
+Advantage:
+
+- does not need an extra pinhole to get diffraction limited resolution and depth discrimination
+- the two-photon microscope greatly reduces photo damage or a bleaching effect outside the laser focus
+
