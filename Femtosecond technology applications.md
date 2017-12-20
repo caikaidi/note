@@ -284,6 +284,8 @@ basic assumptions:
 
 
 
+
+
 mathematical model
 
 heat duffusion equation
@@ -935,6 +937,101 @@ In general, photodisruption may be regarded as a multi-cause mechanial effects s
 The amount of energy absorbed during photodisruption is typical two or more orders of magnitude higher than during plasma induced ablation.
 
 Plasma shielding -> Brillouin scattering -> multiple plasma generation
+
+-----
+
+@12.18
+
+#### 3.5.2 shock wave generation
+
+Cross section $A_0$      A shock front at a speed $U_s$
+$$
+u_s = \frac {\mathrm d x_s}{\mathrm d t}
+$$
+conservation of mass
+$$
+(\rho_1 -\rho_0)A_0\mathrm d x_s\\
+u_p\rho_1A_0\mathrm d t=(\rho_1-\rho_0)A_0\mathrm d x_s\\
+u_p=\frac{\rho_1-\rho_0}{\rho_1}u_s
+$$
+conservation of momentum
+$$
+A_0\rho_1u_p\mathrm d x_s
+$$
+
+- Mass $A_0\rho_1u_p\mathrm d t$ intruds at a speed up momentum $A_0\rho_1u_p^2\mathrm d t$
+- $A_0(P_1-P_0)$ momentum $A_0(P_1-P_0)\mathrm d t$
+
+$$
+A_0\rho_1u_p\mathrm d x_s = A_0\rho_1u_p^2\mathrm d t+A_0(P_1-P_0)\mathrm d t\\
+P_1-P_0=\rho_1u_su_p-\rho_1u_p^2
+$$
+
+$$
+>20Kbar\quad u_s=1.483+25.306\log_{10}(1+\frac {u_p}{5.19})\\
+<20Kbar\quad u_s=a+bu_p\\
+a:\text{speed of sound}\quad b:\text{a diuensronless constant}\\
+\text{water b=2.07}
+$$
+
+Assuming a spherical shock wave with radius $r$
+$$
+4\pi r^2\rho_1u_pu_s\Delta t=C_0\\
+\Delta t:\text{risetime of shock front}\quad C_0:\text{constant}\\
+u_s(u_s-a)=\frac{c_1}{r^2}\\
+C_1=\frac b {4\pi\rho_1\Delta t}C_0\\
+u_s(r)=\frac a 2 +\sqrt{\frac{a^2}{4}+\frac{C_1}{r^2}}\\
+u_p(r)=-\frac a {2b}+ \frac 1 b\sqrt{\frac{a^2}{4}+\frac{C_1}{r^2}}\\
+u_s=u_s(P_1)\quad u_p=u_p(P_1)\\
+P_1(r)=P_0(r)+\frac{\rho_0C_1} b \frac 1 {r^2}
+$$
+
+$$
+E_s\approx(P_1-P_0)A_s\Delta r\\
+P_1:\text{shock wave pressure}\quad A_s:\text{shock wave surface}\\
+\Delta r:\text{shock wave width}\\
+A_s\approx 100\mu m^2 \text{for }30 ps,\quad E_s\approx0.5\mu J\\
+A_s\approx 2500\mu m^2\text{for }6 ns,\quad E_s\approx50\mu J\\
+$$
+
+#### 3.5.3 cavitation
+
+Laser induced cavitations occur if plasmas are generated inside soft tissues or fluids.
+
+Rayleigh 1917:
+$$
+r_{\max}=\frac{t_c}{0.915\sqrt{\rho/(P_{stat}-P_{vap})}}\\
+\begin{align}
+&r_{\max}:\text{maximum radius of cavitation}\\
+&\rho:\text{density of the fluid}\\
+&P_{stat}:\text{static pressure}\\
+&P_{vap}:\text{vapor pressure of the fluid}
+\end{align}
+$$
+
+$$
+E_b=\frac 4 3\pi(P_{stat}-P_{vap})r_{\max}^3
+$$
+
+It has been emphasized that damage of tissue due to shock waves is limited to a subcellular level due to their short displacement length of approximately $1-4\mu m$ since the diameter of cavitation bubbles may reach up to a few millimeters, microscopic photo disruptive effects inside tissue are believed to primarily originate from the combined action of cavitation and get formation.
+
+#### 3.5.4 jet formation
+
+When cavitation bubbles collapse in the vicinity of a solid boundary, a high speed liquid jet directed toward the wall is produced.
+
+#### 3.5.5 summary of photodisruption
+
+Main idea: fragmentation and cutting of tissue by mechanical forces
+
+Observations: plasma sparking, generation of shock waves, cavitation, Jet formation
+
+Typical lasers: solid, state lasers, e.g. Nd:YAG, Nd:YLF, Ti:Sapphire
+
+Typical power densities: $10^{11}-10^{16}w/cm^2$
+
+Typical pulse durations: $100fs-100ns$
+
+Special applications: lens fragmentation, lithotripsy
 
 -----
 
