@@ -80,7 +80,8 @@
 <meta property="og:image" content="https://i.loli.net/2017/12/20/5a39e83eaebe8.png">
 <meta property="og:image" content="https://i.loli.net/2017/12/20/5a39e9894d08d.png">
 <meta property="og:image" content="https://i.loli.net/2017/12/20/5a39e9bd03abb.png">
-<meta property="og:updated_time" content="2017-12-23T07:36:55.987Z">
+<meta property="og:image" content="https://i.loli.net/2017/12/24/5a3fa5b4c3887.png">
+<meta property="og:updated_time" content="2017-12-24T13:19:57.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="光电子器件制造技术考试">
 <meta name="twitter:description" content="光电子器件制造技术思考题终极精校删减版光电子器件制造技术考试时间为十二月二十六日上午8:20，思考题整理如下。">
@@ -413,7 +414,7 @@
 <ul>
 <li><p><strong>Johnson噪声</strong><del>，也称为热噪声，它是由于热搅动导致导体内部的电荷载体（通常是电子）达到平衡状态时的电子噪声，与所施加电压无关。</del></p>
 </li>
-<li><p>温度噪声<del>。由于热探测器敏感元件跟周围的辐射交换或与散热片之间的传导交换，使敏感元件的温度发生随机起伏，而引起信号电压的随机起伏，这种噪声称为温度噪声。温度噪声仅在热探测器中能观察到。</del></p>
+<li><p><strong>温度噪声</strong><del>。由于热探测器敏感元件跟周围的辐射交换或与散热片之间的传导交换，使敏感元件的温度发生随机起伏，而引起信号电压的随机起伏，这种噪声称为温度噪声。温度噪声仅在热探测器中能观察到。</del></p>
 </li>
 <li><p><strong>1/f 噪声</strong><del>。也称调制噪声或闪烁噪声, 产生的物理机理尚不清楚。1/f噪声对低频段影响较大。</del></p>
 </li>
@@ -527,6 +528,10 @@
 <li>有一个合适的谐振腔使受激辐射在其中得到多次反馈而形成激光震荡。</li>
 <li>为了形成稳定的震荡，激光媒质必须能提供足够大的增益，使光增益等于或大于各种损耗之和。</li>
 </ul>
+</li>
+<li><p>一维有限差分<br>$$<br>\Delta\varphi (x)+\varepsilon_r(x)k_0^2\varphi(x)=\beta^2\varphi(x)<br>$$<br><img src="https://i.loli.net/2017/12/24/5a3fa5b4c3887.png" alt=""><br>$$<br>\frac{(\varphi_{n+1}-\varphi_n)/x_n-(\varphi_n-\varphi_{n-1})}{(x_n+x_{n-1})/2}+\varepsilon_{rn}k_0^2\varphi_n=\beta^2\varphi_n\\<br>A_n\varphi_{n-1}+B_n\varphi_n+C_n\varphi_{n+1}=\beta^2\varphi_n\\<br>A_n=\frac 2 {x_{n-1}(x_n+x_{n-1})}\\<br>B_n=-\frac 2 {x_n(x_n+x_{n-1})}-\frac 2 {x_{n-1}(x_n+x_{n-1})}+\varepsilon_m\\<br>C_n=\frac 2 {x_n(x_n+x_{n-1})}<br>$$</p>
+</li>
+<li><p>量子阱<br>$$<br>\left[\frac{-\hbar^2}{2m_i}\frac{\mathrm d^2}{\mathrm d x^2}+U_i(x)\right]\psi_i(x)=E\psi_i(x)\\<br>R_j(x_j)D_j=R_{j+1}(x_j)D_{j+1},j=1,2,3,…,n\\<br>D_1=R_1^{-1}(x_1)R_2(x_1)D_2=R_1^{-1}(x_1)R_2(x_1)R_2^{-1}(x_2)R_3(x_2)D_3=..=MD_n\\<br>M=R_1^{-1}(x_1)R_2(x_1)R_2^{-1}(x_2)R_3(x_2)…=\begin{bmatrix}\mu_{11}&amp;\mu_{12}\\ \mu_{21}&amp;\mu_{22}\end{bmatrix}<br>$$<br>​</p>
 </li>
 </ol>
 <h2 id="纯问题版："><a href="#纯问题版：" class="headerlink" title="纯问题版："></a>纯问题版：</h2><ol>
@@ -912,7 +917,7 @@
   
 
 
-  <script type="text/javascript" src="/note/js/src/bootstrap.js?v=5.1.2"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/note/js/src/bootstrap.js?v=5.1.2"></script>
 
 
 
@@ -958,6 +963,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
