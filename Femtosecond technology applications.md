@@ -37,6 +37,8 @@
 
 @9.11
 
+## 1. Laser
+
 **Wavefront:** in physics, a wavefront is the locus of point characterized by propagation of positions of identical phase
 
 Microscope -> telescope -> ophthalmology(1978)
@@ -68,7 +70,7 @@ Essential elements of a laser:
 
 Pumping can be *a eletrical current* or *a light at a different wavelength*
 
-Femtosecond  10^-15 s
+Femtosecond  $10^-15 s$
 
 **femtosecond laser** is a laser in which the pulse duration is in femtosecond range
 
@@ -286,6 +288,9 @@ basic assumptions:
 
 
 
+
+
+
 mathematical model
 
 heat duffusion equation
@@ -313,7 +318,7 @@ Advantage:
 
 # OCT assisted femtosecond laser cataract sugery
 
-## cataracts and sugery
+## 1. cataracts and sugery
 
 ### 1.1 lens structure
 
@@ -331,7 +336,7 @@ the lens has three main parts:
 
 Reflect ration 1.306-1.468
 
-### 1.2 cataracts
+# 1.2 cataracts
 
 Either clumps of protein or yellow brown pigment maybe deposited in the lens, reducing the transmission of light to the retina, such opacity of the lens, whether it is a small local opcity or a diffuse general loss of transparency is called cataracts.
 
@@ -553,9 +558,9 @@ Other benefits of FLACS include the ability to correct astigmatism through corre
 
 ANSI 21361-2007
 
-## 3. laser tissue interaction
+# laser tissue interaction
 
-#### 3.0 interaction mechanisms
+### 3.0 interaction mechanisms
 
 coefficients of reflection, absorption and scattering
 
@@ -1034,4 +1039,52 @@ Typical pulse durations: $100fs-100ns$
 Special applications: lens fragmentation, lithotripsy
 
 -----
+
+@12.25
+
+# dental applications 
+
+## 1. caries therapy
+
+### 1.1 femtosecond laser based caries removal
+
+1993 Niemz picosecond Nd:YLF
+
+Lasers have NOT currently succeeded in replacing the dental drill in tooth hard tissue ablations due to slow material removal rates and unacceptable collateral damage.
+
+Traditional drill is cheaper, more universal and faster than the laser, but it has an irritating sound, is unselective and not minimally invasive, transmits uncomfortable vibrations, creates heat and shock affecte zones despide cooling by air-water spray and thus pain, with need for local anesthesia.
+
+#### 1.1.1 laser tissue interaction 
+
+CPA Ti:Sapphire femtosecond laser
+
+When comparing femtosecond laser dentistry with previous dental laser applications, the quality is primarily due to the single fact that femtosecond laser interaction with biological tissues is a direct multiphoton ionization of bound and free electrons, which leads to pure plasma induced ablation of the material.
+
+This ultrafast and minimally invasive laser tissue interactions why the use of femtosecond laser pulses for tooth hard tissue ablation minimizes mechanical and thermal effects that precise sturcturing is possible without collateral injuries and most probably without activations of damage - sensing neurons, called no ciceptoss. 
+
+#### 1.1.2 threefold caries selectivity
+
+LIBS: laser induced breakdown spectroscopy
+
+A first means of caries selectivity has been evaluated when comparing the ablation efficiencies of healthy and carious tooth substances.
+
+A second means of caries selectivity is derived from the fact the pulse energy at the threshold of ablation is significantly lower when exposing carious surfaces.
+
+A third means of caries selectivity becomes evident during optical spectroscopy of the laser induced plasma spark at the surface of the tooth.
+
+### 1.2 retentive patterns at dentin surfaces facing filling meterials
+
+Adhesion of restorative materials to the hard components of the tooth structure has been a goal pursued by numerous researchers ever since Buonocore establish the foundation for adhesive dentistry.
+
+An improvement of retention can be achieved by creating patterns working as a micromechanical bond to the dental restoration. This kind of pattern is achieved by femtosecond laser application running under a defined scanning mode of beam.
+
+### 1.3 intraoral application of a femtosecond laser beam
+
+## 2. manufactoring of all ceramic restoration
+
+If a large amount of tooth structure is lost or a whole tooth is lost, the first choise of therapy is to manufacture crowns and bridges fixed to the decayed teeth or to the adjacent teeth of the missing tooth.
+
+Hot  isostatic-pressed(HIP) yttnia-tetragonal zirconia polgcrystal(Y-TZP) ceramic consists of fine particles of $ZrO_2$ and $Y_2O_3$, which when sintered, form a stable tetragonal structure at room temperature.
+
+Processing $ZrO_2$ using a conventional laser cause microcracking. Using ultrafast laser pulses is an alternative possibility in processing HIP Y-TZP due to the nature of ultrashort laser pulses little or no collateral damage is expected.
 
