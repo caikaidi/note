@@ -291,6 +291,8 @@ basic assumptions:
 
 
 
+
+
 mathematical model
 
 heat duffusion equation
@@ -336,7 +338,7 @@ the lens has three main parts:
 
 Reflect ration 1.306-1.468
 
-# 1.2 cataracts
+### 1.2 cataracts
 
 Either clumps of protein or yellow brown pigment maybe deposited in the lens, reducing the transmission of light to the retina, such opacity of the lens, whether it is a small local opcity or a diffuse general loss of transparency is called cataracts.
 
@@ -438,7 +440,7 @@ Laser breakdown thresholds decrease by the square root of the pulse duration ove
 
 Hardware: Michelso interferometer
 
-Like in a Michelson interferometer, light in an OCT system is split into two arms — a sample arm and a reference arm. When the light from both of the arms has traveled an optical distance that is a difference of less than a coherent length, the combination of reflected light from the sample arm and reference light from the reference arm produces an interferenve pattern.
+Like in a Michelson interferometer, light in an OCT system is split into two arms — a sample arm and a reference arm. When the light from both of the arms has traveled an optical distance that is a difference of less than a coherent length, the combination of reflected light from the sample arm and reference light from the reference arm produces an interference pattern.
 
 This reflectivity profile, called an A-scan, contains information about the spatial dimensions and locations of structure within the item of interest. A cross-sectional tomography, called a B-scan, may be achieved by laterally combing a series of A-scans.
 
@@ -1087,4 +1089,86 @@ If a large amount of tooth structure is lost or a whole tooth is lost, the first
 Hot  isostatic-pressed(HIP) yttnia-tetragonal zirconia polgcrystal(Y-TZP) ceramic consists of fine particles of $ZrO_2$ and $Y_2O_3$, which when sintered, form a stable tetragonal structure at room temperature.
 
 Processing $ZrO_2$ using a conventional laser cause microcracking. Using ultrafast laser pulses is an alternative possibility in processing HIP Y-TZP due to the nature of ultrashort laser pulses little or no collateral damage is expected.
+
+---
+
+@1.8
+
+# surface structuring
+
+Several industrial applications use nanosecond laser pulses for microstructuring of surface on macroscopic workpieces. The quality of the resulting structures, however, is limited due to the formation of recast that has to be removed by additional postprocessing. Experimental results show that it is possible to avoid melt formation by shortening the pulse duration into the picosecond regime if low energy density values are used.
+
+In recent years, industry has shown a growing interest in microstructuring of surfaces to improve the characteristics of marcoscopic workpieces. Microcavities on the surface of parts moving against each other can improve their tribological behavior. The first known industrial application of this tecnique is the so-called laser honing of **cylinder walls** in combustion engines.
+
+### 1.1 Influence of basic parameters
+
+These observations show that completely melt-free ablation of metal may not be possible even with femtosecond pulses, at small energy density levels the thickness of the melt layers as well as the transport velocity of the melt is reduced.
+
+Apparently recast-free structuring with femtosecond laser pulses is only possible at energy density levels slightly above the ablation threshold.
+
+### 1.2 influence of beam movement on geometry of ablated zone
+
+If you move the laser beam rather than focus on a same point, you can get better result.
+
+### 1.3 process speed
+
+Since for ablation without recast the energy density is limited, a remaining approach to increase the ablation rate is the use of laser system with higher repetition rate.
+
+## 2. example of possile application
+
+### 2.1 tribological structures
+
+### 2.2 structures for printing and embossing
+
+## 3. summary
+
+Reduction of the pulse duration is a way to reduce the formation of burr and layers of molten material. Structure without noticeable amounts of recast can be produced with pulse durations between 120fs and 10ps if an energy density level lightly above the ablation threshold is selective. The very low ablation rate could be compensated to some extent by using laser systems with a high repetition rate.
+
+-----
+
+@1.15
+
+# drilling of metals
+
+The use of ultrashort laser pulses for drilling of metals is highly promising with respect to reduced melt production and recast formation, as well as minimized heat affected zones.
+
+## 1. basic understanding of short pulsed laser drilling
+
+### 1.1 energy coupling
+
+The formation of a capillary obviously changes the geometry illuminated by the laser beam. The increase of surface area can locally lead to a considerable reduction of intensity in particular, the energy density acting on the side wall is decreased by this projection of the radiation onto the actual hole shape. This certainly leads to a reduction of the ablation rate in these areas.
+
+### 1.2 heat conduction
+
+A one dimensional description of heat conduction is only applicable as long as the lateral variations of absorbed energy or surface topology are negligible  compared to the heat penetration depth particularly at the strongly curved surface areas near the tip or the hole entrance of deep and narrow drillings.
+
+This approximation does not hold. Here, the material will heat slower or faster than on flat surfaces due to a more efficient heat diffusion or accumulation.
+
+### 1.3 plasma
+
+At high intensity a laser beam is able to ionize the material it interacts with and thus to produce plasma the absolute threshold depends on ionization energy, wavelength, interaction time, and on surrounding conditions such as the number of start electrons.
+
+A plasma is able to absorb laser energy strongly and thereby affect the linear drilling rate by reducing the intensity reaching the bottom of the capillary. The absorbed energy is not necessarily lost for the drilling process, however, because a large share of it is transmitted to the capillary walls by radiative and convective heat transport if the plasma is located in the capillary. This means that in addition to the laser beam that acts as a primary tool in the direction of its propagation, a secondary tool, the plasma, is acting radially to widen the capillary and to smoothen its wall.
+
+### 1.4 impeded material expulsion
+
+The transport of gaseous or liquid material out of the capillary is enforced by pressure gradients inside the capillary, it can by expected that the pressure distribution is strongly incluced by the geometry of the ablated surface. In comparison to the beginning of a drilling process when waterial flows away from a still nearly planar surface, the outflow from a narrow capillary certainly is impeded.
+
+At intensity valves below the threshold for plasma formation only geometrical effects are expected. The formation of plasma widens the capillary and thus reduces geometric effects.
+
+In general, pulses between 1 ps and 10ps are regarded as optimal for the treatment of metals.
+
+## 2. drilling techniques
+
+### 2.1 helical drilling
+
+### 2.2 drilling with beam inclination
+
+## 3. means to increase productivity and processing quality
+
+### 3.1 pulse repetition rate
+
+### 3.2 polarization control
+
+### 3.3 vacuum processing
 
