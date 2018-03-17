@@ -204,6 +204,25 @@ $$
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 但很快他发现仅根据这两条假设不足以确定原子的分立能级，于是Bohr又引入了对应原理：即当量子数$n\rightarrow\infty$时，体系的行为应该是接近经典物理的。
 
 基于以上三个假设，我们给出波尔的推导：
@@ -437,7 +456,7 @@ Poisson括号也满足上面的七个关系。Dirac下一步就想到了Bohr的�
 $$
 [\hat u,\hat v]=D{u,v}\hat I
 $$
-而这个D应该是与量子力学特征值$\hbar$有关的一个常数。从量纲的角度说，$[\hbar]=[E][T]$，当体系足够宏观的时候，可以认为$\hbar\righrarrow 0$，则等式右边就变成了0，对易子等于0则表示两个物理量可以对换，就变成了经典物理结果。
+而这个D应该是与量子力学特征值$\hbar$有关的一个常数。从量纲的角度说，$[\hbar]=[E][T]$，当体系足够宏观的时候，可以认为$\hbar\rightarrow 0$，则等式右边就变成了0，对易子等于0则表示两个物理量可以对换，就变成了经典物理结果。
 
 > Bohr的量子论中唯一可靠的就是氢原子能级公式，因为有光谱实验可以证明，所以Dirac的问题就变成了用泊松括号的表示形式推出氢原子能及公式，与光谱实验比较就可以定出常数D，这一推导十分困难，最终是由泡利完成的。
 >
@@ -470,4 +489,319 @@ $$
 E=\hbar\omega\\
 \vec p=\hbar\vec k
 $$
+
+这一奇怪的想法似乎又是很有道理的，德布罗意考虑了这样一个特例：
+
+一个绕着氢原子核运动的电子（时值1924年，海森堡的理论还没有提出，人们仍按Bohr的老量子论认为电子是以一定轨道运行的），电子的角动量是守恒的，其大小、方向都不变，那么电子一定是在与角动量垂直的平面内运动，将椭圆轨道简化为圆轨道，那么假如电子也是一种波的话，它会在轨道上形成一个驻波，如图所示。
+
+![fig 1.4 电子波](https://i.loli.net/2018/01/24/5a68438c0daea.png)
+
+显而易见，要想形成驻波，圆轨道的周长必须是波长的整数倍：
+$$
+2\pi R=n\lambda,\quad n=1,2,3,\dots
+$$
+考虑其动量：
+$$
+L=Rp=R\hbar k=R\hbar\frac{2\pi}{\lambda}=R\hbar\frac{2\pi}{\frac{2\pi R}{n}}=n\hbar
+$$
+这就是Bohr的角动量量子化条件。
+
+> 这一发现让Broglie很兴奋，索性就把它写成了论文送给了朗之万。朗之万看到了论文就开始头痛了，因为德布罗意要毕业，论文也写出来了，就这么多：波就是粒子，粒子就是波。朗之万很难受，他要是不让德布罗意毕业，那等于是搬起石头砸自己的脚，因为当初收他进来就是要做个人情。要是让德布罗意毕业，也很麻烦，因为答辩委员会有五个人，其中有两个是做实验的。答辩时这两个做实验的老师也确实当场提出了反对，因为这个东西没法用实验验证。
+>
+> 朗之万毕竟是非常聪明的人，他为了让德布罗意顺利毕业，给爱因斯坦打了个电话，说我这里有一个学生，他把您的关于电磁波的理论给推广了，推广到了一般的物质波，请您好好的阅读一下，给一个中肯的意见，顺便说一声，这个学生的父亲是我国很重要的一位国务部长，以后您到敝国来的时候，一定会收到敝国政府热情的欢迎。
+>
+> 爱因斯坦显然也是非常聪明的人，在他给朗之万的回信中表扬了De Broglie，也给答辩委员会写了评语，类似“德布罗意天才的、创造性地发挥了我的思想，将这些关系式从电磁波推广到了物质波，使得我过去提出的理论大大的向前迈进了一步，我认为这篇文章应该被评为贵国的优秀博士论文”。
+>
+> 朗之万拿到爱因斯坦的回信赶紧把信给委员会其他四个人看了，那两位持坚决反对意见的老师马上态度就变了，因为就连爱因斯坦都给出了如此表扬，他们反对显然是没能很好的读懂这篇文章的真实含义。于是德布罗意于1924年顺利毕业，拿到了巴黎大学的博士学位。
+>
+> 德布罗意在此之后也没怎么从事物理方面的工作，转而研究生物。然而幸运的是事情并没有到此结束，按照当时的习惯，接下来巴黎大学要把这篇博士论文送到各大大学去，其中有一份就送到了瑞士苏黎世高工（ETH）。当时ETH有一位物理学教授，德拜（Debye），他是索末菲尔德的学生，索末菲尔德有四位获得了诺贝尔奖的学生，他就是其中一位。Debye当时在组织一个报告会，有很多周围学校的老师学生也会来听，在苏黎世大学的38岁的高级讲师薛定谔也来听了这个报告。会后Debye把德布罗意的论文给了薛定谔，让他回去看一看，两个星期之后来交流一下。两个周之后薛定谔给出了一个报告，报告的主要内容就是粒子就是波，波就是粒子。所有人都听的一头雾水，当时Debye就给了一个建议，他说他的老师索末菲尔德曾经说过，你想要深刻的了解一种波，你就要把它的波动方程写出来。
+>
+> 薛定谔深以为然，回去研究了一下这个波动方程，给出了薛定谔方程。
+
+薛定谔从一个自由粒子的角度出发，大家都知道
+$$
+E=\frac{p^2}{2m}
+$$
+在这个方程的两边乘上波函数
+$$
+\begin{align}
+E\psi(\vec r,t)&=\frac{p^2}{2m}\psi(\vec r,t)\\
+E\psi_0\exp(i\vec k\cdot \vec r-i\omega t)&=\frac{p^2}{2m}\psi_0\exp(i\vec k\cdot \vec r-i\omega t)\\
+\hbar\omega\psi_0\exp(i\vec k\cdot \vec r-i\omega t)&=\frac{(\hbar\vec k)^2}{2m}\psi_0\exp(i\vec k\cdot \vec r-i\omega t)\\
+\frac\hbar{-i}\frac{\partial}{\partial t}\psi_0\exp(i\vec k\cdot \vec r-i\omega t)&=-\frac{\hbar^2}{2m}\nabla^2\psi_0\exp(i\vec k\cdot \vec r-i\omega t)\\
+i\hbar\frac\partial{\partial t}\psi(\vec r,t)&=-\frac{\hbar^2}{2m}\nabla^2\psi(\vec r,t)
+\end{align}
+$$
+
+> 写出了波动方程的薛定谔很高兴的找到了Debye，Debye又让他做了一个报告，但人们仍不知道这有什么意义。薛定谔想到，要证明这个东西是正确的，他必须由此推出氢原子能级公式。
+
+他首先改写了这个方程，因为上面的方程是基于自由电子的，而氢原子中的电子显然是束缚的，那么从一开始就应该把势能考虑进去：
+$$
+E=\frac{p^2}{2m}+v(r)
+$$
+由此得到的波函数是
+$$
+i\hbar\frac\partial{\partial t}\psi(\vec r,t)=-\frac{\hbar^2}{2m}\nabla^2\psi(\vec r,t)+v(r)\psi(\vec r,t)
+$$
+氢原子中的$v(r)$应该是$-e^2/r$，即
+$$
+i\hbar\frac\partial{\partial t}\psi(\vec r,t)=-\frac{\hbar^2}{2m}\nabla^2\psi(\vec r,t)-\frac{e^2}{r}\psi(\vec r,t)
+$$
+用分离变量法求解，首先令
+$$
+\psi(\vec r,t)=\Phi(\vec r)f(t)=\Phi(\vec r)e^{-i\omega t}
+$$
+其中$\omega$是待定常数。代入方程，得到
+$$
+\begin{align}
+i\hbar\frac\partial{\partial t}\Phi(\vec r)e^{-i\omega t}&=-\frac{\hbar^2}{2m}\nabla^2\Phi(\vec r)e^{-i\omega t}-\frac{e^2}{r}\Phi(\vec r)e^{-i\omega t}\\
+i\hbar\Phi(\vec r)\frac\partial{\partial t}e^{-i\omega t}&=[-\frac{\hbar^2}{2m}\nabla^2\Phi(\vec r)-\frac{e^2}{r}\Phi(\vec r)]e^{-i\omega t}\\
+i\hbar(-i\omega)\Phi(\vec r)e^{-i\omega t}&=[-\frac{\hbar^2}{2m}\nabla^2\Phi(\vec r)-\frac{e^2}{r}\Phi(\vec r)]e^{-i\omega t}\\
+\hbar\omega\Phi(\vec r)&=-\frac{\hbar^2}{2m}\nabla^2\Phi(\vec r)-\frac{e^2}{r}\Phi(\vec r)
+\frac{e^2}{r}\Phi(\vec r)]e^{-i\omega t}\\
+E\Phi(\vec r)&=-\frac{\hbar^2}{2m}\nabla^2\Phi(\vec r)-\frac{e^2}{r}\Phi(\vec r)
+\end{align}
+$$
+这样就得到一个不含时间的方程，称为定态方程。这个方程一般是没有解的，除非E取某些特定的值，这类问题称为本征值（Eigenvalue）问题。由于这是一个向心力场下的问题，所以我们用球坐标，在球坐标下，拉普拉斯算符可以写作
+$$
+\nabla^2=\frac 1 {r^2}\frac\partial{\partial r}r^2\frac\partial{\partial r}+\frac1{r^2}[\frac{1}{\sin\theta}\frac\partial{\partial\theta}(\sin\theta\frac\partial{\partial\theta})+\frac 1 {\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}]
+$$
+则薛定谔方程可以写为
+$$
+E\Phi(\vec r)=E\Phi(r,\theta,\varphi)
+\\=-\frac{h^2}{2m}\frac 1 {r^2}\frac\partial{\partial r}r^2\frac\partial{\partial r}\Phi(\vec r)-\frac{h^2}{2mr^2}[\frac{1}{\sin\theta}\frac\partial{\partial\theta}\sin\theta\frac\partial{\partial\theta}+\frac 1 {\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}]\Phi(r,\theta,\varphi)-\frac{e^2}r\Phi(r,\theta,\varphi)
+$$
+我们使用球谐函数继续分离变量。
+
+> 球谐函数的定义
+> $$
+> Y_{LM}(\theta,\varphi)=(-1)^M\sqrt{\frac{(2L+1)(L-M)!}{4\pi(L+M)!}}P_L^M(\cos\theta)e^{iM\varphi}
+> $$
+> 其中$L=0,1,2,\dots$，$-L\le M\le L$，$P_L^M$称为连带雷让德（Legendre）函数。
+>
+> 首先定义雷让德函数
+> $$
+> P_L(x)=\frac1{2^LL!}\frac{\mathrm d^L}{\mathrm d x^L}(x^2-1)^L
+> $$
+> 连带雷让德函数
+> $$
+> P_L^M(x)=\frac1 {2^LL!}(L-x^2)^{M/2}\frac{\mathrm d^{L+M}}{\mathrm d x^{L+M}}(x^2-1)^L\\
+> =(1-x^2)^{M/2}\frac{\mathrm d^M}{\mathrm d x^M}P_L^M(x),\quad M\ge0\\
+> P_L^{-M}(x)=(-1)^M\frac{(L-M)!}{(L+M)!}P_L^M(x)
+> $$
+> 引入这些因子之后，我们可以得到一个简单的积分形式：
+> $$
+> \int_{-1}^1P_{L1}(x)P_{L2}(x)\mathrm d x=\frac2{2L+1}\delta_{L1L2}\\
+> \int_)^\infty\int_0^\pi\int_0^{2\pi} Y^*_{L'M'}(\theta,\varphi)Y_{LM}(\theta,\varphi) r^2\mathrm d r\sin\theta\mathrm d \theta\mathrm d \varphi=\delta_{L'L}\delta_{M'M}
+> $$
+>
+> > 克罗内克记号
+> > $$
+> > \delta_{ab}=\begin{cases}1,\quad a=b\\0,\quad a\ne b\end{cases}
+> > $$
+> >
+>
+> 球谐函数有一个对我们来说很有用的性质：
+> $$
+> [\frac{1}{\sin\theta}\frac\partial{\partial\theta}\sin\theta\frac\partial{\partial\theta}+\frac 1 {\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}]Y_{LM}(\theta,\varphi)=-L(L+1)Y_{LM}(\theta,\varphi)
+> $$
+> 称为本征值方程，即将中括号内的微商算符作用在球谐函数上，等于球谐函数乘以一个常数。
+
+令
+$$
+\Phi(\vec r)=\Phi(r,\theta,\varphi)=R(r)Y_{LM}(\theta,\varphi)
+$$
+代回上面的方程中，得到
+$$
+\begin{align}
+E\Phi(\vec r)&=ER(r)Y_{LM}(\theta,\varphi)\\
+&=-\frac{h^2}{2m}\frac 1 {r^2}\frac{\partial }{\partial r}r^2\frac{\partial R(r)}{\partial r}Y_{LM}(\theta,\varphi)-\frac{h^2}{2mr^2}[\frac{1}{\sin\theta}\frac\partial{\partial\theta}\sin\theta\frac{\partial Y_{LM}}{\partial\theta }+\frac 1 {\sin^2\theta}\frac{\partial^2 Y_{LM}}{\partial\varphi^2}]R(r)-\frac{e^2}rR(r)Y_{LM}(\theta,\varphi)\\
+&=-\frac{h^2}{2m}\frac 1 {r^2}\frac{\partial }{\partial r}r^2\frac{\partial R(r)}{\partial r}Y_{LM}(\theta,\varphi)-\frac{h^2}{2mr^2}[-L(L+1)Y_{LM}(\theta,\varphi)]R(r)-\frac{e^2}rR(r)Y_{LM}(\theta,\varphi)\\
+\end{align}
+$$
+约去等式两边的球谐函数，得到常微分方程
+$$
+ER(r)=-\frac{h^2}{2m}\frac 1 {r^2}\frac{\mathrm d }{\mathrm d r}r^2\frac{\mathrm d R(r)}{\mathrm d r}-\frac{h^2}{2mr^2}[-L(L+1)]R(r)-\frac{e^2}rR(r)
+$$
+由于$R(r)$是与$L$有关的，所以我们写成角标的形式，即$R_L(r)$。观察这个方程的第一项，可以发现如果我们令$R_L(r)=\chi_L(r)/r$，有
+$$
+\frac 1 {r^2}\frac{\mathrm d }{\mathrm d r}r^2\frac{\mathrm d R_L(r)}{\mathrm d r}=\frac1r\chi_L^{\prime\prime}(r)
+$$
+那么方程可以进一步简化为
+$$
+E\frac{\chi_L(r)}{r}=-\frac{\hbar^2}{2m}\frac 1r\chi_L^{\prime\prime}(r)+\frac{\hbar^2L(L+1)}{2mr}\frac{\chi_L(r)}{r}-\frac{e^2}r\frac{\chi_L(r)}r\\
+\chi_L^{\prime\prime}(r)+[\frac{2m}{\hbar^2}(E+\frac {e^2}r)-\frac{L(L+1)}{r^2}]\chi_L(r)=0
+$$
+解这个方程首先要做奇异点分析，显然这个方程的极点是在$r=0$和$r=\infty$。
+
+- 当$r\rightarrow\infty$时，上式退化为
+  $$
+  \chi_L^{\prime\prime}(r)+\frac{2m}{\hbar^2}E\chi_L(r)=0
+  $$
+  可以解得
+  $$
+  \begin{cases}
+  \chi_L^{(1)}(r)=\exp[-\sqrt{\frac{2mE}{\hbar^2}}r]\quad \checkmark\\
+  \chi_L^{(2)}(r)=\exp[\sqrt{\frac{2mE}{\hbar^2}}r]\quad \times
+  \end{cases}
+  $$
+  我们希望这个解在空间各点都是有限的，所以取第一个解。
+
+- 当$r\rightarrow0$时，
+  $$
+  \chi_L^{\prime\prime}(r)-\frac{L(L+1)}{r^2}\chi_L(r)=0
+  $$
+  可以解得
+  $$
+  \begin{cases}
+  \chi_L^{(a)}(r)=r^{L+1}\quad \checkmark\\
+  \chi_L^{(b)}(r)=r^{-L}\quad \times
+  \end{cases}
+  $$
+  同理去掉发散的解。
+
+现在令
+$$
+\chi_L(r)=\chi_L^{(1)}(r)\chi_L^{(a)}(r)u_L(r)
+$$
+代回到薛定谔方程中，整理一下可以得到只与$u_L(r)$有关的微分方程：
+$$
+u_L^{\prime\prime}(r)r^{L+1}+\left(2(L+1)r^L-2r^{L+1}\sqrt{-\frac{2mE}{\hbar^2}}\right)u_L^\prime(r)-\left(2(L+1)r^L\sqrt{-\frac{2mE}{\hbar^2}}-\frac{2m}{\hbar^2}e^2r^L\right)u_L(r)=0
+$$
+在两边消去$r^L$并写成微分形式，得到
+$$
+r\frac{\mathrm d^2 u_L(r)}{\mathrm d r^2}+\left(2(L+1)-2r\sqrt{-\frac{2mE}{\hbar^2}}\right)\frac{\mathrm d u_L(r)}{\mathrm d r}-\left(2(L+1)\sqrt{-\frac{2mE}{\hbar^2}}-\frac{2m}{\hbar^2}e^2\right)u_L(r)=0
+$$
+在多数情况下，做到这一步就无法继续进行了，必须用计算机进行求解，但氢原子刚好很特殊，我们可以试图往合流超几何微分方程上凑。
+
+> 合流超几何微分方程的标准形式是这样的：
+> $$
+> \xi\frac{\mathrm d^2u_L(\xi)}{\mathrm d \xi^2}+(\gamma-\xi)\frac{\mathrm du_L(\xi)}{\mathrm d\xi}-\alpha u_L(\xi)=0
+> $$
+> 其中$\gamma$和$\alpha$是常数。
+>
+> 在$\xi=0$处具有解析解：
+> $$
+> F(\alpha,\gamma,\xi)=1+\frac\alpha\gamma\xi+\frac1{2!}\frac{\alpha(\alpha+1)}{\gamma(\gamma+1)}\xi^2+\frac1{3!}\frac{\alpha(\alpha+1)(\alpha+2)}{\gamma(\gamma+1)(\gamma+2)}\xi^3+\dots
+> $$
+>
+
+令$2r\sqrt{-2mE/\hbar^2}=\xi$，则
+$$
+\frac{\mathrm d u}{\mathrm d r}=\frac{\mathrm d u}{\mathrm d \xi}\frac{\mathrm d \xi}{\mathrm d r}=2\sqrt{-\frac{2mE}{\hbar^2}}\frac{\mathrm d u}{\mathrm d \xi}\\
+\frac{\mathrm d^2u}{\mathrm dr^2}=(2\sqrt{-\frac{2mE}{\hbar^2}})^2\frac{\mathrm d^2u}{\mathrm d \xi^2}
+$$
+上式可以化为
+$$
+\xi\frac{\mathrm d^2u_L(\xi)}{\mathrm d\xi^2}+(2(L+1)-\xi)\frac{\mathrm du_L(\xi)}{\mathrm d\xi}-\frac{(2(L+1)\sqrt{-\frac{2mE}{\hbar^2}}-\frac{2m}{\hbar^2}e^2)}{2\sqrt{-\frac{2mE}{\hbar^2}}}u_L(\xi)=0
+$$
+与标准合流超几何方程比较很容易就可以写出它的解析解，但我们注意到这个解是一个发散的无穷级数，为了得到收敛的结果，我们要想办法把这个无穷级数截断成一个多项式。
+
+观察解的形式我们可以发现，如果令$\alpha=0$，则解会被截断成一项：$F=1$；如果令$\alpha=-1$，则解会被截断成前两项。
+
+那么我么令$\alpha=-n_r,\quad n_r=1,2,3\dots$，就可以完成截断
+$$
+\alpha=\frac{(2(L+1)\sqrt{-\frac{2mE}{\hbar^2}}-\frac{2m}{\hbar^2}e^2)}{2\sqrt{-\frac{2mE}{\hbar^2}}}=-n_r
+$$
+化简得到
+$$
+E=-\frac{me^4}{2\hbar^2(L+1+n_r)^2}
+$$
+显而易见，只要令$n=L+1+n_r$，就得到了氢原子能级公式
+$$
+E=-\frac{2\pi^2me^4}{n^2h^2}
+$$
+常数项的这一差异解释了氢原子光谱的谱线亮度问题。对于一个给定的n，所有
+$$
+L=0,1,2,\dots,n-1\\
+n_r=n-1,n-2,\dots,0
+$$
+的状态具有相同的能量，这种现象称为简并。在$Y_{LM}$中，$L\le M\le L$，有2L+1个M，氢原子每个状态的简并度
+$$
+N_n=\sum_{L=0}^{n-1}(2L+1)=2\sum_{L=0}^{n-1}L+n=2\times\frac{n(n-1)}{2}+n=n^2
+$$
+简并度越高，这条谱线的亮度就越亮。
+
+最后我们给出氢原子的波函数
+$$
+\psi(\vec r,t)\approx \frac1r\exp(-\frac\xi2)r^{L+1}F(-n_r,2(L+1),\xi)Y_{LM}(\theta,\varphi)\exp(-\frac{iEt}\hbar), \xi=2r\sqrt{-\frac{2m}{\hbar^2}E}
+$$
+
+### 1.6 波函数的几率解释
+
+对于薛定谔来讲，一个更为迫切的任务是如何解释波函数的物理意义。
+
+对于波函数
+$$
+i\hbar\frac{\partial}{\partial t}\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+V(r)\psi\tag1
+$$
+将方程左乘$\psi^*(r)$，得到
+$$
+i\hbar\psi^*(r)\frac\partial{\partial t}\psi(r)=-\frac{\hbar^2}{2m}\psi^*(r)\nabla^2\psi(r)+\psi^*(r)V(r)\psi(r)\tag2
+$$
+对（1）取复共轭
+$$
+-i\hbar\frac{\partial}{\partial t}\psi^*=-\frac{\hbar^2}{2m}\nabla^2\psi^*+V(r)\psi^*\tag3
+$$
+将（3）再左乘$\psi$
+$$
+-i\hbar\psi\frac{\partial}{\partial t}\psi^*=-\frac{\hbar^2}{2m}\psi\nabla^2\psi^*+V(r)\psi\psi^*\tag4
+$$
+（2）-（4），
+$$
+\begin{align}i\hbar(\psi^*\frac{\partial \psi}{\partial t}+\psi\frac{\partial \psi^*}{\partial t})&=-\frac{\hbar^2}{2m}(\psi^*\nabla^2\psi-\psi\nabla^2\psi^*)\\i\hbar\frac{\partial}{\partial t}(\psi^*\psi)&=-\frac{\hbar^2}{2m}\nabla(\psi\nabla\psi^*-\psi^*\nabla\psi)\end{align}\\
+\frac\partial{\partial t}(\psi^*\psi)+\frac{\hbar}{2mi}\nabla(\psi\nabla\psi^*-\psi^*\nabla\psi)=0
+$$
+薛定谔注意到$\psi^*\psi=|\psi|^2\ge 0$，这与流体力学中的连续性方程很像：
+$$
+\frac{\partial\rho(\vec r,t)}{\partial t}+\nabla\cdot\vec J=0, \rho(\vec r,t)\ge 0
+$$
+那么令$\rho=\psi^*\psi$，表示某种密度，$J=(\hbar/2mi)(\psi\nabla\psi^*-\psi^*\nabla\psi)$，表示某种流。
+
+很自然的，薛定谔认为这是电子的密度和电子的质量流。但是很快人们就发现这样的解释有很多问题，因为一般的波函数都是与时间有关的，这就意味着电子在经历了一段时间后会在空间中很大的区域内非零，即电子越来越大了，这显然是不现实的。
+
+> 最后，波恩（Born）提出的几率解释克服了这一困难。他也因此获得了1954年的诺贝尔奖。Born在量子力学的建立中参与了二人文章和三人文章，做了不小的贡献，但最后只有海森堡一人得了诺贝尔奖，海森堡也为这件事很愧疚，一方面波恩是他的老师，另一方面他也承认波恩确实起了很重要的作用。1954年波恩因为几率解释得奖之后，海森堡写信给波恩，表示心终于沉下来了。
+>
+> 几率解释是十分重要的，因为在给出一个正确的解释之后，所有之后的事情都得到了顺利的进行。
+
+Born提出，考虑单个电子的话，$\rho(\vec r ,t)=|\psi(\vec r,t)|^2$代表在时刻t，在以r为中心的一个小区域中找到该电子的几率密度。电子可以出现在空间的不同区域内，但是一旦出现就是一个整体，具有固定的电荷和质量等属性。
+
+另一方面，如果考虑N各个处于相同状态的粒子，可以将$N|\psi(\vec r ,t )|$解释为时刻t时，在空间r处的粒子密度，而将$Nq|\psi(\vec r,t)|^2$解释为电荷密度。
+
+我们很自然的要求
+$$
+\int_\Omega |\psi(\vec r, t)|^2\mathrm d \vec r = 1 < \infty
+$$
+定义平方可积空间
+$$
+L^2(\Omega)=\{\psi|\int_\Omega|\psi|^2\mathrm d r=A\}
+$$
+这一空间也称为希尔伯特（Hilbert）空间，是线性的，也就是说对数乘和加法是封闭的。
+
+$\psi(\vec r,t)$被称为几率幅，它不是一个可观测的量，因此可以被写作
+$$
+\psi(\vec r, t)=|\psi(\vec r ,t)|e^{i\alpha(\vec r,t)}
+$$
+其中$\exp(i\alpha)$称为相位，若两个波函数仅有相位之差，则他们在物理上是等价的。
+
+### 1.7 Heisenberg的测不准原理
+
+> 薛定谔给出了证明，波动力学和矩阵力学是完全等价的（过程暂略）。这让海森堡十分不爽，应为海森堡花了至少五年的时间~~，还进行了很多哲学思考~~，然后被两个人不经意间搞出一个等价的东西，然后海森堡就想多做一些东西。
+> 
+> 1927年，海森堡引入了测不准原理。
+
+对易关系中，两个物理量不对易的物理意义是什么呢？也就是说，假设有
+$$
+[\hat A ,\hat B]=i\hat C\ne 0
+$$
+我们取一个允许态$\psi(\vec r,t)$。定义
+$$
+\bar A =(\psi , \hat A\psi)=\int_\Omega \mathrm d \vec r \psi^*(\vec r,t)\hat A\psi(\vec r,t)\\
+\bar B =(\psi , \hat A\psi) = \int_\Omega \mathrm d \vec r \psi^*(\vec r,t)\hat B\psi(\vec r,t)
+$$
+海森堡证明了如下的关系：
+$$
+\overline{(\hat A -\bar A)^2}\cdot\overline{(\hat B - \bar B)^2} \ge \frac 1 4 \bar C ^2
+$$
+称为海森堡测不准原理的表达式。（证明过程暂略）
 
