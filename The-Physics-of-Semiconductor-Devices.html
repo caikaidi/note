@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta name="google-site-verification" content="73HnbPjvjYk0kUg9i4Y0dHjoy8NSQR0TRvgKLyyvVCY" />
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/note/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/note/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/note/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Semiconductor,Physics," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/note/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Physics of Semiconductor Device">
+<meta name="keywords" content="Semiconductor,Physics">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Physics of Semiconductor Devices">
+<meta property="og:url" content="http://caikaidi.github.io/note/The-Physics-of-Semiconductor-Devices.html">
+<meta property="og:site_name" content="note">
+<meta property="og:description" content="Physics of Semiconductor Device">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-18T03:23:42.022Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Physics of Semiconductor Devices">
+<meta name="twitter:description" content="Physics of Semiconductor Device">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/note/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://caikaidi.github.io/note/The-Physics-of-Semiconductor-Devices.html"/>
+
+
+
+
+
+  <title>The Physics of Semiconductor Devices | note</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/note/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">note</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/note/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/note/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://caikaidi.github.io/note/note/The-Physics-of-Semiconductor-Devices.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Diego">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/note/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="note">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">The Physics of Semiconductor Devices</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T11:18:00+08:00">
+                2018-03-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Physics-of-Semiconductor-Device"><a href="#Physics-of-Semiconductor-Device" class="headerlink" title="Physics of Semiconductor Device"></a>Physics of Semiconductor Device</h1><a id="more"></a>
+<h2 id="1-Electrons-and-Holes-in-Semiconductors"><a href="#1-Electrons-and-Holes-in-Semiconductors" class="headerlink" title="1. Electrons and Holes in Semiconductors"></a>1. Electrons and Holes in Semiconductors</h2><h3 id="1-1-Silicon-Crystal-Sturcture"><a href="#1-1-Silicon-Crystal-Sturcture" class="headerlink" title="1.1 Silicon Crystal Sturcture"></a>1.1 Silicon Crystal Sturcture</h3><ul>
+<li>unit cell</li>
+<li>lattice constant</li>
+<li>primitive cell</li>
+<li>Miller indices</li>
+</ul>
+<h3 id="1-2-Bond-Model-of-Electrons-and-Holes"><a href="#1-2-Bond-Model-of-Electrons-and-Holes" class="headerlink" title="1.2 Bond Model of Electrons and Holes"></a>1.2 Bond Model of Electrons and Holes</h3><h3 id="1-3-Energy-Band-Model"><a href="#1-3-Energy-Band-Model" class="headerlink" title="1.3 Energy Band Model"></a>1.3 Energy Band Model</h3><ul>
+<li>energy bands</li>
+<li>valence band</li>
+<li>conduction band</li>
+<li>band gap</li>
+</ul>
+<h4 id="1-3-1-Energy-Band-Diagram"><a href="#1-3-1-Energy-Band-Diagram" class="headerlink" title="1.3.1 Energy Band Diagram"></a>1.3.1 Energy Band Diagram</h4><table>
+<thead>
+<tr>
+<th>Semiconductor</th>
+<th>Ge</th>
+<th>Si</th>
+<th>GaAs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_g$</td>
+<td>0.67</td>
+<td>1.12</td>
+<td>1.42</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-3-2-Donors-and-Acceptors-in-the-Band-Model"><a href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model" class="headerlink" title="1.3.2 Donors and Acceptors in the Band Model"></a>1.3.2 Donors and Acceptors in the Band Model</h3><ul>
+<li>shallow levels</li>
+<li>deep levels</li>
+</ul>
+<h3 id="1-4-Semiconductors-Insulators-and-Conductors"><a href="#1-4-Semiconductors-Insulators-and-Conductors" class="headerlink" title="1.4 Semiconductors, Insulators, and Conductors"></a>1.4 Semiconductors, Insulators, and Conductors</h3><p>$E_g\sim 4$eV</p>
+<h3 id="1-5-Electrons-and-Holes"><a href="#1-5-Electrons-and-Holes" class="headerlink" title="1.5 Electrons and Holes"></a>1.5 Electrons and Holes</h3><blockquote>
+<p>We may think of holes as bubbles in liquid, floating up in the energy band. Similarly, one may think of electrons as water drops that tend to fall to the lowest energy states in the energy band.</p>
+</blockquote>
+<h4 id="1-5-1-Effective-Mass"><a href="#1-5-1-Effective-Mass" class="headerlink" title="1.5.1 Effective Mass"></a>1.5.1 Effective Mass</h4><p>$$<br>\text{Acceleration}=\frac{q\varepsilon}{m_p}=-\frac{q\varepsilon}{m_n}<br>$$</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Si</th>
+<th>Ge</th>
+<th>GaAs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_n$</td>
+<td>0.26</td>
+<td>0.12</td>
+<td>0.068</td>
+</tr>
+<tr>
+<td>$m_p$</td>
+<td>0.39</td>
+<td>0.30</td>
+<td>0.50</td>
+</tr>
+</tbody>
+</table>
+<p>$$<br>\text{Acceleration}=-\frac{q\varepsilon}{\hbar^2}\frac{\mathrm d ^2 E}{\mathrm d \vec k^2}\\<br>\text{Effective mass}=\frac{\hbar^2}{\mathrm d^2 E/\mathrm d \vec k^2}<br>$$</p>
+<h4 id="1-5-2-How-to-Measure-the-Effective-Mass"><a href="#1-5-2-How-to-Measure-the-Effective-Mass" class="headerlink" title="1.5.2 How to Measure the Effective Mass"></a>1.5.2 How to Measure the Effective Mass</h4><ul>
+<li>cyclotron resonance</li>
+</ul>
+<h3 id="1-6-Density-of-States"><a href="#1-6-Density-of-States" class="headerlink" title="1.6 Density of States"></a>1.6 Density of States</h3><p>$$<br>D_C(E)=\frac{\text{number of states in }\Delta E}{\Delta E\times\text{volume}}\\<br>D_C(E)=\frac{8\pi m_n\sqrt{2m_n(E-E_C)}}{h^3},E\ge E_C\\<br>D_V(E)=\frac{8\pi m_p\sqrt{2m_p(E_V-E)}}{h^3},E\le E_v\\<br>$$</p>
+<h3 id="1-7-Thermal-Equilibrium-and-the-Fermi-Function"><a href="#1-7-Thermal-Equilibrium-and-the-Fermi-Function" class="headerlink" title="1.7 Thermal Equilibrium and the Fermi Function"></a>1.7 Thermal Equilibrium and the Fermi Function</h3><h4 id="1-7-1-An-Analogy-for-Thermal-Equilibrium"><a href="#1-7-1-An-Analogy-for-Thermal-Equilibrium" class="headerlink" title="1.7.1 An Analogy for Thermal Equilibrium"></a>1.7.1 An Analogy for Thermal Equilibrium</h4><blockquote>
+<p>Every energy state in the conductino and valence bands has a certain probability of being occupied by an electron.</p>
+</blockquote>
+<h4 id="1-7-2-Fermi-Function—The-Probability-of-an-Energy-State-Being-Occupied-by-an-Electron"><a href="#1-7-2-Fermi-Function—The-Probability-of-an-Energy-State-Being-Occupied-by-an-Electron" class="headerlink" title="1.7.2 Fermi Function—The Probability of an Energy State Being Occupied by an Electron"></a>1.7.2 Fermi Function—The Probability of an Energy State Being Occupied by an Electron</h4><p>Fermi-Dirac Distribution Function:<br>$$<br>f(E)=\frac 1 {1+\exp[(E-E_F)/KT]}<br>$$<br>Maxwell-Boltzmann approximation:<br>$$<br>f(E)\approx \exp[-(E-E_F)/kT],E-E_F\gg -kT\\<br>1-f(E)\approx \exp[-(E_F-E)/kT], E-E_F\ll -kT<br>$$</p>
+<h3 id="1-8-Electron-and-Hole-Concentrations"><a href="#1-8-Electron-and-Hole-Concentrations" class="headerlink" title="1.8 Electron and Hole Concentrations"></a>1.8 Electron and Hole Concentrations</h3><h4 id="1-8-1-Derivation-of-n-and-p-from-D-E-and-f-E"><a href="#1-8-1-Derivation-of-n-and-p-from-D-E-and-f-E" class="headerlink" title="1.8.1 Derivation of n and p from D(E) and f(E)"></a>1.8.1 Derivation of <em>n</em> and <em>p</em> from <em>D(E)</em> and <em>f(E)</em></h4><p>electron concentration<br>$$<br>\begin{align}<br>n&amp;=\int_{E_c}^{\text{Top of conduction band}}f(E)D_C(E)\mathrm d E\\<br>&amp;=N_C\exp[-(E_C-E_F)/kT]<br>\end{align}<br>$$<br>hole concentration<br>$$<br>\begin{align}<br>p&amp;=\int_{\text{bottom of valence band}}^{E_V}D_V(E)(1-f(E))\mathrm d E\\<br>&amp;=N_V\exp[-(E_F-E_V)/kT]<br>\end{align}<br>$$</p>
+<p>$$<br>N_C=2\left[\frac{2\pi m_nkT}{h^2}\right]^{3/2}\\N_V=2\left[\frac{2\pi m_pkT}{h^2}\right]^{3/2}<br>$$</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Ge</th>
+<th>Si</th>
+<th>GaAs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N_C$</td>
+<td>$1.04\times 10^{19}$</td>
+<td>$2.8\times 10^{19}$</td>
+<td>$4.7\times 10^{17}$</td>
+</tr>
+<tr>
+<td>$N_V$</td>
+<td>$6.0\times 10^{18}$</td>
+<td>$1.04\times 10^{19}$</td>
+<td>$7.0\times 10^{18}$</td>
+</tr>
+</tbody>
+</table>
+<p>$N_C$: effective density of states of the conduction band</p>
+<p>$N_V$: effective density of states of the valence band</p>
+<h4 id="1-8-2-Fermi-Level-and-the-Carrier-Concentrations"><a href="#1-8-2-Fermi-Level-and-the-Carrier-Concentrations" class="headerlink" title="1.8.2 Fermi Level and the Carrier Concentrations"></a>1.8.2 Fermi Level and the Carrier Concentrations</h4><p>$$<br>E_C-E_F =kT\cdot\ln(N_C/n)\\<br>E_F-E_V=kT\ln(N_V/p)<br>$$</p>
+<h4 id="1-8-3-The-np-Product-and-the-Intrinsic-Carrier-Concentration"><a href="#1-8-3-The-np-Product-and-the-Intrinsic-Carrier-Concentration" class="headerlink" title="1.8.3 The np Product and the Intrinsic Carrier Concentration"></a>1.8.3 The <em>np</em> Product and the Intrinsic Carrier Concentration</h4><p>$$<br>np=N_CN_V\exp[-E_g/kT]\\<br>np=n_i^2\\<br>n_i=\sqrt{N_CN_V}\exp[-E_g/2kT]<br>$$</p>
+<p>If there are no dopants present, the semiconductor is said to be <strong>intrinsic</strong>.</p>
+<p>In an intrinsic semiconductor, $n=p=n_i$. Therefore, $n_i$ is called the <strong>intrinsic carrier concentration</strong>.</p>
+<ul>
+<li>majority carriers</li>
+<li>minority carriers</li>
+</ul>
+<p>In an intrinsic semiconductor, the Fermi level is nearly at the middle of the band gap. This level is called the <strong>intrinsic Fermi level</strong>, $E_i$.<br>$$<br>n_i=N_C\exp[-(E_C-E_i)kT]\\<br>E_i=E_C-E_g/2-kT\ln\sqrt{\frac{N_C}{N_V}}<br>$$</p>
+<h3 id="1-9-General-Theory-of-n-and-p"><a href="#1-9-General-Theory-of-n-and-p" class="headerlink" title="1.9 General Theory of n and p"></a>1.9 General Theory of <em>n</em> and <em>p</em></h3><p>Since $E_d$ is usually a few $kT$ above $E_F$, we say that nearly all the donor atoms are ionized. Similarly, all the acceptor atoms are ionized.</p>
+<p>Charge neutrality requires that<br>$$<br>n+N_a=p+N_d<br>$$</p>
+<ul>
+<li><p>$N_d-N_a\gg n_i$(i.e., N type)<br>$$<br>n=N_d-N_a\\<br>p=n_i^2/n<br>$$</p>
+</li>
+<li><p>$N_a-N_d\gg n_i$(i.e., P type)<br>$$<br>p=N_a-N_d\\<br>n=n_i^2/p<br>$$</p>
+</li>
+</ul>
+<h3 id="1-10-Carrier-Concentrations-at-Extremely-High-and-Low-Temperatures"><a href="#1-10-Carrier-Concentrations-at-Extremely-High-and-Low-Temperatures" class="headerlink" title="1.10 Carrier Concentrations at Extremely High and Low Temperatures"></a>1.10 Carrier Concentrations at Extremely High and Low Temperatures</h3><p>At very high temperatures, it is possible to have $n_i\gg |N_d-N_a|$. The semiconductor becomes “intrinsic”.</p>
+<p>At very low temperatures, $E_F$ may rise above $E_d$, and most of the donor or acceptor atoms can remain nonionized. This phenomenon is called <strong>freeze-out</strong>. In this case, we have<br>$$<br>n=\left[\frac{N_CN_d}{2}\right]^{1/2}\exp[-(E_C-E_d)/2kT]<br>$$</p>
+<h2 id="2-Motion-and-Recombination-of-Electrons-and-Holes"><a href="#2-Motion-and-Recombination-of-Electrons-and-Holes" class="headerlink" title="2. Motion and Recombination of Electrons and Holes"></a>2. Motion and Recombination of Electrons and Holes</h2><h3 id="2-1-Thermal-Motion"><a href="#2-1-Thermal-Motion" class="headerlink" title="2.1 Thermal Motion"></a>2.1 Thermal Motion</h3><p>$$<br>\text{Average electron kinetic energy}=\frac{\int f(E)D(E)(E-E_C)\mathrm d E}{\int f (E)D(E)\mathrm d E}=\frac 32kT<br>$$</p>
+<p>Thermal velocity<br>$$<br>V_{th}=\sqrt{\frac{3kT}{m}}\sim10^7\text{cm/s}<br>$$<br>The mean free time is typically $10^{-13}$s. The distance between collisions is a few tens of nanometers.</p>
+<h3 id="2-2-Drift"><a href="#2-2-Drift" class="headerlink" title="2.2 Drift"></a>2.2 Drift</h3><h4 id="2-2-1-Electron-and-Hole-Mobilities"><a href="#2-2-1-Electron-and-Hole-Mobilities" class="headerlink" title="2.2.1 Electron and Hole Mobilities"></a>2.2.1 Electron and Hole Mobilities</h4><p>Hole mobility $\mu_p$<br>$$<br>\nu = \mu_p\varepsilon\\<br>\mu_p=\frac{q\tau_{mp}}{m_p}<br>$$<br>Electron mobility $\mu_n$<br>$$<br>\nu=-\mu_n\varepsilon\\<br>\mu_n=\frac{q\tau_{mn}}{m_n}<br>$$</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Si</th>
+<th>Ge</th>
+<th>GaAs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu_n$</td>
+<td>1400</td>
+<td>3900</td>
+<td>8500</td>
+</tr>
+<tr>
+<td>$\mu_p$</td>
+<td>470</td>
+<td>1900</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-2-2-Mechanisms-of-Carrier-Scattering"><a href="#2-2-2-Mechanisms-of-Carrier-Scattering" class="headerlink" title="2.2.2 Mechanisms of Carrier Scattering"></a>2.2.2 Mechanisms of Carrier Scattering</h4><ul>
+<li><p>phonon scattering<br>$$<br>\mu_{ph}=\frac{q\tau_{ph}}{m^*}\\<br>\mu_{\text{phonon}}\propto \tau_{ph}\\<br>\propto\frac1{\text{phonon density}\times\text{carrier thermal velocity}}\\<br>\propto\frac1{T\cdot T^{1/2}}\propto T^{-3/2}<br>$$</p>
+</li>
+<li><p>ionized impurity scattering<br>$$<br>\mu_{\text{impurity}}\propto \frac{T^{3/2}}{N_a+N_d}<br>$$</p>
+</li>
+</ul>
+<p>$$<br>\frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\<br>\frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}<br>$$</p>
+<p>Velocity Saturation: electron and hole velocities saturate at around $10^7$cm/s and do not increase no matter how large $\varepsilon$ is. The culprit is <strong>optical phonon scattering</strong>. When the kinetic energy of a carrier exceeds the optical phonon energy $E_{opt}$, it generates an optical phonon and loses the kinetic energy. Therefore, the velocity does not rise above <strong>saturation velocity</strong>, $\nu_{sat}$.<br>$$<br>\frac12m^<em>\nu_{sat}^2=E_{opt}\Rightarrow \nu_{sat}=\sqrt{\frac{2E_{opt}}{m^</em>}}<br>$$<br>When we deal with devices whose sizes are smaller than the mean free path, the scattering is about to disappear. That is called <strong>ballistic transport</strong>.</p>
+<h4 id="2-2-3-Drift-Current-and-Conductivity"><a href="#2-2-3-Drift-Current-and-Conductivity" class="headerlink" title="2.2.3 Drift Current and Conductivity"></a>2.2.3 Drift Current and Conductivity</h4><p>$$<br>J_{p,drift}=qp\nu=qp\mu_p\varepsilon\\<br>J_{n,drift}=-qn\nu=qn\mu_n\varepsilon\\<br>J_{drift}=J_{n,drift}+J_{p,drift}=(qn\mu_n+qp\mu_p)\varepsilon\\<br>\sigma=qn\mu_n+qp\mu_p<br>$$</p>
+<p>$\sigma$ Is the quantity in the parentheses, called the <strong>conductivity</strong>. Its reciprocal is the <strong>resistivity</strong>, $\rho$.</p>
+<h3 id="2-3-Diffusion-Current"><a href="#2-3-Diffusion-Current" class="headerlink" title="2.3 Diffusion Current"></a>2.3 Diffusion Current</h3><p>$$<br>J_{n,diffusion}=qD_n\frac{\text d n}{\text d x}\\<br>J_{p,diffusion}=-qD_p\frac{\text d p}{\text d x}\\<br>$$</p>
+<p>$D$ is called the <strong>diffusion constant</strong>.<br>$$<br>J_n = J_{n,dirft}+J_{n,diffusion}=qn\mu_n\varepsilon+qD_n\frac{\text d n}{\text d x}\\<br>J_n = J_{n,dirft}+J_{n,diffusion}=qp\mu_p\varepsilon-qD_p\frac{\text d p}{\text d x}\\<br>J=J_n+J_p<br>$$</p>
+<h3 id="2-4-Relation-Between-the-Energy-Diagram-and-v-varepsilon"><a href="#2-4-Relation-Between-the-Energy-Diagram-and-v-varepsilon" class="headerlink" title="2.4 Relation Between the Energy Diagram and v, $\varepsilon$"></a>2.4 Relation Between the Energy Diagram and v, $\varepsilon$</h3><p>When a voltage is applied across a piece of semiconductor, it alters the band diagram.<br>$$<br>E_C(x)=\text{constant}-qV(x)<br>$$</p>
+<p>The constant takes care of the zero references for $E_cC$ and $V$, which is unspecified and inconsequential.</p>
+<p>The electric field<br>$$<br>E(x)=-\frac{\text d V}{\text d x}=\frac1q \frac{\text d E_C}{\text d x}=\frac1q \frac{\mathrm d E_V}{\text d x}<br>$$</p>
+<h3 id="2-5-Einstein-Relationship-Between-D-and-mu"><a href="#2-5-Einstein-Relationship-Between-D-and-mu" class="headerlink" title="2.5 Einstein Relationship Between D and $\mu$"></a>2.5 Einstein Relationship Between <em>D</em> and $\mu$</h3><p>$$<br>D_n=\frac{kT}q\mu_n\\<br>D_p=\frac{kT}{q}\mu_p<br>$$</p>
+<p>The electron drift and diffusion currents will perfectly cancel each other out for an arbitrary doping profile.</p>
+<h3 id="2-6-Electron-Hole-Recombination"><a href="#2-6-Electron-Hole-Recombination" class="headerlink" title="2.6 Electron-Hole Recombination"></a>2.6 Electron-Hole Recombination</h3><p>Denote <strong>excess carrier concentrations</strong> by $n’$ and $p’$.</p>
+<p>If the light is suddenly turned off, there will be <strong>recombination</strong>. The time constant of decay is called the <strong>recombination time </strong> or <strong>carrier lifetime</strong>, $\tau$.<br>$$<br>\frac{\mathrm d n’}{\mathrm  d t}=-\frac{n’}\tau=-\frac{p’}\tau<br>$$<br>The recombination rate is proportional to excess carrier concentrations:<br>$$<br>\text{Recombination rate }=\frac{n’}\tau=\frac{p’}\tau<br>$$<br>$\tau$ has the dimension of time range from 1 ns to 1 ms, depending on the density of trace metal impurities, which cause energy levels deep in the band gap. These <strong>deep traps</strong> or <strong>recombination centers</strong> can capture electrons or holes to facilitate recombination. Another recombination process, <strong>direct recombination</strong>, or <strong>radiative recombination</strong>, is very inefficient in <strong>indirect gap semiconductors</strong> and very efficient in <strong>direct gap semiconductors</strong>.</p>
+<h3 id="2-7-Thermal-Generation"><a href="#2-7-Thermal-Generation" class="headerlink" title="2.7 Thermal Generation"></a>2.7 Thermal Generation</h3><p>The reverse process of recombination is called <strong>thermal generation</strong>.</p>
+<p>When $np&gt;n_i^2$, there is net recombination; when $np&lt;n_i^2$, there is net generation.</p>
+<h3 id="2-8-Quasi-Equilibrium-and-Quasi-Fermi-levels"><a href="#2-8-Quasi-Equilibrium-and-Quasi-Fermi-levels" class="headerlink" title="2.8 Quasi-Equilibrium and Quasi-Fermi levels"></a>2.8 Quasi-Equilibrium and Quasi-Fermi levels</h3><p>$$<br>n=N_C\exp[-(E_C-E_{Fn})/kT]\\<br>n=N_V\exp[-(E_{Fp}-E_V)/kT]\\<br>$$</p>
+<p>The condition that $n’$ and $p’$ are much less than the majority carrien conentration is commonly assumed and is called <strong>low-level injection</strong>.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/note/images/wechatqcode.jpg" alt="Diego wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎扫上面的二维码关注我的微信公众号OvO</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/note/tags/Semiconductor/" rel="tag"># Semiconductor</a>
+          
+            <a href="/note/tags/Physics/" rel="tag"># Physics</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/note/光电子器件制造技术考试.html" rel="next" title="光电子器件制造技术考试">
+                <i class="fa fa-chevron-left"></i> 光电子器件制造技术考试
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/note/images/avatar.png"
+              alt="Diego" />
+          
+            <p class="site-author-name" itemprop="name">Diego</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/note/archives/">
+            
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/3801836590" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>微博</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Physics-of-Semiconductor-Device"><span class="nav-text">Physics of Semiconductor Device</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Electrons-and-Holes-in-Semiconductors"><span class="nav-text">1. Electrons and Holes in Semiconductors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Silicon-Crystal-Sturcture"><span class="nav-text">1.1 Silicon Crystal Sturcture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Bond-Model-of-Electrons-and-Holes"><span class="nav-text">1.2 Bond Model of Electrons and Holes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Energy-Band-Model"><span class="nav-text">1.3 Energy Band Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-Energy-Band-Diagram"><span class="nav-text">1.3.1 Energy Band Diagram</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model"><span class="nav-text">1.3.2 Donors and Acceptors in the Band Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-Semiconductors-Insulators-and-Conductors"><span class="nav-text">1.4 Semiconductors, Insulators, and Conductors</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-Electrons-and-Holes"><span class="nav-text">1.5 Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-1-Effective-Mass"><span class="nav-text">1.5.1 Effective Mass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2-How-to-Measure-the-Effective-Mass"><span class="nav-text">1.5.2 How to Measure the Effective Mass</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-Density-of-States"><span class="nav-text">1.6 Density of States</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-Thermal-Equilibrium-and-the-Fermi-Function"><span class="nav-text">1.7 Thermal Equilibrium and the Fermi Function</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-1-An-Analogy-for-Thermal-Equilibrium"><span class="nav-text">1.7.1 An Analogy for Thermal Equilibrium</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-2-Fermi-Function—The-Probability-of-an-Energy-State-Being-Occupied-by-an-Electron"><span class="nav-text">1.7.2 Fermi Function—The Probability of an Energy State Being Occupied by an Electron</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-Electron-and-Hole-Concentrations"><span class="nav-text">1.8 Electron and Hole Concentrations</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-1-Derivation-of-n-and-p-from-D-E-and-f-E"><span class="nav-text">1.8.1 Derivation of n and p from D(E) and f(E)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-2-Fermi-Level-and-the-Carrier-Concentrations"><span class="nav-text">1.8.2 Fermi Level and the Carrier Concentrations</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-3-The-np-Product-and-the-Intrinsic-Carrier-Concentration"><span class="nav-text">1.8.3 The np Product and the Intrinsic Carrier Concentration</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-General-Theory-of-n-and-p"><span class="nav-text">1.9 General Theory of n and p</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-Carrier-Concentrations-at-Extremely-High-and-Low-Temperatures"><span class="nav-text">1.10 Carrier Concentrations at Extremely High and Low Temperatures</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Motion-and-Recombination-of-Electrons-and-Holes"><span class="nav-text">2. Motion and Recombination of Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Thermal-Motion"><span class="nav-text">2.1 Thermal Motion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Drift"><span class="nav-text">2.2 Drift</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-Electron-and-Hole-Mobilities"><span class="nav-text">2.2.1 Electron and Hole Mobilities</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-Mechanisms-of-Carrier-Scattering"><span class="nav-text">2.2.2 Mechanisms of Carrier Scattering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-3-Drift-Current-and-Conductivity"><span class="nav-text">2.2.3 Drift Current and Conductivity</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Diffusion-Current"><span class="nav-text">2.3 Diffusion Current</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-Relation-Between-the-Energy-Diagram-and-v-varepsilon"><span class="nav-text">2.4 Relation Between the Energy Diagram and v, $\varepsilon$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-Einstein-Relationship-Between-D-and-mu"><span class="nav-text">2.5 Einstein Relationship Between D and $\mu$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-Electron-Hole-Recombination"><span class="nav-text">2.6 Electron-Hole Recombination</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-Thermal-Generation"><span class="nav-text">2.7 Thermal Generation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-Quasi-Equilibrium-and-Quasi-Fermi-levels"><span class="nav-text">2.8 Quasi-Equilibrium and Quasi-Fermi levels</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Diego</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/note/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/note/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="true"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/note/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/note/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/note/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/note/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/note/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/note/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/note/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
