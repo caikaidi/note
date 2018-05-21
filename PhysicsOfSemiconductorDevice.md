@@ -24,7 +24,7 @@
 | ------------- | ---- | ---- | ---- |
 | $E_g$         | 0.67 | 1.12 | 1.42 |
 
-### 1.3.2 Donors and Acceptors in the Band Model
+#### 1.3.2 Donors and Acceptors in the Band Model
 
 - shallow levels
 - deep levels
@@ -165,6 +165,14 @@ $$
   $$
 
 
+
+
+
+
+
+
+
+
 ### 1.10 Carrier Concentrations at Extremely High and Low Temperatures
 
 At very high temperatures, it is possible to have $n_i\gg |N_d-N_a|$. The semiconductor becomes "intrinsic".
@@ -220,16 +228,19 @@ $$
 
 - ionized impurity scattering
   $$
-  \mu_{\text{impurity}}\propto \frac{T^{3/2}}{N_a+N_d}
+  \mu_{\text{impurity}}\propto \frac{T^{3/2}}{N_a+N_d}\\
+  \frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\
+  \frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}
   $$
 
 
 
 
-$$
-\frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\
-\frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}
-$$
+
+
+
+
+
 
 Velocity Saturation: electron and hole velocities saturate at around $10^7$cm/s and do not increase no matter how large $\varepsilon$ is. The culprit is **optical phonon scattering**. When the kinetic energy of a carrier exceeds the optical phonon energy $E_{opt}$, it generates an optical phonon and loses the kinetic energy. Therefore, the velocity does not rise above **saturation velocity**, $\nu_{sat}$.
 $$
@@ -313,3 +324,511 @@ n=N_V\exp[-(E_{Fp}-E_V)/kT]\\
 $$
 
 The condition that $n'$ and $p'$ are much less than the majority carrien conentration is commonly assumed and is called **low-level injection**.
+
+## 3. Device Fabrication Technology
+
+### 3.1 Introduction to Device Fabrication
+
+- planar technology
+
+### 3.2 Oxidation of Silicon
+
+- dry oxidation
+- wet oxidation
+- horizontal furnace
+- vertical furnace
+
+### 3.3 Lithography
+
+(**Photolithography** or **optical lithography**)
+
+- photoresist
+  - negative resists
+  - positive resists
+- photomask
+- resist strip
+- lithography field
+- stepper
+- optical proximity correction
+- phase-shift photomask
+
+#### 3.3.1 Wet Lithography
+
+Fill the gap between the lens and the wafer with water is called **wet lithography** or **immersion lithography**.
+
+#### 3.3.2 Electron Lighography
+
+Electron-beam lithography has long been used to fabricate the photomasks used in optical lithography and for EUVL (extreme UV lithography).
+
+#### 3.3.3 Nanoimprint
+
+### 3.4 Pattern Transfer-Etching
+
+- wet etching (isotropic)
+- dry etching (Aniostropic) (plasma etching) (reactive-ion etching RIE)
+- end-point detector
+- plasma process-induced damage / wafer charging damage
+- antenna effect
+
+### 3.5 Doping
+
+dopant profile:
+- predeposition
+  - ion implantation
+  - gas-source doping
+  - solid-source diffusion
+- drive-in diffusion
+
+#### 3.5.1 Ion Implantation
+
+- anneal
+- dopant activation
+
+$$
+N(x)=\frac{N_i}{\sqrt{2\pi}(\Delta R)}\cdot\exp[-(x-R)^2/2\Delta R^2]
+$$
+
+$N_i$ called the **implantation dose**. *R* called the **implantation range**, and $\Delta R$ called **implantation straggle**.
+
+#### 3.5.2 Gas-Source Doping
+
+#### 3.5.3 Solid-Source Diffusion
+
+### 3.6 Dopant Diffusion
+
+- PN junction
+- junction depth
+
+$$
+N(x,t)=\frac{N_0}{\sqrt{\pi D t}}\exp(-x/4Dt)
+$$
+
+$D$ is the **diffusivity**. 
+
+**Shallow junctions** and **rapid thermal annealing**:
+
+- furnace annealing
+- rapid thermal annealing (RTA)
+- rapid thermal oxidation (RTO)
+- rapid thermal chemical vapor deposition (RTCVD)
+- rapid thermal processing (RTP)
+- flash annealing
+- laser annealing
+- transient enhanved diffusion (TED)
+
+### 3.7 Thin-Film Deposition
+
+- solid material
+  - crastalline
+  - polycrystalline
+  - amorphous
+
+#### 3.7.1 Sputtering
+
+Spttering can be combined with a chemical reaction in **reactive sputtering**.
+
+Sputtering is sometimes called a method of **physical vapor deposition (PVD)**.
+
+#### 3.7.2 Chemical Vapor Deposition (CVD)
+
+- step coverage
+- high-temperature oxide (HTO)
+- low-pressure chemical vapor deposition (LPCVD)
+- plasma-enhanved chemical vapor deposition (PECVD)
+- in situ doping
+
+#### 3.7.3 Epitaxy
+
+- hetero-junction
+
+### 3.8 Interconnect—The Back-End Process
+
+- metallization
+- intermetal dielectric
+- via
+- electromigration
+- damascene
+- chemical-mechanical polishing (CMP)
+- low-*k* dielectrics
+- cross talk
+- front-end process
+- planarization
+
+### 3.9 Testing, Assembly, and Qualification
+
+- multi-chip modules (MCM)
+- solder bumps
+- flip-chip
+- qualification
+- operating life test
+- burn-in
+
+
+## 4. PN and Metal-Semiconductor Junctions
+
+A PN junction has rectifying current-voltage characteristics, as a device, it is called a **rectifier** or a **diode**.
+
+### 4.1 Building Blocks of the PN Junction Theory
+
+The idealized PN juction has the uniformly doped P and N layers, known as **step junction** or **abrupt junction**.
+
+#### 4.1.1 Energy Band Diagram and Depletion Layer of a PN Junction
+
+#### 4.1.2 Built-In Potential
+
+$$
+\phi_{bi}=\frac{kT}q\ln\frac{N_dN_a}{n_i^2}
+$$
+
+Typically,$\phi_{bi}$ is about 0.9 V for a silicon PN junction.
+
+#### 4.1.3 Poisson's Equation
+
+$$
+\frac{\mathrm d^2V}{\mathrm d x^2}=-\frac{\mathrm d E}{\text d x}=-\frac\rho{\varepsilon_S}
+$$
+
+$\varepsilon_S$ is the semiconductor permittivity and, for silicon, is equal to 12 times the permittivity of free space. $\rho$ is the charge density and $E$ is the electric field.
+
+### 4.2 Depletion-Layer Model
+
+The charge density is zero everywhere except in the depletion layer.
+
+#### 4.2.1 Field and Potential in the Depletion Layer
+
+> The depletion layer penetrates primarily into the lighter doping side, and the width of the depletion layer in the heavily doped material can often be neglected. It may be helpful to think that a heavily doped semiconductor is similar to metal.
+
+$$
+E(x)=\begin{cases}\frac{qN_a}{\varepsilon_S}(x_P-x)\quad 0\le x\le x_P\\ \frac{qN_d}{\varepsilon_S}(x-x_N)\quad x_N\le x\le 0\end{cases}
+\\V(x)=\begin{cases}-\frac{qN_a}{2\varepsilon_S}(x_P-x)^2\quad 0\le x\le x_P\\ \phi_{bi}-\frac{qN_d}{2\varepsilon_S}(x-x_N)^2\quad x_N\le x\le 0\end{cases}
+$$
+
+#### 4.2.2 Depletion-Layer Width
+
+$$
+W_{dep}=x_P-x_N=\sqrt{\frac{2\varepsilon_S\phi_{bi}}q(\frac1{N_a}+\frac1{N_d})}
+$$
+
+The depletion-layer width is determined by the lighter doping concentration.
+
+### 4.3 Reverse-Biased PN Junction
+
+$$
+W_{dep}=\sqrt{\frac{2\varepsilon_S(\phi_{bi}+V_r)}{qN}}
+$$
+
+> The depletion layer widen as the junction is more reverse biased to dissipate the extra voltage drop across it.
+
+### 4.4 Capacitance-Voltage Characteristics
+
+$$
+C_{dep}=A\frac{\varepsilon_S}{W_{dep}}
+$$
+
+Numerically, $C\approx 1 f\text{F/}\mu m ^2$ when $W_{dep}=0.1\mu m$.
+
+### 4.5 Junction Breakdown
+
+There is nothing inherently destructive about junction breakdown. 
+
+#### 4.5.1 Peak Electric Field
+
+$$
+E_p=E(0)=\sqrt{\frac{2qN}{\varepsilon_S}(\phi_{bi}+|V_r|)}\\
+V_B=\frac{\varepsilon_SE_{crit}^2}{2qN}-\phi_{bi}
+$$
+
+#### 4.5.2 Tunneling Breakdown
+
+$$
+J=Ge^{-H/\varepsilon_p}
+$$
+
+$G$ and $H$ are constants for a given semiconductor.
+
+#### 4.5.3 Avalanche Breakdown
+
+$$
+V_B=\frac{\varepsilon_SE_{crit}^2}{2qN}\approx15\times(\frac{10^{17}}{N})^{0.6}
+$$
+
+For silicon, $E_{crit}$ is about $5\times 10^5$ V/cm at $N=10^{17}\text{cm}^{-3}$,and is approximately proportional to $N^{0.2}$.
+
+### 4.6 Carrier Injection Under Forward Bias—Quasi-Equilibrium Boundary Condition
+
+$$
+n(x_P)=n_{P0}e^{qV/kT}=\frac{n_i^2}{N_a}e^{qV/kT}\\
+p(x_N)=p_{N0}e^{qV/kT}=\frac{n_i^2}{N_d}e^{qV/kT}
+$$
+
+This equation is called the **quasi-equilibrium boundary condition** or the **Shockley boundary condition**. $\exp(qV/kT)=10^{10}$ when forward bias is 0.6V. This equation is also valid for a reverse bias, in which situation the minority carrier is essentially zero, known as **minority carrier extraction**.
+$$
+\Delta n(x_P)=n(x_P)-n_{P0}=n_{P0}(e^{qV/kT}-1)\\
+\Delta p(x_N)=p(x_N)-p_{n0}=p_{N0}(e^{qV/kT}-1)
+$$
+
+### 4.7 Current Continuity Equation
+
+$$
+\frac{\text d ^2\Delta p}{\text d x^2}=\frac{\Delta p}{D_p\tau_p}=\frac{\Delta p}{L_p^2}\\
+\frac{\text d ^2\Delta n}{\text d x^2}=\frac{\Delta n}{D_n\tau_n}=\frac{\Delta n}{L_n^2}\\
+$$
+
+$L_n$ and $L_p$ are called the hole and electron **diffusion lengths**. They vary from a few $\mu m$ to hundreds of $\mu m$ depending on $\tau$.
+
+### 4.8 Excess Carriers in Forward-Biased PN Junction
+
+$$
+\Delta p(x)=p_{N0}(e^{qV/kT}-1)e^{-(x-x_N)/L_p},\quad x>x_N\\
+\Delta n(x)=n_{P0}(e^{qV/kT}-1)e^{(x-x_P)/L_n},\quad x< x_P
+$$
+
+The exponentially decaying density is because diffuse and recombination.
+
+### 4.9 PN Diode IV Characteristics
+
+$$
+\text{Total current}=J_{pN}(x_N)+J_{nP}(x_P)=(q\frac{D_p}{L_p}p_{N0}+q\frac{D_n}{L_n}n_{P0})(e^{qV/kT}-1)\\
+I=I_0(e^{qV/kT}-1)\\
+I_0=Aqn_i^2(\frac{D_p}{L_pN_d}+\frac{D_n}{L_nN_a})
+$$
+
+$A$ is the diode area and $I_0$ is known as the **reverse saturation current**. It is often said that Si PN diodes have a turn-on voltage of about 0.6V at room temperature. 
+
+#### 4.9.1 Contributions from the Depletion Region
+
+We neglect hte recombination in the depletion region before. In reality, that contributes to the current, known as the **SCR current** for **space-charge region current**.
+$$
+pn=n_i^2e^{qV/kT}
+$$
+Recombination rate is the largest where
+$$
+n\approx p\approx n_ie^{qV/2kT}\\
+\text{net recombination rate}=\frac{n_i}{\tau_{dep}}(e^{qV/2kT}-1)\\
+I=I_0(e^{qV/kT}-1)+A\frac{qn_iW_{Dep}}{\tau_{dep}}(e^{qV/2kT}-1)\\
+I_{\text{leakage}}=I_0+A\frac{qn_iW_{dep}}{\tau_{dep}}
+$$
+
+### 4.10 Charge Storage
+
+$$
+Q=I\tau_S
+$$
+
+$\tau_S$ is called the **charge-storage time**.
+
+### 4.11 Small-Signal Model of the Diode
+
+The diode appears to the analog circuit as a parrallel RC circuit.
+$$
+G=\frac1R=\frac{\text d I}{\text d V}=I_{DC}\bigg/\frac{kT}q\\
+C=\frac{\text d Q}{\text d V}=\tau_S\frac{\text d I}{\text d V}=\tau_SG=\tau_SI_{DC}\bigg/\frac{kT}q
+$$
+$\tau_S$ is often called the **diffusion capacitance** or the **charge-storage capacitance**.
+
+To be more accurate, one can add to the second equation a term $A\varepsilon_S/W_{dep}$, repsenting the depletion-layer capacitance. Under strong forward bias, the diffusion capacitance usually overwhelms it.
+
+### 4.12 Solar cells
+
+#### 4.12.1 Solar Cell Basics
+
+$$
+I=I_0(e^{qV/kT}-1)-I_{SC}
+$$
+
+$I_{SC}$ stands for **short-circuit current**, it is proportional to the light intensity and to the cell area.
+
+#### 4.12.2 Light Penetration Depth—Direct-Gap and Indirect-Gap Semiconductors
+
+$$
+\text{Light intensity}(x)\propto e^{-\alpha x}
+$$
+
+$\alpha$ is called the **absorption coefficient**. $1/\alpha$ is called the light **penetration depth**.
+$$
+I_{sc}=AJ_p(0)=AqL_pG
+$$
+
+The open-circuit voltage:
+$$
+V_{oc}=\frac{kT}q\ln(\tau_pGN_d/n_i^2)
+$$
+
+#### 4.12.4 Output Power
+
+$$
+P=I_{sc}\times V_{oc}\times FF
+$$
+
+$FF$ is called the **fill factor**, which is the ratio of the maximum $|I\times V|$ to $I_{sc}\times V_{oc}$. $FF$ is typically around 0.75.
+
+### 4.13 Light-Emitting Diodes and Solid-State Lighting
+
+#### 4.13.1 LED Materials and Structures
+
+#### 4.13.2 Solid-State Lighting
+
+### 4.14 Diode Lasers
+
+#### 4.14.1 Light Amplification
+
+#### 4.14.2 Optical Feedback
+
+#### 4.14.3 Diode Laser Applications
+
+### 4.15 Photodiodes
+
+### 4.16 Schottky Barriers
+
+$$
+\phi_{Bn}+\phi_{Bp}=E_g\\
+\phi_{Bn}=\psi_M-\chi_{Si}
+$$
+
+- Fermi-level pinning
+
+### 4.17 Thermionic Emission Theory
+
+$$
+v_{thx}=-\sqrt{2kT/\pi m_n}\\
+J_{S\rightarrow M}=-\frac12 qnv_{thx}=\frac{4\pi qm_nk^2}{h^3}T^2e^{-q\phi_B/kT}e^{qV/kT}\\
+=J_0e^{qV/kT}
+$$
+
+- $J_0\approx 100\exp(-q\phi_B/kT)$ is larger if $\phi_B$ is smaller
+- $J_{S\rightarrow M}$ is only a function of $\phi_B-V$
+
+### 4.18 Schottky Diodes
+
+$$
+I=I_0(e^{qV/kT}-1)\\
+I_0=AKT^2e^{-q\phi_B/kT}
+$$
+
+$K\approx 100\text A/(\text{cm}^2/\text K^2)$ is known as the **Richardson constant**.
+
+### 4.19 Applications of Schottky Diodes
+
+### 4.20 Quantum Mechanical Tunneling
+
+Tunneling probability
+$$
+P\approx \exp\left(-2T\sqrt{\frac{8\pi^2m}{h^2}(V_H-E)}\right)
+$$
+
+### 4.21 Ohmic Contacts
+
+$$
+T\approx W_{dep}/2=\sqrt{\frac{\varepsilon_S\phi_{Bn}}{2qN_d}}\\
+P\approx e^{-H\phi_{Bn}/\sqrt{N_d}}\\
+H=\frac{4\pi}{h}\sqrt{\frac{\varepsilon_S m_n}q}\\
+J_{S\rightarrow M}=-J_{M\rightarrow S}=\frac12qN_dv_{thx}P
+$$
+
+If a small voltage is applied, the balance between $J_{S\rightarrow M}$ and $J_{M\rightarrow S}$ is broken.
+$$
+J_{S\rightarrow M}=\frac12qN_dv_{thx}e^{-H(\phi_{Bn}-V)/\sqrt{N_d}}\\
+R_c=\frac VJ=\frac{2e^{H\phi_{Bn}/\sqrt{N_d}}}{qv_{thx}H\sqrt{N_d}}
+$$
+$R_c$ is the **specific contact resistance**.
+
+## 5. MOS Capacitor
+
+### 5.1 Flat-Band Condition and Flat-Band Voltage
+
+$$
+V_{fb}=\Psi_g-\Psi_s
+$$
+
+### 5.2 Surface Accumulation
+
+$$
+V_g=V_{fb}+\phi_s+V_{ox}\\
+V_{ox}=\varepsilon_{ox}T_{ox} =-\frac {Q_{sub}}{C_{ox}}
+$$
+
+### 5.3 Surface Depletion
+
+$$
+V_{ox}=-\frac{Q_{sub}}{C_{ox}}=-\frac{Q_{dep}}{C_{ox}}=\frac{qN_aW_{dep}}{C_{ox}}=\frac{\sqrt{qN_a2\varepsilon_s\phi_s}}{C_{ox}}\\
+V_g=V_{fb}+ \frac{qN_aW_{dep}^2}{2\varepsilon_s}+\frac{qN_aW_{dep}}{C_{ox}}
+$$
+
+### 5.4 Thershold Condition and Threshold Voltage
+
+$$
+\phi_{st}=2\phi_B=2\frac{kT}q\ln{\frac{N_a}{N_i}}\\
+V_t=V_{fb}+2\phi_B+\frac{\sqrt{qN_a2\varepsilon_s2\phi_B}}{C_{ox}}
+$$
+
+### 5.5 Strong Inversion Beyond Threshold
+
+$$
+W_{dmax}=\sqrt{\frac{2\varepsilon_s2\phi_B}{qN_a}}\\
+Q_{inv}=-C_{ox}(V_g-V_t)
+$$
+
+#### 5.5.1 Choice of $V_t$ and Gate Doping Type
+
+$$
+Q_{dep}=qN_aW_{dep}
+$$
+
+### 5.6 MOS C-V Characteristics
+
+$$
+C_{dep}=\frac{\varepsilon_s}{W_{dep}}\\
+\frac1C=\frac1{C_{ox}}+\frac1 {C_{dep}}\\
+\frac1C=\sqrt{\frac1{C_{ox}^2}+\frac{2(V_g-V_{fb})}{qN_a\varepsilon_s}}
+$$
+
+### 5.7 Oxide Charage—A Modification to $V_{fb}$ and $V_t^4$
+
+$$
+V_{fb}=V_{fb0}-\frac{Q_{ox}}{C_{ox}}
+$$
+
+### 5.8 Poly-Si Gate Depletion—Effective Increase in $T_{ox}$
+
+$$
+W_{dpoly}=\frac{\varepsilon_{ox}V_{ox}}{qN_{poly}}\\
+C=\left(\frac1{C_{ox}}+\frac1{C_{poly}}\right)^{-1}=\left(\frac{T_{ox}}{\varepsilon_{ox}}+\frac{W_{dpoly}}{\varepsilon_s} \right)^{-1}=\frac{\varepsilon_{ox}}{T_{ox}+W_{dpoly}/3}\\
+Q_{inv}=-C_{ox}(V_g-\phi_{poly}-V_t)
+$$
+
+### 5.9 Inversion and Accumulation Charge-Layer Thicknesses and Quantum Mechanical Effect
+
+$$
+T_{oxe}=T_{ox}+W_{dpoly}/3+T_{inv}/3\\
+Q_{inv}=-C_{oxe}(V_g-V_t)=\frac{\varepsilon_{ox}}{T_{oxe}}(V_g-V_t)
+$$
+
+### 5.10 CCD Image and CMOS Imager
+
+#### 5.10.1 CCD Imager
+
+- Charge-coupled device
+- Deep-depletion
+
+#### 5.10.2 CMOS Imager
+
+## 6. MOS Transistor
+
+### 6.1 Introduction to the MOSFET
+
+### 6.2 Complementary MOS (CMOS) Technology
+
+### 6.3 Surface Mobilities and High-Mobility FETs
+
+#### 6.3.1 Surface Mobilities
+
+$$
+I_{ds}=WQ_{inv}v=WQ_{inv}\nu_{ns}E \\=WC_{oxe}(V_{gs}-V_t)\mu_{ns}V_{ds}/L
+$$
+
+$W$ is the channel width, $E$ is the channel electric field, $\mu_{ns}$ is the electron **surface mobility** or the **effective mobility**.
+$$
+\frac{E_b+E_t}2=\frac{\varepsilon_{ox}}{2\varepsilon_sT_{oxe}}(V_{gs}+V_t+0.2\text V)\\
+=\frac{V_{gs}+V_t+0.2\text V}{6T_{oxe}}\quad \text{for N}^+\text{ poly-gate NFET}
+$$
+
