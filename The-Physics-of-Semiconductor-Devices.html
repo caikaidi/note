@@ -46,6 +46,32 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -70,18 +96,18 @@
 
 
 
-<meta name="description" content="Physics of Semiconductor Device">
+<meta name="description" content="A long lesson that takes all of my time.">
 <meta name="keywords" content="Semiconductor,Physics">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Physics of Semiconductor Devices">
 <meta property="og:url" content="http://caikaidi.github.io/note/The-Physics-of-Semiconductor-Devices.html">
 <meta property="og:site_name" content="note">
-<meta property="og:description" content="Physics of Semiconductor Device">
+<meta property="og:description" content="A long lesson that takes all of my time.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-13T12:14:50.871Z">
+<meta property="og:updated_time" content="2018-07-09T12:10:42.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Physics of Semiconductor Devices">
-<meta name="twitter:description" content="Physics of Semiconductor Device">
+<meta name="twitter:description" content="A long lesson that takes all of my time.">
 
 
 
@@ -91,7 +117,7 @@
     root: '/note/',
     scheme: 'Pisces',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -136,7 +162,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,6 +306,27 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4,588
+                </span>
+              
+
+              
+
+              
+            </div>
+          
 
           
 
@@ -296,7 +343,8 @@
       
 
       
-        <h1 id="Physics-of-Semiconductor-Device"><a href="#Physics-of-Semiconductor-Device" class="headerlink" title="Physics of Semiconductor Device"></a>Physics of Semiconductor Device</h1><a id="more"></a>
+        <p>A long lesson that takes all of my time.</p>
+<a id="more"></a>
 <h2 id="1-Electrons-and-Holes-in-Semiconductors"><a href="#1-Electrons-and-Holes-in-Semiconductors" class="headerlink" title="1. Electrons and Holes in Semiconductors"></a>1. Electrons and Holes in Semiconductors</h2><h3 id="1-1-Silicon-Crystal-Sturcture"><a href="#1-1-Silicon-Crystal-Sturcture" class="headerlink" title="1.1 Silicon Crystal Sturcture"></a>1.1 Silicon Crystal Sturcture</h3><ul>
 <li>unit cell</li>
 <li>lattice constant</li>
@@ -327,7 +375,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="1-3-2-Donors-and-Acceptors-in-the-Band-Model"><a href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model" class="headerlink" title="1.3.2 Donors and Acceptors in the Band Model"></a>1.3.2 Donors and Acceptors in the Band Model</h3><ul>
+<h4 id="1-3-2-Donors-and-Acceptors-in-the-Band-Model"><a href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model" class="headerlink" title="1.3.2 Donors and Acceptors in the Band Model"></a>1.3.2 Donors and Acceptors in the Band Model</h4><ul>
 <li>shallow levels</li>
 <li>deep levels</li>
 </ul>
@@ -446,10 +494,9 @@
 <h4 id="2-2-2-Mechanisms-of-Carrier-Scattering"><a href="#2-2-2-Mechanisms-of-Carrier-Scattering" class="headerlink" title="2.2.2 Mechanisms of Carrier Scattering"></a>2.2.2 Mechanisms of Carrier Scattering</h4><ul>
 <li><p>phonon scattering<br>$$<br>\mu_{ph}=\frac{q\tau_{ph}}{m^*}\\<br>\mu_{\text{phonon}}\propto \tau_{ph}\\<br>\propto\frac1{\text{phonon density}\times\text{carrier thermal velocity}}\\<br>\propto\frac1{T\cdot T^{1/2}}\propto T^{-3/2}<br>$$</p>
 </li>
-<li><p>ionized impurity scattering<br>$$<br>\mu_{\text{impurity}}\propto \frac{T^{3/2}}{N_a+N_d}<br>$$</p>
+<li><p>ionized impurity scattering<br>$$<br>\mu_{\text{impurity}}\propto \frac{T^{3/2}}{N_a+N_d}\\<br>\frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\<br>\frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}<br>$$</p>
 </li>
 </ul>
-<p>$$<br>\frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\<br>\frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}<br>$$</p>
 <p>Velocity Saturation: electron and hole velocities saturate at around $10^7$cm/s and do not increase no matter how large $\varepsilon$ is. The culprit is <strong>optical phonon scattering</strong>. When the kinetic energy of a carrier exceeds the optical phonon energy $E_{opt}$, it generates an optical phonon and loses the kinetic energy. Therefore, the velocity does not rise above <strong>saturation velocity</strong>, $\nu_{sat}$.<br>$$<br>\frac12m^*\nu_{sat}^2=E_{opt}\Rightarrow \nu_{sat}=\sqrt{\frac{2E_{opt}}{m^*}}<br>$$<br>When we deal with devices whose sizes are smaller than the mean free path, the scattering is about to disappear. That is called <strong>ballistic transport</strong>.</p>
 <h4 id="2-2-3-Drift-Current-and-Conductivity"><a href="#2-2-3-Drift-Current-and-Conductivity" class="headerlink" title="2.2.3 Drift Current and Conductivity"></a>2.2.3 Drift Current and Conductivity</h4><p>$$<br>J_{p,drift}=qp\nu=qp\mu_p\varepsilon\\<br>J_{n,drift}=-qn\nu=qn\mu_n\varepsilon\\<br>J_{drift}=J_{n,drift}+J_{p,drift}=(qn\mu_n+qp\mu_p)\varepsilon\\<br>\sigma=qn\mu_n+qp\mu_p<br>$$</p>
 <p>$\sigma$ Is the quantity in the parentheses, called the <strong>conductivity</strong>. Its reciprocal is the <strong>resistivity</strong>, $\rho$.</p>
@@ -630,7 +677,81 @@
 <h3 id="4-19-Applications-of-Schottky-Diodes"><a href="#4-19-Applications-of-Schottky-Diodes" class="headerlink" title="4.19 Applications of Schottky Diodes"></a>4.19 Applications of Schottky Diodes</h3><h3 id="4-20-Quantum-Mechanical-Tunneling"><a href="#4-20-Quantum-Mechanical-Tunneling" class="headerlink" title="4.20 Quantum Mechanical Tunneling"></a>4.20 Quantum Mechanical Tunneling</h3><p>Tunneling probability<br>$$<br>P\approx \exp\left(-2T\sqrt{\frac{8\pi^2m}{h^2}(V_H-E)}\right)<br>$$</p>
 <h3 id="4-21-Ohmic-Contacts"><a href="#4-21-Ohmic-Contacts" class="headerlink" title="4.21 Ohmic Contacts"></a>4.21 Ohmic Contacts</h3><p>$$<br>T\approx W_{dep}/2=\sqrt{\frac{\varepsilon_S\phi_{Bn}}{2qN_d}}\\<br>P\approx e^{-H\phi_{Bn}/\sqrt{N_d}}\\<br>H=\frac{4\pi}{h}\sqrt{\frac{\varepsilon_S m_n}q}\\<br>J_{S\rightarrow M}=-J_{M\rightarrow S}=\frac12qN_dv_{thx}P<br>$$</p>
 <p>If a small voltage is applied, the balance between $J_{S\rightarrow M}$ and $J_{M\rightarrow S}$ is broken.<br>$$<br>J_{S\rightarrow M}=\frac12qN_dv_{thx}e^{-H(\phi_{Bn}-V)/\sqrt{N_d}}\\<br>R_c=\frac VJ=\frac{2e^{H\phi_{Bn}/\sqrt{N_d}}}{qv_{thx}H\sqrt{N_d}}<br>$$<br>$R_c$ is the <strong>specific contact resistance</strong>.</p>
-<h2 id="5-MOS-Capacitor"><a href="#5-MOS-Capacitor" class="headerlink" title="5. MOS Capacitor"></a>5. MOS Capacitor</h2><h3 id="5-1-Flat-Band-Condition-and-Flat-Band-Voltage"><a href="#5-1-Flat-Band-Condition-and-Flat-Band-Voltage" class="headerlink" title="5.1 Flat-Band Condition and Flat-Band Voltage"></a>5.1 Flat-Band Condition and Flat-Band Voltage</h3>
+<h2 id="5-MOS-Capacitor"><a href="#5-MOS-Capacitor" class="headerlink" title="5. MOS Capacitor"></a>5. MOS Capacitor</h2><h3 id="5-1-Flat-Band-Condition-and-Flat-Band-Voltage"><a href="#5-1-Flat-Band-Condition-and-Flat-Band-Voltage" class="headerlink" title="5.1 Flat-Band Condition and Flat-Band Voltage"></a>5.1 Flat-Band Condition and Flat-Band Voltage</h3><p>$$<br>V_{fb}=\Psi_g-\Psi_s<br>$$</p>
+<h3 id="5-2-Surface-Accumulation"><a href="#5-2-Surface-Accumulation" class="headerlink" title="5.2 Surface Accumulation"></a>5.2 Surface Accumulation</h3><p>$$<br>V_g=V_{fb}+\phi_s+V_{ox}\\<br>V_{ox}=\varepsilon_{ox}T_{ox} =-\frac {Q_{sub}}{C_{ox}}<br>$$</p>
+<h3 id="5-3-Surface-Depletion"><a href="#5-3-Surface-Depletion" class="headerlink" title="5.3 Surface Depletion"></a>5.3 Surface Depletion</h3><p>$$<br>V_{ox}=-\frac{Q_{sub}}{C_{ox}}=-\frac{Q_{dep}}{C_{ox}}=\frac{qN_aW_{dep}}{C_{ox}}=\frac{\sqrt{qN_a2\varepsilon_s\phi_s}}{C_{ox}}\\<br>V_g=V_{fb}+ \frac{qN_aW_{dep}^2}{2\varepsilon_s}+\frac{qN_aW_{dep}}{C_{ox}}<br>$$</p>
+<h3 id="5-4-Thershold-Condition-and-Threshold-Voltage"><a href="#5-4-Thershold-Condition-and-Threshold-Voltage" class="headerlink" title="5.4 Thershold Condition and Threshold Voltage"></a>5.4 Thershold Condition and Threshold Voltage</h3><p>$$<br>\phi_{st}=2\phi_B=2\frac{kT}q\ln{\frac{N_a}{N_i}}\\<br>V_t=V_{fb}+2\phi_B+\frac{\sqrt{qN_a2\varepsilon_s2\phi_B}}{C_{ox}}<br>$$</p>
+<h3 id="5-5-Strong-Inversion-Beyond-Threshold"><a href="#5-5-Strong-Inversion-Beyond-Threshold" class="headerlink" title="5.5 Strong Inversion Beyond Threshold"></a>5.5 Strong Inversion Beyond Threshold</h3><p>$$<br>W_{dmax}=\sqrt{\frac{2\varepsilon_s2\phi_B}{qN_a}}\\<br>Q_{inv}=-C_{ox}(V_g-V_t)<br>$$</p>
+<h4 id="5-5-1-Choice-of-V-t-and-Gate-Doping-Type"><a href="#5-5-1-Choice-of-V-t-and-Gate-Doping-Type" class="headerlink" title="5.5.1 Choice of $V_t$ and Gate Doping Type"></a>5.5.1 Choice of $V_t$ and Gate Doping Type</h4><p>$$<br>Q_{dep}=qN_aW_{dep}<br>$$</p>
+<h3 id="5-6-MOS-C-V-Characteristics"><a href="#5-6-MOS-C-V-Characteristics" class="headerlink" title="5.6 MOS C-V Characteristics"></a>5.6 MOS C-V Characteristics</h3><p>$$<br>C_{dep}=\frac{\varepsilon_s}{W_{dep}}\\<br>\frac1C=\frac1{C_{ox}}+\frac1 {C_{dep}}\\<br>\frac1C=\sqrt{\frac1{C_{ox}^2}+\frac{2(V_g-V_{fb})}{qN_a\varepsilon_s}}<br>$$</p>
+<h3 id="5-7-Oxide-Charage—A-Modification-to-V-fb-and-V-t-4"><a href="#5-7-Oxide-Charage—A-Modification-to-V-fb-and-V-t-4" class="headerlink" title="5.7 Oxide Charage—A Modification to $V_{fb}$ and $V_t^4$"></a>5.7 Oxide Charage—A Modification to $V_{fb}$ and $V_t^4$</h3><p>$$<br>V_{fb}=V_{fb0}-\frac{Q_{ox}}{C_{ox}}<br>$$</p>
+<h3 id="5-8-Poly-Si-Gate-Depletion—Effective-Increase-in-T-ox"><a href="#5-8-Poly-Si-Gate-Depletion—Effective-Increase-in-T-ox" class="headerlink" title="5.8 Poly-Si Gate Depletion—Effective Increase in $T_{ox}$"></a>5.8 Poly-Si Gate Depletion—Effective Increase in $T_{ox}$</h3><p>$$<br>W_{dpoly}=\frac{\varepsilon_{ox}V_{ox}}{qN_{poly}}\\<br>C=\left(\frac1{C_{ox}}+\frac1{C_{poly}}\right)^{-1}=\left(\frac{T_{ox}}{\varepsilon_{ox}}+\frac{W_{dpoly}}{\varepsilon_s} \right)^{-1}=\frac{\varepsilon_{ox}}{T_{ox}+W_{dpoly}/3}\\<br>Q_{inv}=-C_{ox}(V_g-\phi_{poly}-V_t)<br>$$</p>
+<h3 id="5-9-Inversion-and-Accumulation-Charge-Layer-Thicknesses-and-Quantum-Mechanical-Effect"><a href="#5-9-Inversion-and-Accumulation-Charge-Layer-Thicknesses-and-Quantum-Mechanical-Effect" class="headerlink" title="5.9 Inversion and Accumulation Charge-Layer Thicknesses and Quantum Mechanical Effect"></a>5.9 Inversion and Accumulation Charge-Layer Thicknesses and Quantum Mechanical Effect</h3><p>$$<br>T_{oxe}=T_{ox}+W_{dpoly}/3+T_{inv}/3\\<br>Q_{inv}=-C_{oxe}(V_g-V_t)=\frac{\varepsilon_{ox}}{T_{oxe}}(V_g-V_t)<br>$$</p>
+<h3 id="5-10-CCD-Image-and-CMOS-Imager"><a href="#5-10-CCD-Image-and-CMOS-Imager" class="headerlink" title="5.10 CCD Image and CMOS Imager"></a>5.10 CCD Image and CMOS Imager</h3><h4 id="5-10-1-CCD-Imager"><a href="#5-10-1-CCD-Imager" class="headerlink" title="5.10.1 CCD Imager"></a>5.10.1 CCD Imager</h4><ul>
+<li>Charge-coupled device</li>
+<li>Deep-depletion</li>
+</ul>
+<h4 id="5-10-2-CMOS-Imager"><a href="#5-10-2-CMOS-Imager" class="headerlink" title="5.10.2 CMOS Imager"></a>5.10.2 CMOS Imager</h4><h2 id="6-MOS-Transistor"><a href="#6-MOS-Transistor" class="headerlink" title="6. MOS Transistor"></a>6. MOS Transistor</h2><h3 id="6-1-Introduction-to-the-MOSFET"><a href="#6-1-Introduction-to-the-MOSFET" class="headerlink" title="6.1 Introduction to the MOSFET"></a>6.1 Introduction to the MOSFET</h3><ul>
+<li>source</li>
+<li>drain</li>
+<li>FET</li>
+<li>transistor</li>
+</ul>
+<h3 id="6-2-Complementary-MOS-CMOS-Technology"><a href="#6-2-Complementary-MOS-CMOS-Technology" class="headerlink" title="6.2 Complementary MOS (CMOS) Technology"></a>6.2 Complementary MOS (CMOS) Technology</h3><h3 id="6-3-Surface-Mobilities-and-High-Mobility-FETs"><a href="#6-3-Surface-Mobilities-and-High-Mobility-FETs" class="headerlink" title="6.3 Surface Mobilities and High-Mobility FETs"></a>6.3 Surface Mobilities and High-Mobility FETs</h3><h4 id="6-3-1-Surface-Mobilities"><a href="#6-3-1-Surface-Mobilities" class="headerlink" title="6.3.1 Surface Mobilities"></a>6.3.1 Surface Mobilities</h4><p>$$<br>I_{ds}=WQ_{inv}v=WQ_{inv}\nu_{ns}E \\=WC_{oxe}(V_{gs}-V_t)\mu_{ns}V_{ds}/L<br>$$</p>
+<p>$W$ is the channel width, $E$ is the channel electric field, $\mu_{ns}$ is the electron <strong>surface mobility</strong> or the <strong>effective mobility</strong>.<br>$$<br>\frac{E_b+E_t}2=\frac{\varepsilon_{ox}}{2\varepsilon_sT_{oxe}}(V_{gs}+V_t+0.2\text V)\\<br>=\frac{V_{gs}+V_t+0.2\text V}{6T_{oxe}}\quad \text{for N}^+\text{ poly-gate NFET}<br>$$</p>
+<h4 id="6-3-2-GaAs-MESFET"><a href="#6-3-2-GaAs-MESFET" class="headerlink" title="6.3.2 GaAs MESFET"></a>6.3.2 GaAs MESFET</h4><p>Use a Schottky junction to serve as the control gate of a FET, called MESFET for metal-semiconductor field-effect transistor.</p>
+<ul>
+<li>If the transistor is conductie at $V_g=0$ and requires a reverse bias gate voltage to turn it off, it is called a <strong>depletion-mode transistor</strong>.</li>
+<li>If a forward gate voltage is needed to turn the transistor on, this is known as an <strong>enhancement-mode transistor</strong>.</li>
+</ul>
+<h4 id="6-3-3-HEMT"><a href="#6-3-3-HEMT" class="headerlink" title="6.3.3 HEMT"></a>6.3.3 HEMT</h4><p>By growing a thin epitaxial layer of GaAlAs over the undoped GaAs substrate, we significantly increased the electron mobility. This device is called <strong>HEMT</strong> or <strong>high electron-mobility transistor</strong>, or <strong>MODFET</strong> for <strong>modulation- doped FET</strong>. It is used in microwave communication, satellite TV receivers, etc.</p>
+<h4 id="6-3-4-JFET"><a href="#6-3-4-JFET" class="headerlink" title="6.3.4 JFET"></a>6.3.4 JFET</h4><p>If the Schottky junction in MESFET is replaced with a $\text P ^+\text N$ junction, the new structure is called a <strong>JFET</strong> or <strong>junction field-effect transistor</strong>.</p>
+<h3 id="6-4-MOSFET-V-t-Body-Effect-and-Steep-Retrograde-Doping"><a href="#6-4-MOSFET-V-t-Body-Effect-and-Steep-Retrograde-Doping" class="headerlink" title="6.4 MOSFET $V_t$, Body Effect, and Steep Retrograde Doping"></a>6.4 MOSFET $V_t$, Body Effect, and Steep Retrograde Doping</h3><p>$$<br>V_t(V_{sb})=V_{t0}+\frac{C_{dep}}{C_{oxe}}V_{sb}=V_{t0}+\alpha V_{sb}<br>$$</p>
+<p>The fact that $V_t$ is a function of the body is called the <strong>body effect</strong>. $\alpha$ is called the <strong>body effect coefficient</strong>.</p>
+<p><strong>Steep retrograde body doping profiles</strong>: light doping in a thin surface layer and very heavy doping underneath.</p>
+<h3 id="6-5-Q-inv-in-MOSFET"><a href="#6-5-Q-inv-in-MOSFET" class="headerlink" title="6.5 $Q_{inv}$ in MOSFET"></a>6.5 $Q_{inv}$ in MOSFET</h3><p>$$<br>Q_{inv}(x)=-C_{oxe}(V_{gs}-mV_{cs}-V_t)\\<br>m=1+\alpha =1+C_{dep}/C_{oxe}=1+3T_{oxe}/W_{dmax}<br>$$</p>
+<p>The body is sometimes called the <strong>back gate</strong> since it clearly has a similar though weaker effect on the channel charge. The back-gate effect on $Q_{inv}$ is often called the <strong>bulk-charge effect</strong>. $m$ is called the <strong>bulk-charge factor</strong>.</p>
+<h3 id="6-6-Basic-MOSFET-IV-Model"><a href="#6-6-Basic-MOSFET-IV-Model" class="headerlink" title="6.6 Basic MOSFET IV Model"></a>6.6 Basic MOSFET IV Model</h3><p>$$<br>I_{ds}=\frac W LC_{oxe}\mu_{ns}(V_{gs}-V_t-\frac m2V_{ds})V_{ds}\\<br>V_{dsat}=\frac{V_{gs}-V_t}m<br>$$</p>
+<p>$V_{dsat}$ is called the <strong>drain saturation voltage</strong>, </p>
+<h3 id="6-7-CMOS-Inverter–A-Circuit-Example"><a href="#6-7-CMOS-Inverter–A-Circuit-Example" class="headerlink" title="6.7 CMOS Inverter–A Circuit Example"></a>6.7 CMOS Inverter–A Circuit Example</h3><h4 id="6-7-1-Voltage-Transfer-Curve-VTC"><a href="#6-7-1-Voltage-Transfer-Curve-VTC" class="headerlink" title="6.7.1 Voltage Transfer Curve (VTC)"></a>6.7.1 Voltage Transfer Curve (VTC)</h4><h4 id="6-7-2-Inverter-Speed–The-Importanvce-of-I-on"><a href="#6-7-2-Inverter-Speed–The-Importanvce-of-I-on" class="headerlink" title="6.7.2 Inverter Speed–The Importanvce of $I_{on}$"></a>6.7.2 Inverter Speed–The Importanvce of $I_{on}$</h4><h4 id="6-7-3-Power-Consumption"><a href="#6-7-3-Power-Consumption" class="headerlink" title="6.7.3 Power Consumption"></a>6.7.3 Power Consumption</h4><p>$$<br>P_{\text{dynamic}}=V_{dd}\times\text{average current}=kCV_{dd}^2f<br>$$</p>
+<p>$f$ is the clock frequency and $k$ is an <strong>activity factor</strong> that represents the fact that a particular gate in a given circuit is not switched every clock cycle all the time.</p>
+<blockquote>
+<p>This dynamic power dominates the power consumption when the inverter is switched frequently. Power consumption can be reduced by lowering $V_{dd}$ and by minimizing all capacitances in the circuit as well as by reducing $k$. It is interesting to note that making $I_{on}$ large by using a small $L$ or improving the carrier mobility does not increase $P_{\text{dynamic}}$.</p>
+</blockquote>
+<p>$$<br>P_{\text{static}}=V_{dd}I_{off}<br>$$</p>
+<h3 id="6-8-Velocity-Saturation"><a href="#6-8-Velocity-Saturation" class="headerlink" title="6.8 Velocity Saturation"></a>6.8 Velocity Saturation</h3><h3 id="6-9-MOSFET-IV-Model-With-Velocity-Saturation"><a href="#6-9-MOSFET-IV-Model-With-Velocity-Saturation" class="headerlink" title="6.9 MOSFET IV Model With Velocity Saturation"></a>6.9 MOSFET IV Model With Velocity Saturation</h3><h4 id="6-9-1-Celocity-Saturation-vs-Pinch-Off"><a href="#6-9-1-Celocity-Saturation-vs-Pinch-Off" class="headerlink" title="6.9.1 Celocity Saturation vs. Pinch-Off"></a>6.9.1 Celocity Saturation vs. Pinch-Off</h4><h3 id="6-10-Parasitic-Source-Drain-Resistance"><a href="#6-10-Parasitic-Source-Drain-Resistance" class="headerlink" title="6.10 Parasitic Source-Drain Resistance"></a>6.10 Parasitic Source-Drain Resistance</h3><h3 id="6-11-Extraction-of-the-Series-Resistance-and-the-Effective-Channel-Length"><a href="#6-11-Extraction-of-the-Series-Resistance-and-the-Effective-Channel-Length" class="headerlink" title="6.11 Extraction of the Series Resistance and the Effective Channel Length"></a>6.11 Extraction of the Series Resistance and the Effective Channel Length</h3><h3 id="6-12-Velocity-Overshoot-and-Source-Velocity-Limit"><a href="#6-12-Velocity-Overshoot-and-Source-Velocity-Limit" class="headerlink" title="6.12 Velocity Overshoot and Source Velocity Limit"></a>6.12 Velocity Overshoot and Source Velocity Limit</h3><h3 id="6-13-Output-Conductance"><a href="#6-13-Output-Conductance" class="headerlink" title="6.13 Output Conductance"></a>6.13 Output Conductance</h3><h3 id="6-14-High-Frequency-Performance"><a href="#6-14-High-Frequency-Performance" class="headerlink" title="6.14 High-Frequency Performance"></a>6.14 High-Frequency Performance</h3><h3 id="6-15-MOSFET-Noises"><a href="#6-15-MOSFET-Noises" class="headerlink" title="6.15 MOSFET Noises"></a>6.15 MOSFET Noises</h3><h4 id="6-15-1-Thermal-Noise-of-a-Resistor"><a href="#6-15-1-Thermal-Noise-of-a-Resistor" class="headerlink" title="6.15.1 Thermal Noise of a Resistor"></a>6.15.1 Thermal Noise of a Resistor</h4><h4 id="6-15-2-MOSFET-Thermal-Noise"><a href="#6-15-2-MOSFET-Thermal-Noise" class="headerlink" title="6.15.2 MOSFET Thermal Noise"></a>6.15.2 MOSFET Thermal Noise</h4><h4 id="6-15-3-MOSFET-Flicker-Noise"><a href="#6-15-3-MOSFET-Flicker-Noise" class="headerlink" title="6.15.3 MOSFET Flicker Noise"></a>6.15.3 MOSFET Flicker Noise</h4><h4 id="6-15-4-Signal-to-Noise-Ratio-Noise-Factor-Noise-Figure"><a href="#6-15-4-Signal-to-Noise-Ratio-Noise-Factor-Noise-Figure" class="headerlink" title="6.15.4 Signal to Noise Ratio, Noise Factor, Noise Figure"></a>6.15.4 Signal to Noise Ratio, Noise Factor, Noise Figure</h4><h3 id="6-16-SRAM-DRAM-Noncolatile-Flash-Memory-Devices"><a href="#6-16-SRAM-DRAM-Noncolatile-Flash-Memory-Devices" class="headerlink" title="6.16 SRAM, DRAM, Noncolatile (Flash) Memory Devices"></a>6.16 SRAM, DRAM, Noncolatile (Flash) Memory Devices</h3><h4 id="6-16-1-SRAM"><a href="#6-16-1-SRAM" class="headerlink" title="6.16.1 SRAM"></a>6.16.1 SRAM</h4><h4 id="6-16-2-DRAM"><a href="#6-16-2-DRAM" class="headerlink" title="6.16.2 DRAM"></a>6.16.2 DRAM</h4><h4 id="6-16-3-Nonvolatile-Flash-Memory"><a href="#6-16-3-Nonvolatile-Flash-Memory" class="headerlink" title="6.16.3 Nonvolatile (Flash) Memory"></a>6.16.3 Nonvolatile (Flash) Memory</h4><h2 id="7-MOSFETs-in-ICs–Scaling-Leakage-and-Other-Topics"><a href="#7-MOSFETs-in-ICs–Scaling-Leakage-and-Other-Topics" class="headerlink" title="7. MOSFETs in ICs–Scaling, Leakage, and Other Topics"></a>7. MOSFETs in ICs–Scaling, Leakage, and Other Topics</h2><h3 id="7-1-Thechnology-Scaling–For-Cost-Speed-and-Power-Consumption"><a href="#7-1-Thechnology-Scaling–For-Cost-Speed-and-Power-Consumption" class="headerlink" title="7.1 Thechnology Scaling–For Cost, Speed, and Power Consumption"></a>7.1 Thechnology Scaling–For Cost, Speed, and Power Consumption</h3><h4 id="7-1-1-Innovations-Enable-Scaling"><a href="#7-1-1-Innovations-Enable-Scaling" class="headerlink" title="7.1.1 Innovations Enable Scaling"></a>7.1.1 Innovations Enable Scaling</h4><h4 id="7-1-2-Strained-Silicon-and-Other-Innovations"><a href="#7-1-2-Strained-Silicon-and-Other-Innovations" class="headerlink" title="7.1.2 Strained Silicon and Other Innovations"></a>7.1.2 Strained Silicon and Other Innovations</h4><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>2003</th>
+<th>2005</th>
+<th>2007</th>
+<th>2010</th>
+<th>2013</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technology Node (nm)</td>
+<td>90</td>
+<td>65</td>
+<td>45</td>
+<td>32</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Innovations</td>
+<td>Strained Silicon</td>
+<td></td>
+<td>High-k material</td>
+<td>Wet lithography</td>
+<td>FinFET</td>
+</tr>
+</tbody>
+</table>
+<h3 id="7-2-Subthreshold-Current–”Off”-is-Not-Totally-“Off”"><a href="#7-2-Subthreshold-Current–”Off”-is-Not-Totally-“Off”" class="headerlink" title="7.2 Subthreshold Current–”Off” is Not Totally “Off”"></a>7.2 Subthreshold Current–”Off” is Not Totally “Off”</h3><p>$$<br>I_{ds}(nA)=100\cdot \frac WL\cdot e^{q(V_{gs}-V_t)/\eta kT}<br>$$</p>
+<h3 id="7-3-V-t-Roll-Off–Short-Channel-MOSFETs-Leak-More"><a href="#7-3-V-t-Roll-Off–Short-Channel-MOSFETs-Leak-More" class="headerlink" title="7.3 $V_t$ Roll-Off–Short-Channel MOSFETs Leak More"></a>7.3 $V_t$ Roll-Off–Short-Channel MOSFETs Leak More</h3><p>$$<br>V_t = V_{t-long}-(V_{ds}+0.4\text V)\cdot e^{-L/l_d}\\<br>l_d\propto\sqrt[3]{T_{oxe}W_{dep}X_j}<br>$$</p>
+<h3 id="7-4-Reducing-Gate-Insulator-Electrical-Thickness-and-Tunneling-Leakage"><a href="#7-4-Reducing-Gate-Insulator-Electrical-Thickness-and-Tunneling-Leakage" class="headerlink" title="7.4 Reducing Gate-Insulator Electrical Thickness and Tunneling Leakage"></a>7.4 Reducing Gate-Insulator Electrical Thickness and Tunneling Leakage</h3><h3 id="7-5-How-to-Reduce-W-dep"><a href="#7-5-How-to-Reduce-W-dep" class="headerlink" title="7.5 How to Reduce $W_{dep}$"></a>7.5 How to Reduce $W_{dep}$</h3><h3 id="7-6-Shallow-Junction-and-Metal-Source-Drain-MOSFET"><a href="#7-6-Shallow-Junction-and-Metal-Source-Drain-MOSFET" class="headerlink" title="7.6 Shallow Junction and Metal Source/Drain MOSFET"></a>7.6 Shallow Junction and Metal Source/Drain MOSFET</h3><h4 id="7-6-1-MOSFET-with-Metal-Source-Drain"><a href="#7-6-1-MOSFET-with-Metal-Source-Drain" class="headerlink" title="7.6.1 MOSFET with Metal Source/Drain"></a>7.6.1 MOSFET with Metal Source/Drain</h4><h3 id="7-7-Trade-Off-Between-I-on-and-I-off-and-Design-for-Manufacturing"><a href="#7-7-Trade-Off-Between-I-on-and-I-off-and-Design-for-Manufacturing" class="headerlink" title="7.7 Trade-Off Between $I_{on}$ and $I_{off}$ and Design for Manufacturing"></a>7.7 Trade-Off Between $I_{on}$ and $I_{off}$ and Design for Manufacturing</h3><h3 id="7-8-Ultra-Thin-Body-SOI-and-Multigate-MOSFETs"><a href="#7-8-Ultra-Thin-Body-SOI-and-Multigate-MOSFETs" class="headerlink" title="7.8 Ultra-Thin-Body SOI and Multigate MOSFETs"></a>7.8 Ultra-Thin-Body SOI and Multigate MOSFETs</h3><h4 id="7-8-1-Ultra-Thin-Body-MOSFET-and-SOI"><a href="#7-8-1-Ultra-Thin-Body-MOSFET-and-SOI" class="headerlink" title="7.8.1 Ultra-Thin-Body MOSFET and SOI"></a>7.8.1 Ultra-Thin-Body MOSFET and SOI</h4><h4 id="7-8-2-FinFET-Multigate-MOSFET"><a href="#7-8-2-FinFET-Multigate-MOSFET" class="headerlink" title="7.8.2 FinFET - Multigate MOSFET"></a>7.8.2 FinFET - Multigate MOSFET</h4><h3 id="7-9-Output-Conductance"><a href="#7-9-Output-Conductance" class="headerlink" title="7.9 Output Conductance"></a>7.9 Output Conductance</h3><h3 id="7-10-Device-and-Process-Simulation"><a href="#7-10-Device-and-Process-Simulation" class="headerlink" title="7.10 Device and Process Simulation"></a>7.10 Device and Process Simulation</h3><h3 id="7-11-MOSFET-Compact-Model-for-Circuit-Simulation"><a href="#7-11-MOSFET-Compact-Model-for-Circuit-Simulation" class="headerlink" title="7.11 MOSFET Compact Model for Circuit Simulation"></a>7.11 MOSFET Compact Model for Circuit Simulation</h3><h2 id="8-Bipolar-Transistor"><a href="#8-Bipolar-Transistor" class="headerlink" title="8. Bipolar Transistor"></a>8. Bipolar Transistor</h2><h3 id="8-1-Introduction-to-the-BJT"><a href="#8-1-Introduction-to-the-BJT" class="headerlink" title="8.1 Introduction to the BJT"></a>8.1 Introduction to the BJT</h3><h3 id="8-2-Collector-Current"><a href="#8-2-Collector-Current" class="headerlink" title="8.2 Collector Current"></a>8.2 Collector Current</h3><h4 id="8-2-1-High-Level-Injection-Effect"><a href="#8-2-1-High-Level-Injection-Effect" class="headerlink" title="8.2.1 High-Level Injection Effect"></a>8.2.1 High-Level Injection Effect</h4><h3 id="8-3-Base-Current"><a href="#8-3-Base-Current" class="headerlink" title="8.3 Base Current"></a>8.3 Base Current</h3><h3 id="8-4-Current-Gain"><a href="#8-4-Current-Gain" class="headerlink" title="8.4 Current Gain"></a>8.4 Current Gain</h3><h4 id="8-4-1-Emitter-Band-Gap-Narrowing"><a href="#8-4-1-Emitter-Band-Gap-Narrowing" class="headerlink" title="8.4.1 Emitter Band Gap Narrowing"></a>8.4.1 Emitter Band Gap Narrowing</h4><h4 id="8-4-2-Narrow-Band-Gap-Base-and-Heterojunction-BJT"><a href="#8-4-2-Narrow-Band-Gap-Base-and-Heterojunction-BJT" class="headerlink" title="8.4.2 Narrow Band-Gap Base and Heterojunction BJT"></a>8.4.2 Narrow Band-Gap Base and Heterojunction BJT</h4><h4 id="8-4-3-Poly-Silicon-Emitter"><a href="#8-4-3-Poly-Silicon-Emitter" class="headerlink" title="8.4.3 Poly-Silicon Emitter"></a>8.4.3 Poly-Silicon Emitter</h4><h4 id="8-4-4-Gummel-Plot-and-beta-F-Fall-Off-at-High-and-Low-I-C"><a href="#8-4-4-Gummel-Plot-and-beta-F-Fall-Off-at-High-and-Low-I-C" class="headerlink" title="8.4.4 Gummel Plot and $\beta_F$ Fall-Off at High and Low $I_C$"></a>8.4.4 Gummel Plot and $\beta_F$ Fall-Off at High and Low $I_C$</h4><h3 id="8-5-Base-Width-Modulation-by-Collector-Voltage"><a href="#8-5-Base-Width-Modulation-by-Collector-Voltage" class="headerlink" title="8.5 Base-Width Modulation by Collector Voltage"></a>8.5 Base-Width Modulation by Collector Voltage</h3><h3 id="8-6-Ebers-Moll-Model"><a href="#8-6-Ebers-Moll-Model" class="headerlink" title="8.6 Ebers-Moll Model"></a>8.6 Ebers-Moll Model</h3><h3 id="8-7-Transit-Time-and-Charge-Storage"><a href="#8-7-Transit-Time-and-Charge-Storage" class="headerlink" title="8.7 Transit Time and Charge Storage"></a>8.7 Transit Time and Charge Storage</h3><h4 id="8-7-1-Base-Charge-Storage-and-Base-Transit-Time"><a href="#8-7-1-Base-Charge-Storage-and-Base-Transit-Time" class="headerlink" title="8.7.1 Base Charge Storage and Base Transit Time"></a>8.7.1 Base Charge Storage and Base Transit Time</h4><h3 id="8-7-2-Drift-Transistor-Built-In-Base-Field"><a href="#8-7-2-Drift-Transistor-Built-In-Base-Field" class="headerlink" title="8.7.2 Drift Transistor-Built-In Base Field"></a>8.7.2 Drift Transistor-Built-In Base Field</h3><h3 id="8-7-3-Emitter-to-Collector-Transit-Time-and-Kirk-Effect"><a href="#8-7-3-Emitter-to-Collector-Transit-Time-and-Kirk-Effect" class="headerlink" title="8.7.3 Emitter-to-Collector Transit Time and Kirk Effect"></a>8.7.3 Emitter-to-Collector Transit Time and Kirk Effect</h3><h3 id="8-8-Small-Signal-Model"><a href="#8-8-Small-Signal-Model" class="headerlink" title="8.8 Small-Signal Model"></a>8.8 Small-Signal Model</h3><h3 id="8-9-Cutoff-Freqency"><a href="#8-9-Cutoff-Freqency" class="headerlink" title="8.9 Cutoff Freqency"></a>8.9 Cutoff Freqency</h3><h3 id="8-10-Charge-Control-Model"><a href="#8-10-Charge-Control-Model" class="headerlink" title="8.10 Charge Control Model"></a>8.10 Charge Control Model</h3><h3 id="8-11-Model-for-Large-Signal-Circult-Simulation"><a href="#8-11-Model-for-Large-Signal-Circult-Simulation" class="headerlink" title="8.11 Model for Large-Signal Circult Simulation"></a>8.11 Model for Large-Signal Circult Simulation</h3>
       
     </div>
     
@@ -664,6 +785,17 @@
 
       
       
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;五星好评请拉满&lt;)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+        </div>
+      
       
 
       
@@ -679,6 +811,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/note/Si基CMOS与光子学.html" rel="prev" title="Si基CMOS与光子学">
+                Si基CMOS与光子学 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -758,7 +894,7 @@
             
               <a href="/note/archives/">
             
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -771,7 +907,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -798,7 +934,47 @@
 
         
         
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              神奇的链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://music.163.com/#/user/home?id=38039153" title="网易云音乐" target="_blank">网易云音乐</a>
+                </li>
+              
+            </ul>
+         <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("09/28/2017 15:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
+          </div>
         
 
 
@@ -814,7 +990,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Physics-of-Semiconductor-Device"><span class="nav-text">Physics of Semiconductor Device</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Electrons-and-Holes-in-Semiconductors"><span class="nav-text">1. Electrons and Holes in Semiconductors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Silicon-Crystal-Sturcture"><span class="nav-text">1.1 Silicon Crystal Sturcture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Bond-Model-of-Electrons-and-Holes"><span class="nav-text">1.2 Bond Model of Electrons and Holes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Energy-Band-Model"><span class="nav-text">1.3 Energy Band Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-Energy-Band-Diagram"><span class="nav-text">1.3.1 Energy Band Diagram</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model"><span class="nav-text">1.3.2 Donors and Acceptors in the Band Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-Semiconductors-Insulators-and-Conductors"><span class="nav-text">1.4 Semiconductors, Insulators, and Conductors</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-Electrons-and-Holes"><span class="nav-text">1.5 Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-1-Effective-Mass"><span class="nav-text">1.5.1 Effective Mass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2-How-to-Measure-the-Effective-Mass"><span class="nav-text">1.5.2 How to Measure the Effective Mass</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-Density-of-States"><span class="nav-text">1.6 Density of States</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-Thermal-Equilibrium-and-the-Fermi-Function"><span class="nav-text">1.7 Thermal Equilibrium and the Fermi Function</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-1-An-Analogy-for-Thermal-Equilibrium"><span class="nav-text">1.7.1 An Analogy for Thermal Equilibrium</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-2-Fermi-Function—The-Probability-of-an-Energy-State-Being-Occupied-by-an-Electron"><span class="nav-text">1.7.2 Fermi Function—The Probability of an Energy State Being Occupied by an Electron</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-Electron-and-Hole-Concentrations"><span class="nav-text">1.8 Electron and Hole Concentrations</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-1-Derivation-of-n-and-p-from-D-E-and-f-E"><span class="nav-text">1.8.1 Derivation of n and p from D(E) and f(E)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-2-Fermi-Level-and-the-Carrier-Concentrations"><span class="nav-text">1.8.2 Fermi Level and the Carrier Concentrations</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-3-The-np-Product-and-the-Intrinsic-Carrier-Concentration"><span class="nav-text">1.8.3 The np Product and the Intrinsic Carrier Concentration</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-General-Theory-of-n-and-p"><span class="nav-text">1.9 General Theory of n and p</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-Carrier-Concentrations-at-Extremely-High-and-Low-Temperatures"><span class="nav-text">1.10 Carrier Concentrations at Extremely High and Low Temperatures</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Motion-and-Recombination-of-Electrons-and-Holes"><span class="nav-text">2. Motion and Recombination of Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Thermal-Motion"><span class="nav-text">2.1 Thermal Motion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Drift"><span class="nav-text">2.2 Drift</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-Electron-and-Hole-Mobilities"><span class="nav-text">2.2.1 Electron and Hole Mobilities</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-Mechanisms-of-Carrier-Scattering"><span class="nav-text">2.2.2 Mechanisms of Carrier Scattering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-3-Drift-Current-and-Conductivity"><span class="nav-text">2.2.3 Drift Current and Conductivity</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Diffusion-Current"><span class="nav-text">2.3 Diffusion Current</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-Relation-Between-the-Energy-Diagram-and-v-varepsilon"><span class="nav-text">2.4 Relation Between the Energy Diagram and v, $\varepsilon$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-Einstein-Relationship-Between-D-and-mu"><span class="nav-text">2.5 Einstein Relationship Between D and $\mu$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-Electron-Hole-Recombination"><span class="nav-text">2.6 Electron-Hole Recombination</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-Thermal-Generation"><span class="nav-text">2.7 Thermal Generation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-Quasi-Equilibrium-and-Quasi-Fermi-levels"><span class="nav-text">2.8 Quasi-Equilibrium and Quasi-Fermi levels</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Device-Fabrication-Technology"><span class="nav-text">3. Device Fabrication Technology</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Introduction-to-Device-Fabrication"><span class="nav-text">3.1 Introduction to Device Fabrication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Oxidation-of-Silicon"><span class="nav-text">3.2 Oxidation of Silicon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Lithography"><span class="nav-text">3.3 Lithography</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-1-Wet-Lithography"><span class="nav-text">3.3.1 Wet Lithography</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2-Electron-Lighography"><span class="nav-text">3.3.2 Electron Lighography</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-3-Nanoimprint"><span class="nav-text">3.3.3 Nanoimprint</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-Pattern-Transfer-Etching"><span class="nav-text">3.4 Pattern Transfer-Etching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-Doping"><span class="nav-text">3.5 Doping</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-1-Ion-Implantation"><span class="nav-text">3.5.1 Ion Implantation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-2-Gas-Source-Doping"><span class="nav-text">3.5.2 Gas-Source Doping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-3-Solid-Source-Diffusion"><span class="nav-text">3.5.3 Solid-Source Diffusion</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-Dopant-Diffusion"><span class="nav-text">3.6 Dopant Diffusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-Thin-Film-Deposition"><span class="nav-text">3.7 Thin-Film Deposition</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-1-Sputtering"><span class="nav-text">3.7.1 Sputtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-2-Chemical-Vapor-Deposition-CVD"><span class="nav-text">3.7.2 Chemical Vapor Deposition (CVD)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-3-Epitaxy"><span class="nav-text">3.7.3 Epitaxy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-Interconnect—The-Back-End-Process"><span class="nav-text">3.8 Interconnect—The Back-End Process</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-9-Testing-Assembly-and-Qualification"><span class="nav-text">3.9 Testing, Assembly, and Qualification</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-PN-and-Metal-Semiconductor-Junctions"><span class="nav-text">4. PN and Metal-Semiconductor Junctions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Building-Blocks-of-the-PN-Junction-Theory"><span class="nav-text">4.1 Building Blocks of the PN Junction Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-Energy-Band-Diagram-and-Depletion-Layer-of-a-PN-Junction"><span class="nav-text">4.1.1 Energy Band Diagram and Depletion Layer of a PN Junction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-Built-In-Potential"><span class="nav-text">4.1.2 Built-In Potential</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-3-Poisson’s-Equation"><span class="nav-text">4.1.3 Poisson’s Equation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-Depletion-Layer-Model"><span class="nav-text">4.2 Depletion-Layer Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-Field-and-Potential-in-the-Depletion-Layer"><span class="nav-text">4.2.1 Field and Potential in the Depletion Layer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-2-Depletion-Layer-Width"><span class="nav-text">4.2.2 Depletion-Layer Width</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Reverse-Biased-PN-Junction"><span class="nav-text">4.3 Reverse-Biased PN Junction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-Capacitance-Voltage-Characteristics"><span class="nav-text">4.4 Capacitance-Voltage Characteristics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-Junction-Breakdown"><span class="nav-text">4.5 Junction Breakdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-1-Peak-Electric-Field"><span class="nav-text">4.5.1 Peak Electric Field</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-2-Tunneling-Breakdown"><span class="nav-text">4.5.2 Tunneling Breakdown</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-3-Avalanche-Breakdown"><span class="nav-text">4.5.3 Avalanche Breakdown</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-Carrier-Injection-Under-Forward-Bias—Quasi-Equilibrium-Boundary-Condition"><span class="nav-text">4.6 Carrier Injection Under Forward Bias—Quasi-Equilibrium Boundary Condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-Current-Continuity-Equation"><span class="nav-text">4.7 Current Continuity Equation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-Excess-Carriers-in-Forward-Biased-PN-Junction"><span class="nav-text">4.8 Excess Carriers in Forward-Biased PN Junction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-9-PN-Diode-IV-Characteristics"><span class="nav-text">4.9 PN Diode IV Characteristics</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-9-1-Contributions-from-the-Depletion-Region"><span class="nav-text">4.9.1 Contributions from the Depletion Region</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-10-Charge-Storage"><span class="nav-text">4.10 Charge Storage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-11-Small-Signal-Model-of-the-Diode"><span class="nav-text">4.11 Small-Signal Model of the Diode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-12-Solar-cells"><span class="nav-text">4.12 Solar cells</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-1-Solar-Cell-Basics"><span class="nav-text">4.12.1 Solar Cell Basics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-2-Light-Penetration-Depth—Direct-Gap-and-Indirect-Gap-Semiconductors"><span class="nav-text">4.12.2 Light Penetration Depth—Direct-Gap and Indirect-Gap Semiconductors</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-4-Output-Power"><span class="nav-text">4.12.4 Output Power</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-13-Light-Emitting-Diodes-and-Solid-State-Lighting"><span class="nav-text">4.13 Light-Emitting Diodes and Solid-State Lighting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-13-1-LED-Materials-and-Structures"><span class="nav-text">4.13.1 LED Materials and Structures</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-13-2-Solid-State-Lighting"><span class="nav-text">4.13.2 Solid-State Lighting</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-14-Diode-Lasers"><span class="nav-text">4.14 Diode Lasers</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-1-Light-Amplification"><span class="nav-text">4.14.1 Light Amplification</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-2-Optical-Feedback"><span class="nav-text">4.14.2 Optical Feedback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-3-Diode-Laser-Applications"><span class="nav-text">4.14.3 Diode Laser Applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-15-Photodiodes"><span class="nav-text">4.15 Photodiodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-16-Schottky-Barriers"><span class="nav-text">4.16 Schottky Barriers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-17-Thermionic-Emission-Theory"><span class="nav-text">4.17 Thermionic Emission Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-18-Schottky-Diodes"><span class="nav-text">4.18 Schottky Diodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-19-Applications-of-Schottky-Diodes"><span class="nav-text">4.19 Applications of Schottky Diodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-20-Quantum-Mechanical-Tunneling"><span class="nav-text">4.20 Quantum Mechanical Tunneling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-21-Ohmic-Contacts"><span class="nav-text">4.21 Ohmic Contacts</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-MOS-Capacitor"><span class="nav-text">5. MOS Capacitor</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-Flat-Band-Condition-and-Flat-Band-Voltage"><span class="nav-text">5.1 Flat-Band Condition and Flat-Band Voltage</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Electrons-and-Holes-in-Semiconductors"><span class="nav-text">1. Electrons and Holes in Semiconductors</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Silicon-Crystal-Sturcture"><span class="nav-text">1.1 Silicon Crystal Sturcture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Bond-Model-of-Electrons-and-Holes"><span class="nav-text">1.2 Bond Model of Electrons and Holes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Energy-Band-Model"><span class="nav-text">1.3 Energy Band Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-Energy-Band-Diagram"><span class="nav-text">1.3.1 Energy Band Diagram</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-2-Donors-and-Acceptors-in-the-Band-Model"><span class="nav-text">1.3.2 Donors and Acceptors in the Band Model</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-Semiconductors-Insulators-and-Conductors"><span class="nav-text">1.4 Semiconductors, Insulators, and Conductors</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-Electrons-and-Holes"><span class="nav-text">1.5 Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-1-Effective-Mass"><span class="nav-text">1.5.1 Effective Mass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-2-How-to-Measure-the-Effective-Mass"><span class="nav-text">1.5.2 How to Measure the Effective Mass</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-Density-of-States"><span class="nav-text">1.6 Density of States</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-Thermal-Equilibrium-and-the-Fermi-Function"><span class="nav-text">1.7 Thermal Equilibrium and the Fermi Function</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-1-An-Analogy-for-Thermal-Equilibrium"><span class="nav-text">1.7.1 An Analogy for Thermal Equilibrium</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-2-Fermi-Function—The-Probability-of-an-Energy-State-Being-Occupied-by-an-Electron"><span class="nav-text">1.7.2 Fermi Function—The Probability of an Energy State Being Occupied by an Electron</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-Electron-and-Hole-Concentrations"><span class="nav-text">1.8 Electron and Hole Concentrations</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-1-Derivation-of-n-and-p-from-D-E-and-f-E"><span class="nav-text">1.8.1 Derivation of n and p from D(E) and f(E)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-2-Fermi-Level-and-the-Carrier-Concentrations"><span class="nav-text">1.8.2 Fermi Level and the Carrier Concentrations</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-3-The-np-Product-and-the-Intrinsic-Carrier-Concentration"><span class="nav-text">1.8.3 The np Product and the Intrinsic Carrier Concentration</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-General-Theory-of-n-and-p"><span class="nav-text">1.9 General Theory of n and p</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-Carrier-Concentrations-at-Extremely-High-and-Low-Temperatures"><span class="nav-text">1.10 Carrier Concentrations at Extremely High and Low Temperatures</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Motion-and-Recombination-of-Electrons-and-Holes"><span class="nav-text">2. Motion and Recombination of Electrons and Holes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Thermal-Motion"><span class="nav-text">2.1 Thermal Motion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Drift"><span class="nav-text">2.2 Drift</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-Electron-and-Hole-Mobilities"><span class="nav-text">2.2.1 Electron and Hole Mobilities</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-Mechanisms-of-Carrier-Scattering"><span class="nav-text">2.2.2 Mechanisms of Carrier Scattering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-3-Drift-Current-and-Conductivity"><span class="nav-text">2.2.3 Drift Current and Conductivity</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Diffusion-Current"><span class="nav-text">2.3 Diffusion Current</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-Relation-Between-the-Energy-Diagram-and-v-varepsilon"><span class="nav-text">2.4 Relation Between the Energy Diagram and v, $\varepsilon$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-Einstein-Relationship-Between-D-and-mu"><span class="nav-text">2.5 Einstein Relationship Between D and $\mu$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-Electron-Hole-Recombination"><span class="nav-text">2.6 Electron-Hole Recombination</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-Thermal-Generation"><span class="nav-text">2.7 Thermal Generation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-Quasi-Equilibrium-and-Quasi-Fermi-levels"><span class="nav-text">2.8 Quasi-Equilibrium and Quasi-Fermi levels</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Device-Fabrication-Technology"><span class="nav-text">3. Device Fabrication Technology</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Introduction-to-Device-Fabrication"><span class="nav-text">3.1 Introduction to Device Fabrication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Oxidation-of-Silicon"><span class="nav-text">3.2 Oxidation of Silicon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-Lithography"><span class="nav-text">3.3 Lithography</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-1-Wet-Lithography"><span class="nav-text">3.3.1 Wet Lithography</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2-Electron-Lighography"><span class="nav-text">3.3.2 Electron Lighography</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-3-Nanoimprint"><span class="nav-text">3.3.3 Nanoimprint</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-Pattern-Transfer-Etching"><span class="nav-text">3.4 Pattern Transfer-Etching</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-Doping"><span class="nav-text">3.5 Doping</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-1-Ion-Implantation"><span class="nav-text">3.5.1 Ion Implantation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-2-Gas-Source-Doping"><span class="nav-text">3.5.2 Gas-Source Doping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-3-Solid-Source-Diffusion"><span class="nav-text">3.5.3 Solid-Source Diffusion</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-Dopant-Diffusion"><span class="nav-text">3.6 Dopant Diffusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-Thin-Film-Deposition"><span class="nav-text">3.7 Thin-Film Deposition</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-1-Sputtering"><span class="nav-text">3.7.1 Sputtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-2-Chemical-Vapor-Deposition-CVD"><span class="nav-text">3.7.2 Chemical Vapor Deposition (CVD)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-3-Epitaxy"><span class="nav-text">3.7.3 Epitaxy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-Interconnect—The-Back-End-Process"><span class="nav-text">3.8 Interconnect—The Back-End Process</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-9-Testing-Assembly-and-Qualification"><span class="nav-text">3.9 Testing, Assembly, and Qualification</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-PN-and-Metal-Semiconductor-Junctions"><span class="nav-text">4. PN and Metal-Semiconductor Junctions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Building-Blocks-of-the-PN-Junction-Theory"><span class="nav-text">4.1 Building Blocks of the PN Junction Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-1-Energy-Band-Diagram-and-Depletion-Layer-of-a-PN-Junction"><span class="nav-text">4.1.1 Energy Band Diagram and Depletion Layer of a PN Junction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-2-Built-In-Potential"><span class="nav-text">4.1.2 Built-In Potential</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-3-Poisson’s-Equation"><span class="nav-text">4.1.3 Poisson’s Equation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-Depletion-Layer-Model"><span class="nav-text">4.2 Depletion-Layer Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-Field-and-Potential-in-the-Depletion-Layer"><span class="nav-text">4.2.1 Field and Potential in the Depletion Layer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-2-Depletion-Layer-Width"><span class="nav-text">4.2.2 Depletion-Layer Width</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Reverse-Biased-PN-Junction"><span class="nav-text">4.3 Reverse-Biased PN Junction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-Capacitance-Voltage-Characteristics"><span class="nav-text">4.4 Capacitance-Voltage Characteristics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-Junction-Breakdown"><span class="nav-text">4.5 Junction Breakdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-1-Peak-Electric-Field"><span class="nav-text">4.5.1 Peak Electric Field</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-2-Tunneling-Breakdown"><span class="nav-text">4.5.2 Tunneling Breakdown</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-3-Avalanche-Breakdown"><span class="nav-text">4.5.3 Avalanche Breakdown</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-Carrier-Injection-Under-Forward-Bias—Quasi-Equilibrium-Boundary-Condition"><span class="nav-text">4.6 Carrier Injection Under Forward Bias—Quasi-Equilibrium Boundary Condition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-Current-Continuity-Equation"><span class="nav-text">4.7 Current Continuity Equation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-Excess-Carriers-in-Forward-Biased-PN-Junction"><span class="nav-text">4.8 Excess Carriers in Forward-Biased PN Junction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-9-PN-Diode-IV-Characteristics"><span class="nav-text">4.9 PN Diode IV Characteristics</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-9-1-Contributions-from-the-Depletion-Region"><span class="nav-text">4.9.1 Contributions from the Depletion Region</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-10-Charge-Storage"><span class="nav-text">4.10 Charge Storage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-11-Small-Signal-Model-of-the-Diode"><span class="nav-text">4.11 Small-Signal Model of the Diode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-12-Solar-cells"><span class="nav-text">4.12 Solar cells</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-1-Solar-Cell-Basics"><span class="nav-text">4.12.1 Solar Cell Basics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-2-Light-Penetration-Depth—Direct-Gap-and-Indirect-Gap-Semiconductors"><span class="nav-text">4.12.2 Light Penetration Depth—Direct-Gap and Indirect-Gap Semiconductors</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-4-Output-Power"><span class="nav-text">4.12.4 Output Power</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-13-Light-Emitting-Diodes-and-Solid-State-Lighting"><span class="nav-text">4.13 Light-Emitting Diodes and Solid-State Lighting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-13-1-LED-Materials-and-Structures"><span class="nav-text">4.13.1 LED Materials and Structures</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-13-2-Solid-State-Lighting"><span class="nav-text">4.13.2 Solid-State Lighting</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-14-Diode-Lasers"><span class="nav-text">4.14 Diode Lasers</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-1-Light-Amplification"><span class="nav-text">4.14.1 Light Amplification</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-2-Optical-Feedback"><span class="nav-text">4.14.2 Optical Feedback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-14-3-Diode-Laser-Applications"><span class="nav-text">4.14.3 Diode Laser Applications</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-15-Photodiodes"><span class="nav-text">4.15 Photodiodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-16-Schottky-Barriers"><span class="nav-text">4.16 Schottky Barriers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-17-Thermionic-Emission-Theory"><span class="nav-text">4.17 Thermionic Emission Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-18-Schottky-Diodes"><span class="nav-text">4.18 Schottky Diodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-19-Applications-of-Schottky-Diodes"><span class="nav-text">4.19 Applications of Schottky Diodes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-20-Quantum-Mechanical-Tunneling"><span class="nav-text">4.20 Quantum Mechanical Tunneling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-21-Ohmic-Contacts"><span class="nav-text">4.21 Ohmic Contacts</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-MOS-Capacitor"><span class="nav-text">5. MOS Capacitor</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-Flat-Band-Condition-and-Flat-Band-Voltage"><span class="nav-text">5.1 Flat-Band Condition and Flat-Band Voltage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-Surface-Accumulation"><span class="nav-text">5.2 Surface Accumulation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-Surface-Depletion"><span class="nav-text">5.3 Surface Depletion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-Thershold-Condition-and-Threshold-Voltage"><span class="nav-text">5.4 Thershold Condition and Threshold Voltage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-Strong-Inversion-Beyond-Threshold"><span class="nav-text">5.5 Strong Inversion Beyond Threshold</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-5-1-Choice-of-V-t-and-Gate-Doping-Type"><span class="nav-text">5.5.1 Choice of $V_t$ and Gate Doping Type</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-MOS-C-V-Characteristics"><span class="nav-text">5.6 MOS C-V Characteristics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-7-Oxide-Charage—A-Modification-to-V-fb-and-V-t-4"><span class="nav-text">5.7 Oxide Charage—A Modification to $V_{fb}$ and $V_t^4$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-8-Poly-Si-Gate-Depletion—Effective-Increase-in-T-ox"><span class="nav-text">5.8 Poly-Si Gate Depletion—Effective Increase in $T_{ox}$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-9-Inversion-and-Accumulation-Charge-Layer-Thicknesses-and-Quantum-Mechanical-Effect"><span class="nav-text">5.9 Inversion and Accumulation Charge-Layer Thicknesses and Quantum Mechanical Effect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-10-CCD-Image-and-CMOS-Imager"><span class="nav-text">5.10 CCD Image and CMOS Imager</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-10-1-CCD-Imager"><span class="nav-text">5.10.1 CCD Imager</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-10-2-CMOS-Imager"><span class="nav-text">5.10.2 CMOS Imager</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-MOS-Transistor"><span class="nav-text">6. MOS Transistor</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-Introduction-to-the-MOSFET"><span class="nav-text">6.1 Introduction to the MOSFET</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-Complementary-MOS-CMOS-Technology"><span class="nav-text">6.2 Complementary MOS (CMOS) Technology</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-Surface-Mobilities-and-High-Mobility-FETs"><span class="nav-text">6.3 Surface Mobilities and High-Mobility FETs</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-1-Surface-Mobilities"><span class="nav-text">6.3.1 Surface Mobilities</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-2-GaAs-MESFET"><span class="nav-text">6.3.2 GaAs MESFET</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-3-HEMT"><span class="nav-text">6.3.3 HEMT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-3-4-JFET"><span class="nav-text">6.3.4 JFET</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-4-MOSFET-V-t-Body-Effect-and-Steep-Retrograde-Doping"><span class="nav-text">6.4 MOSFET $V_t$, Body Effect, and Steep Retrograde Doping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-5-Q-inv-in-MOSFET"><span class="nav-text">6.5 $Q_{inv}$ in MOSFET</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-6-Basic-MOSFET-IV-Model"><span class="nav-text">6.6 Basic MOSFET IV Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-7-CMOS-Inverter–A-Circuit-Example"><span class="nav-text">6.7 CMOS Inverter–A Circuit Example</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-7-1-Voltage-Transfer-Curve-VTC"><span class="nav-text">6.7.1 Voltage Transfer Curve (VTC)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-7-2-Inverter-Speed–The-Importanvce-of-I-on"><span class="nav-text">6.7.2 Inverter Speed–The Importanvce of $I_{on}$</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-7-3-Power-Consumption"><span class="nav-text">6.7.3 Power Consumption</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-8-Velocity-Saturation"><span class="nav-text">6.8 Velocity Saturation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-9-MOSFET-IV-Model-With-Velocity-Saturation"><span class="nav-text">6.9 MOSFET IV Model With Velocity Saturation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-9-1-Celocity-Saturation-vs-Pinch-Off"><span class="nav-text">6.9.1 Celocity Saturation vs. Pinch-Off</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-10-Parasitic-Source-Drain-Resistance"><span class="nav-text">6.10 Parasitic Source-Drain Resistance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-11-Extraction-of-the-Series-Resistance-and-the-Effective-Channel-Length"><span class="nav-text">6.11 Extraction of the Series Resistance and the Effective Channel Length</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-12-Velocity-Overshoot-and-Source-Velocity-Limit"><span class="nav-text">6.12 Velocity Overshoot and Source Velocity Limit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-13-Output-Conductance"><span class="nav-text">6.13 Output Conductance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-14-High-Frequency-Performance"><span class="nav-text">6.14 High-Frequency Performance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-15-MOSFET-Noises"><span class="nav-text">6.15 MOSFET Noises</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-15-1-Thermal-Noise-of-a-Resistor"><span class="nav-text">6.15.1 Thermal Noise of a Resistor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-15-2-MOSFET-Thermal-Noise"><span class="nav-text">6.15.2 MOSFET Thermal Noise</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-15-3-MOSFET-Flicker-Noise"><span class="nav-text">6.15.3 MOSFET Flicker Noise</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-15-4-Signal-to-Noise-Ratio-Noise-Factor-Noise-Figure"><span class="nav-text">6.15.4 Signal to Noise Ratio, Noise Factor, Noise Figure</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-16-SRAM-DRAM-Noncolatile-Flash-Memory-Devices"><span class="nav-text">6.16 SRAM, DRAM, Noncolatile (Flash) Memory Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#6-16-1-SRAM"><span class="nav-text">6.16.1 SRAM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-16-2-DRAM"><span class="nav-text">6.16.2 DRAM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-16-3-Nonvolatile-Flash-Memory"><span class="nav-text">6.16.3 Nonvolatile (Flash) Memory</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-MOSFETs-in-ICs–Scaling-Leakage-and-Other-Topics"><span class="nav-text">7. MOSFETs in ICs–Scaling, Leakage, and Other Topics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-Thechnology-Scaling–For-Cost-Speed-and-Power-Consumption"><span class="nav-text">7.1 Thechnology Scaling–For Cost, Speed, and Power Consumption</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-1-Innovations-Enable-Scaling"><span class="nav-text">7.1.1 Innovations Enable Scaling</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-1-2-Strained-Silicon-and-Other-Innovations"><span class="nav-text">7.1.2 Strained Silicon and Other Innovations</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-Subthreshold-Current–”Off”-is-Not-Totally-“Off”"><span class="nav-text">7.2 Subthreshold Current–”Off” is Not Totally “Off”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-3-V-t-Roll-Off–Short-Channel-MOSFETs-Leak-More"><span class="nav-text">7.3 $V_t$ Roll-Off–Short-Channel MOSFETs Leak More</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-4-Reducing-Gate-Insulator-Electrical-Thickness-and-Tunneling-Leakage"><span class="nav-text">7.4 Reducing Gate-Insulator Electrical Thickness and Tunneling Leakage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-5-How-to-Reduce-W-dep"><span class="nav-text">7.5 How to Reduce $W_{dep}$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-6-Shallow-Junction-and-Metal-Source-Drain-MOSFET"><span class="nav-text">7.6 Shallow Junction and Metal Source/Drain MOSFET</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-6-1-MOSFET-with-Metal-Source-Drain"><span class="nav-text">7.6.1 MOSFET with Metal Source/Drain</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-7-Trade-Off-Between-I-on-and-I-off-and-Design-for-Manufacturing"><span class="nav-text">7.7 Trade-Off Between $I_{on}$ and $I_{off}$ and Design for Manufacturing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-8-Ultra-Thin-Body-SOI-and-Multigate-MOSFETs"><span class="nav-text">7.8 Ultra-Thin-Body SOI and Multigate MOSFETs</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-8-1-Ultra-Thin-Body-MOSFET-and-SOI"><span class="nav-text">7.8.1 Ultra-Thin-Body MOSFET and SOI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-8-2-FinFET-Multigate-MOSFET"><span class="nav-text">7.8.2 FinFET - Multigate MOSFET</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-9-Output-Conductance"><span class="nav-text">7.9 Output Conductance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-10-Device-and-Process-Simulation"><span class="nav-text">7.10 Device and Process Simulation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-11-MOSFET-Compact-Model-for-Circuit-Simulation"><span class="nav-text">7.11 MOSFET Compact Model for Circuit Simulation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-Bipolar-Transistor"><span class="nav-text">8. Bipolar Transistor</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8-1-Introduction-to-the-BJT"><span class="nav-text">8.1 Introduction to the BJT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-2-Collector-Current"><span class="nav-text">8.2 Collector Current</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8-2-1-High-Level-Injection-Effect"><span class="nav-text">8.2.1 High-Level Injection Effect</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-3-Base-Current"><span class="nav-text">8.3 Base Current</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-4-Current-Gain"><span class="nav-text">8.4 Current Gain</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8-4-1-Emitter-Band-Gap-Narrowing"><span class="nav-text">8.4.1 Emitter Band Gap Narrowing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-4-2-Narrow-Band-Gap-Base-and-Heterojunction-BJT"><span class="nav-text">8.4.2 Narrow Band-Gap Base and Heterojunction BJT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-4-3-Poly-Silicon-Emitter"><span class="nav-text">8.4.3 Poly-Silicon Emitter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-4-4-Gummel-Plot-and-beta-F-Fall-Off-at-High-and-Low-I-C"><span class="nav-text">8.4.4 Gummel Plot and $\beta_F$ Fall-Off at High and Low $I_C$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-5-Base-Width-Modulation-by-Collector-Voltage"><span class="nav-text">8.5 Base-Width Modulation by Collector Voltage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-6-Ebers-Moll-Model"><span class="nav-text">8.6 Ebers-Moll Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-7-Transit-Time-and-Charge-Storage"><span class="nav-text">8.7 Transit Time and Charge Storage</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8-7-1-Base-Charge-Storage-and-Base-Transit-Time"><span class="nav-text">8.7.1 Base Charge Storage and Base Transit Time</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-7-2-Drift-Transistor-Built-In-Base-Field"><span class="nav-text">8.7.2 Drift Transistor-Built-In Base Field</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-7-3-Emitter-to-Collector-Transit-Time-and-Kirk-Effect"><span class="nav-text">8.7.3 Emitter-to-Collector Transit Time and Kirk Effect</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-8-Small-Signal-Model"><span class="nav-text">8.8 Small-Signal Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-9-Cutoff-Freqency"><span class="nav-text">8.9 Cutoff Freqency</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-10-Charge-Control-Model"><span class="nav-text">8.10 Charge Control Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-11-Model-for-Large-Signal-Circult-Simulation"><span class="nav-text">8.11 Model for Large-Signal Circult Simulation</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -822,6 +998,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -836,9 +1019,9 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2017 &mdash; 
   <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Diego</span>
@@ -846,12 +1029,6 @@
   
 </div>
 
-
-  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-  <span class="post-meta-divider">|</span>
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
 
 
         
@@ -886,11 +1063,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
   </div>
@@ -1024,6 +1196,23 @@
   
 
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 11738,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
   
@@ -1045,7 +1234,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
@@ -1053,5 +1242,13 @@
 
   
 
-</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>;
+<script>
+$("body").backstretch("https://i.loli.net/2018/05/30/5b0e0e6352c73.jpg");
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+<script src="/note/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/note/live2dw/assets/z16.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false}});</script></body>
 </html>
+
+<script type="text/javascript" src="/note/js/src/love.js"></script>
