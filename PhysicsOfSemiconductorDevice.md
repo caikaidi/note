@@ -165,14 +165,6 @@ $$
   $$
 
 
-
-
-
-
-
-
-
-
 ### 1.10 Carrier Concentrations at Extremely High and Low Temperatures
 
 At very high temperatures, it is possible to have $n_i\gg |N_d-N_a|$. The semiconductor becomes "intrinsic".
@@ -232,14 +224,6 @@ $$
   \frac 1\tau=\frac1 {\tau_{\text{phonon}}}+\frac 1 {\tau_{\text{impurity}}}\\
   \frac 1\mu =\frac1 {\mu_\text{phonon}}+\frac1 {\mu_\text{impurity}}
   $$
-
-
-
-
-
-
-
-
 
 
 Velocity Saturation: electron and hole velocities saturate at around $10^7$cm/s and do not increase no matter how large $\varepsilon$ is. The culprit is **optical phonon scattering**. When the kinetic energy of a carrier exceeds the optical phonon energy $E_{opt}$, it generates an optical phonon and loses the kinetic energy. Therefore, the velocity does not rise above **saturation velocity**, $\nu_{sat}$.
@@ -816,6 +800,11 @@ $$
 
 ### 6.1 Introduction to the MOSFET
 
+- source
+- drain
+- FET
+- transistor
+
 ### 6.2 Complementary MOS (CMOS) Technology
 
 ### 6.3 Surface Mobilities and High-Mobility FETs
@@ -831,4 +820,189 @@ $$
 \frac{E_b+E_t}2=\frac{\varepsilon_{ox}}{2\varepsilon_sT_{oxe}}(V_{gs}+V_t+0.2\text V)\\
 =\frac{V_{gs}+V_t+0.2\text V}{6T_{oxe}}\quad \text{for N}^+\text{ poly-gate NFET}
 $$
+
+#### 6.3.2 GaAs MESFET
+
+Use a Schottky junction to serve as the control gate of a FET, called MESFET for metal-semiconductor field-effect transistor.
+
+- If the transistor is conductie at $V_g=0$ and requires a reverse bias gate voltage to turn it off, it is called a **depletion-mode transistor**.
+- If a forward gate voltage is needed to turn the transistor on, this is known as an **enhancement-mode transistor**.
+
+#### 6.3.3 HEMT
+
+By growing a thin epitaxial layer of GaAlAs over the undoped GaAs substrate, we significantly increased the electron mobility. This device is called **HEMT** or **high electron-mobility transistor**, or **MODFET** for **modulation- doped FET**. It is used in microwave communication, satellite TV receivers, etc.
+
+#### 6.3.4 JFET
+
+If the Schottky junction in MESFET is replaced with a $\text P ^+\text N$ junction, the new structure is called a **JFET** or **junction field-effect transistor**.
+
+### 6.4 MOSFET $V_t$, Body Effect, and Steep Retrograde Doping
+
+$$
+V_t(V_{sb})=V_{t0}+\frac{C_{dep}}{C_{oxe}}V_{sb}=V_{t0}+\alpha V_{sb}
+$$
+
+The fact that $V_t$ is a function of the body is called the **body effect**. $\alpha$ is called the **body effect coefficient**.
+
+**Steep retrograde body doping profiles**: light doping in a thin surface layer and very heavy doping underneath.
+
+### 6.5 $Q_{inv}$ in MOSFET
+
+$$
+Q_{inv}(x)=-C_{oxe}(V_{gs}-mV_{cs}-V_t)\\
+m=1+\alpha =1+C_{dep}/C_{oxe}=1+3T_{oxe}/W_{dmax}
+$$
+
+The body is sometimes called the **back gate** since it clearly has a similar though weaker effect on the channel charge. The back-gate effect on $Q_{inv}$ is often called the **bulk-charge effect**. $m$ is called the **bulk-charge factor**.
+
+### 6.6 Basic MOSFET IV Model
+
+$$
+I_{ds}=\frac W LC_{oxe}\mu_{ns}(V_{gs}-V_t-\frac m2V_{ds})V_{ds}\\
+V_{dsat}=\frac{V_{gs}-V_t}m
+$$
+
+$V_{dsat}$ is called the **drain saturation voltage**, 
+
+### 6.7 CMOS Inverter--A Circuit Example
+
+#### 6.7.1 Voltage Transfer Curve (VTC)
+
+#### 6.7.2 Inverter Speed--The Importanvce of $I_{on}$
+
+#### 6.7.3 Power Consumption
+
+$$
+P_{\text{dynamic}}=V_{dd}\times\text{average current}=kCV_{dd}^2f
+$$
+
+$f$ is the clock frequency and $k$ is an **activity factor** that represents the fact that a particular gate in a given circuit is not switched every clock cycle all the time.
+
+> This dynamic power dominates the power consumption when the inverter is switched frequently. Power consumption can be reduced by lowering $V_{dd}$ and by minimizing all capacitances in the circuit as well as by reducing $k$. It is interesting to note that making $I_{on}$ large by using a small $L$ or improving the carrier mobility does not increase $P_{\text{dynamic}}$.
+
+$$
+P_{\text{static}}=V_{dd}I_{off}
+$$
+
+### 6.8 Velocity Saturation
+
+### 6.9 MOSFET IV Model With Velocity Saturation
+
+#### 6.9.1 Celocity Saturation vs. Pinch-Off
+
+### 6.10 Parasitic Source-Drain Resistance
+
+### 6.11 Extraction of the Series Resistance and the Effective Channel Length
+
+### 6.12 Velocity Overshoot and Source Velocity Limit
+
+### 6.13 Output Conductance
+
+### 6.14 High-Frequency Performance
+
+### 6.15 MOSFET Noises
+
+#### 6.15.1 Thermal Noise of a Resistor
+
+#### 6.15.2 MOSFET Thermal Noise
+
+#### 6.15.3 MOSFET Flicker Noise
+
+#### 6.15.4 Signal to Noise Ratio, Noise Factor, Noise Figure
+
+### 6.16 SRAM, DRAM, Noncolatile (Flash) Memory Devices
+
+#### 6.16.1 SRAM
+
+#### 6.16.2 DRAM
+
+#### 6.16.3 Nonvolatile (Flash) Memory
+
+## 7. MOSFETs in ICs--Scaling, Leakage, and Other Topics
+
+### 7.1 Thechnology Scaling--For Cost, Speed, and Power Consumption
+
+#### 7.1.1 Innovations Enable Scaling
+
+#### 7.1.2 Strained Silicon and Other Innovations
+
+| Year                 | 2003             | 2005 | 2007            | 2010            | 2013   |
+| -------------------- | ---------------- | ---- | --------------- | --------------- | ------ |
+| Technology Node (nm) | 90               | 65   | 45              | 32              | 22     |
+| Innovations          | Strained Silicon |      | High-k material | Wet lithography | FinFET |
+
+### 7.2 Subthreshold Current--"Off" is Not Totally "Off"
+
+$$
+I_{ds}(nA)=100\cdot \frac WL\cdot e^{q(V_{gs}-V_t)/\eta kT}
+$$
+
+### 7.3 $V_t$ Roll-Off--Short-Channel MOSFETs Leak More
+
+$$
+V_t = V_{t-long}-(V_{ds}+0.4\text V)\cdot e^{-L/l_d}\\
+l_d\propto\sqrt[3]{T_{oxe}W_{dep}X_j}
+$$
+
+### 7.4 Reducing Gate-Insulator Electrical Thickness and Tunneling Leakage
+
+### 7.5 How to Reduce $W_{dep}$
+
+### 7.6 Shallow Junction and Metal Source/Drain MOSFET
+
+#### 7.6.1 MOSFET with Metal Source/Drain
+
+### 7.7 Trade-Off Between $I_{on}$ and $I_{off}$ and Design for Manufacturing
+
+### 7.8 Ultra-Thin-Body SOI and Multigate MOSFETs
+
+#### 7.8.1 Ultra-Thin-Body MOSFET and SOI
+
+#### 7.8.2 FinFET - Multigate MOSFET
+
+### 7.9 Output Conductance
+
+### 7.10 Device and Process Simulation
+
+### 7.11 MOSFET Compact Model for Circuit Simulation
+
+## 8. Bipolar Transistor
+
+### 8.1 Introduction to the BJT
+
+### 8.2 Collector Current
+
+#### 8.2.1 High-Level Injection Effect
+
+### 8.3 Base Current
+
+### 8.4 Current Gain
+
+#### 8.4.1 Emitter Band Gap Narrowing
+
+#### 8.4.2 Narrow Band-Gap Base and Heterojunction BJT
+
+#### 8.4.3 Poly-Silicon Emitter
+
+#### 8.4.4 Gummel Plot and $\beta_F$ Fall-Off at High and Low $I_C$
+
+### 8.5 Base-Width Modulation by Collector Voltage
+
+### 8.6 Ebers-Moll Model
+
+### 8.7 Transit Time and Charge Storage
+
+#### 8.7.1 Base Charge Storage and Base Transit Time
+
+### 8.7.2 Drift Transistor-Built-In Base Field
+
+### 8.7.3 Emitter-to-Collector Transit Time and Kirk Effect
+
+### 8.8 Small-Signal Model
+
+### 8.9 Cutoff Freqency
+
+### 8.10 Charge Control Model
+
+### 8.11 Model for Large-Signal Circult Simulation
 
